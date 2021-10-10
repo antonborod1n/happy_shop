@@ -1,13 +1,121 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Happy Shop</title>
     <link rel="stylesheet" href="style.min.css">
 </head>
+
 <body>
-    
-<script src="js/main.min.js"></script>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__top">
+                    <ul class="header__top-list">
+                        <li class="header__top-items">
+                            Служба поддержки:
+                            <a class="header__top-link" href="tel:880012345678">
+                                8 (800) 1234-56-78
+                            </a>
+                        </li>
+                        <li class="header__top-items">
+                            Перезвонить?
+                        </li>
+                        <li class="header__top-items">
+                            <a class="header__top-link" href="mailtu:myemail@gmail.com">
+                                Отправить сообщение
+                            </a>
+                        </li>
+                    </ul>
+                    <form action="#" method="post">
+                        <label>Валюта: </label>
+                        <select name="carancy">
+                            <option value="1">BYN</option>
+                            <option value="2">USD</option>
+                            <option value="3">RUB</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="header__main">
+                    <a class="logo" href="#">
+                        <img class="logo__img" src="images/logo.png" alt="Логотип">
+                    </a>
+                    <form action="#">
+                        <select name="product">
+                            <option value="1">Товары</option>
+                            <option value="2">Одежда</option>
+                            <option value="3">Игрушки</option>
+                            <option value="4">Обувь</option>
+                            <option value="5">Инры</option>
+                            <option value="6">Канцтовары</option>
+                            <option value="7">Сумки</option>
+                            <option value="8">Уборы</option>
+                            <option value="9">Аксессуары</option>
+                        </select>
+                    </form>
+                    <div class="header__info">
+                        <div class="header__info-address">
+                            <p class="header__info-title">Наш адрес</p>
+                            <p class="header__info-subtitle">1234 Donec semper lorem, 65c.</p>
+                        </div>
+                        <div class="header__info-time">
+                            <p class="header__info-title">Часы работы</p>
+                            <p class="header__info-subtitle">Ежедневно с 09:00 до 21:00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__menu">
+                    <div class="header__menu-catalog"></div>
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__list-items">
+                                <a class="menu__list-link" href="#">
+                                    Каталог
+                                </a>
+                            </li>
+                            <li class="menu__list-items">
+                                <a class="menu__list-link" href="#">
+                                    О магазине
+                                </a>
+                            </li>
+                            <li class="menu__list-items">
+                                <a class="menu__list-link" href="#">
+                                    Блог
+                                </a>
+                            </li>
+                            <li class="menu__list-items">
+                                <a class="menu__list-link" href="#">
+                                    FAQ
+                                </a>
+                            </li>
+                            <li class="menu__list-items">
+                                <a class="menu__list-link" href="#">
+                                    Контакты
+                                </a>
+                            </li>
+                            <li class="menu__list-items">
+                                <a class="menu__list-link" href="#">
+                                    Еще
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="user__nav">
+                        <a class="user__nav-link" href="#"></a>
+                        <a class="user__nav-link" href="#">
+                            <div class="user__nav-numb">4</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+
+    <script src="js/main.min.js"></script>
 </body>
+
 </html>
