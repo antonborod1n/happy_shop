@@ -1,0 +1,37 @@
+/* 
+#f2356b Розовый
+#ffdd00 Желтый
+#1a1a1a Черный
+#ededed Серый бг
+#5ce2ec Голубой
+#7a7a7a Серый текст 
+*/
+
+$accent: #f2356b;
+$default: #7a7a7a;
+$title: #1a1a1a;
+
+%montserrat-400 {
+    font-family: 'Montserrat-Regular', sans-serif;
+    font-weight: 400;
+}
+
+%montserr-atalternates-400 {
+    font-family: 'MontserratAlternates-Regular', sans-serif;
+    font-weight: 400;
+}
+
+%montserr-atalternates-500 {
+    font-family: 'MontserratAlternates-Medium', sans-serif;
+    font-weight: 500;
+}
+
+%montserr-atalternates-600 {
+    font-family: 'MontserratAlternates-SemiBold', sans-serif;
+    font-weight: 600;
+}
+
+%montserr-atalternates-700 {
+    font-family: 'MontserratAlternates-Bold', sans-serif;
+    font-weight: 700;
+}

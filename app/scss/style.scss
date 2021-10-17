@@ -3,14 +3,84 @@
 @import 'reset'; /* Сброс */
 @import 'global'; /* Глобальные стили */
 
+.header {
+    padding: 15px 0;
+    color: $title;
+    background-color: #f8f8f8;
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        &-list {
+            display: flex;
+            justify-content: space-between;
+        }
+        &-items {
+            padding-left: 45px;
+            padding-right: 17px;
+            border-right: 1px solid #ededed;
+        }
+        &-items:last-child {
+            border-right: none;
+        }
+    }
+    &__main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &-logo {
+            display: flex;
+            align-items: center;
+        }
+    }
+    &__info {
+        display: flex;
+        align-items: center;
+    }
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
 
+.menu {
+    &__catalog {
+        padding-right: 180px;
+    }
+    &__list {
+        display: flex;
+    }
+    &__list-item + .menu__list-item {
+        padding-left: 40px;
+    }
+    &__list-link {
+        font-size: 15px;
+        line-height: 22px;
+        color: $title;
+    }
+}
 
-
-
-
-
-
-
+.user__nav {
+    display: flex;
+    &-link {
+        position: relative;
+    }
+    &-link + .user__nav-link{
+        padding-left: 25px;
+    }
+    &-numb {
+        position: absolute;
+        top: -8px;
+        right: -16px;
+        width: 16px;
+        height: 16px;
+        font-size: 11px;
+        line-height: 16px;
+        background-color: #fff;
+        border-radius: 50%;
+        text-align: center;
+    }
+}
 
 
 
