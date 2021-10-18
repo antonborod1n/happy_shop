@@ -1,8 +1,19 @@
+html,
 body {
-    @extend %montserr-atalternates-400;
+    height: 100%;
+}
+
+.main {
+    flex-grow: 1;
+}
+
+body {
+    @extend %montserrat-alternates-400;
     font-size: 13px;
     line-height: 22px;
     color: $default;
+    display: flex;
+    flex-direction: column;
 }
 
 .container {

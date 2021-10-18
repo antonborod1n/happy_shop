@@ -4,15 +4,16 @@
 @import 'global'; /* Глобальные стили */
 
 .header {
-    padding: 15px 0;
     color: $title;
     background-color: #f8f8f8;
     &__top {
         display: flex;
         justify-content: space-between;
+        padding: 15px 0;
         &-list {
             display: flex;
             justify-content: space-between;
+            position: relative;
         }
         &-items {
             padding-left: 45px;
@@ -22,6 +23,13 @@
         &-items:last-child {
             border-right: none;
         }
+        &-link {
+            color: $title;
+        }
+    }
+    &__center {
+        background-color: $accent;
+        padding: 20px 0;
     }
     &__main {
         display: flex;
@@ -29,12 +37,25 @@
         align-items: center;
         &-logo {
             display: flex;
-            align-items: center;
         }
     }
     &__info {
+        @extend %montserrat-alternates-600;
         display: flex;
         align-items: center;
+        font-size: 15px;
+        line-height: 18px;
+        color: #FFFFFF;
+        &-address {
+            margin-left: 100px;
+        }
+        &-time {
+            margin-left: 100px;
+        }
+    }
+    &__bottom {
+        background-color: #5ce2ec;
+        padding: 12px 0;
     }
     &__menu {
         display: flex;
@@ -43,12 +64,64 @@
     }
 }
 
-.menu {
-    &__catalog {
-        padding-right: 180px;
+.support::before {
+    content: url(../images/icons/support.svg);
+    position: absolute;
+    top: 1px;
+    left: 10px;
+}
+
+.phone::before {
+    content: url(../images/icons/phone.svg);
+    position: absolute;
+    top: 1px;
+    left: 313px;
+}
+
+.massage::before {
+    content: url(../images/icons/email.svg);
+    position: absolute;
+    top: 1px;
+    left: 463px;
+}
+
+.form__carancy {
+    position: relative;
+    &-title::before {
+        content: url(../images/icons/dollar.svg);
+        position: absolute;
+        top: 0;
+        left: -20px;
     }
+}
+
+.logo {
+    &__text {
+        margin-left: 12px;
+        &-title {
+            @extend %montserrat-alternates-700;
+            font-size: 26px;
+            text-transform: uppercase;
+            color: #ffffff;
+        }
+        &-subtitle {
+            color: #ffffff;
+        }
+    }
+}
+
+.menu {
+    display: flex;
+    align-items: center;
     &__list {
         display: flex;
+    }
+    &__catalog {
+        @extend %montserrat-alternates-600;
+        padding: 12px 90px 12px 28px;
+        font-size: 15px;
+        background-color: #fff;
+        border-radius: 10px;
     }
     &__list-item + .menu__list-item {
         padding-left: 40px;
@@ -62,6 +135,7 @@
 
 .user__nav {
     display: flex;
+    margin-left: 500px;
     &-link {
         position: relative;
     }
@@ -82,6 +156,120 @@
     }
 }
 
+
+
+
+/* FOOTER */
+
+.footer {
+    background-color: $lightgrey;
+}
+.footer-top {
+    display: flex;
+    padding: 80px 0 60px;
+    &__items {
+        width: 475px;
+        margin-right: 325px;
+    }
+    &__title {
+        @extend %montserrat-alternates-600;
+        font-size: 24px;
+        margin-bottom: 22px;
+        color: $title;
+    }
+    &__phone {
+        position: relative;
+        margin: 0 0 36px 70px;
+    }
+    &__phone::before {
+        position: absolute;
+        content: url(../images/icons/footer-support.svg);
+        top: 0;
+        left: -76px;
+    }
+    &__qestion {
+        @extend %montserrat-alternates-400;
+        font-size: 13px;
+        margin-bottom: 12px;
+        color: $default;
+    }
+    &__link {
+        @extend %montserrat-alternates-600;
+        font-size: 22px;
+        color: $title;
+    }
+    &__text {
+        @extend %montserrat-alternates-600;
+        font-size: 15px;
+        margin-bottom: 12px;
+        color: $title;
+    }
+    &__address {
+        display: inline-block;
+        @extend %montserrat-alternates-400;
+        font-size: 13px;
+        margin-bottom: 38px;
+        color: $default;
+    }
+}
+.logo__title {
+    @extend %montserrat-alternates-600;
+    font-size: 36px;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+    color: $title;
+}
+.footer-top__social-list {
+    display: flex;
+}
+.footer-top__item + .footer-top__item {
+    margin-left: 10px;
+}
+.footer-top__social-link {
+    display: inline-block;
+    background-color: $darkgrey;
+    padding: 10px;
+    border-radius: 10px;
+}
+.footer-top__social-link:hover{
+    background-color: $yellow;
+    transition: all .3s;
+}
+.footer-top__social-active {
+    background-color: $yellow;
+}
+.footer-top__inner {
+    display: flex;
+    margin-bottom: 40px;
+}
+.footer-top__menu{
+    width: 215px;
+    margin-right: 180px;
+    &:last-child{
+        margin-right: 0;
+    }
+    &-link {
+        @extend %montserrat-alternates-400;
+        font-size: 13px;
+        line-height: 34px;
+        color: $default;
+    }
+    &-link::before {
+        content: url(../images/icons/arrow-right.svg);
+        vertical-align: -2px;
+    }
+}
+.footer-top__card-list {
+    display: flex;
+}
+.footer-top__card-item {
+    margin-right: 12px;
+}
+.footer-bottom {
+    background-color: $darkgrey;
+    padding: 20px 0;
+    text-align: center;
+}
 
 
 @import 'media'; /* медиа-запросы */
