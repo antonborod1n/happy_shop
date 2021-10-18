@@ -159,6 +159,59 @@
 
 
 
+
+
+
+
+
+
+
+/* BANNER */
+
+.banner {
+    padding: 10px 0;
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 220px;
+        background-image: url(../images/sv.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        border-radius: 10px
+    }
+    &__sybtitle {
+        @extend %montserrat-alternates-600;
+        font-size: 19px;
+        color: $title;
+        margin-bottom: 20px;
+    }
+    &__title {
+        @extend %montserrat-alternates-600;
+        font-size: 48px;
+        color: $accent;
+        margin-bottom: 40px;
+    }
+    &__link {
+        position: relative;
+        padding: 14px 44px 14px 25px;
+        background-color: $yellow;
+        border-radius: 10px;
+        @extend %montserrat-alternates-400;
+        font-size: 13px;
+        color: $title;
+        &::after {
+            content: url(../images/icons/arrow-back-btn.svg);
+            position: absolute;
+            top: 16px;
+            right: 22px;
+        }
+    }
+    
+}
+
 /* FOOTER */
 
 .footer {
