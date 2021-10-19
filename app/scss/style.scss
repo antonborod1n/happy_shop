@@ -139,25 +139,69 @@
     &__list {
         display: flex;
         &-link {
+            @extend %montserrat-alternates-500;
             font-size: 15px;
             line-height: 22px;
-            color: $title;
+            color: $title;  
         }
     }
-    &__catalog {
-        @extend %montserrat-alternates-600;
-        padding: 12px 90px 12px 28px;
-        font-size: 15px;
-        background-color: #FFFFFF;
-        border-radius: 10px;
+}
+
+.menu__new {
+    background-color: #FFFFFF;
+    border-radius: 20px;
+}
+
+.menu__new-img {
+    position: relative;
+    &::after {
+        content: url(../images/icons/new.svg);
+        top: -15px;
+        left: 64px;
+        position: absolute;
     }
 }
+
+.catalog__arrow {
+    padding-right: 10px;
+}
+
+.link__arrow {
+    position: relative;
+    &::after {
+        position: absolute;
+        content: url(../images/icons/arrow-down.svg);
+        right: -15px;
+        bottom: -3px;
+    }
+}
+
+.menu__catalog {
+    @extend %montserrat-alternates-600;
+    padding: 12px 90px 12px 28px;
+    font-size: 15px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+}
+
+.menu__catalog-link {
+    color: $title;
+    position: relative;
+}
+
+.menu__catalog-link::before {
+    position: absolute;
+    content: url(../images/icons/menu-burger.svg);
+    bottom: -5px;
+    right: -70px;
+}
+
 .menu__list-item + .menu__list-item {
     padding-left: 40px;
 }
 .user__nav {
     display: flex;
-    margin-left: 500px;
+    margin-left: 570px;
     &-link {
         position: relative;
     }
@@ -167,9 +211,10 @@
     &-numb {
         position: absolute;
         top: -8px;
-        right: -16px;
+        right: -10px;
         width: 16px;
         height: 16px;
+        @extend %montserrat-alternates-600;
         font-size: 11px;
         line-height: 16px;
         background-color: #FFFFFF;

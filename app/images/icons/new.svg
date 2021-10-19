@@ -1,0 +1,16 @@
+<svg id="new" xmlns="http://www.w3.org/2000/svg" width="44" height="18.25" viewBox="0 0 44 18.25">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-1 {
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <text x="0" y="15" fill="#1a1a1a">Новое</text>
+  <path data-name="Прямоугольник 6" class="cls-1" d="M1150.55,162.689l7.81,1.073,0.91,6.189-12.86,7.309Z" transform="translate(-1119 -159)"/>
+  <rect data-name="Прямоугольник 5" class="cls-2" width="44" height="15" rx="7" ry="7"/>
+</svg>
