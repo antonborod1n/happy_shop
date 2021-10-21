@@ -35,3 +35,41 @@ $blue: #5ce2ec;
     font-family: 'MontserratAlternates-Bold', sans-serif;
     font-weight: 700;
 }
+
+%btny {
+        position: relative;
+        padding: 15px 45px 15px 25px;
+        background-color: $yellow;
+        border-radius: 10px;
+        @extend %montserrat-alternates-400;
+        font-size: 13px;
+        color: $title;
+        &::after {
+            position: absolute;
+            content: url(../images/icons/arrow-back-btn.svg);
+            top: 17px;
+            right: 20px;
+        }
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+%btnb {
+        position: relative;
+        padding: 15px 45px 15px 25px;
+        background-color: $blue;
+        border-radius: 10px;
+        @extend %montserrat-alternates-400;
+        font-size: 13px;
+        color: $title;
+        &::after {
+            position: absolute;
+            content: url(../images/icons/arrow-back-btn.svg);
+            top: 17px;
+            right: 20px;
+        }
+        &:hover {
+            cursor: pointer;
+        }
+    }
