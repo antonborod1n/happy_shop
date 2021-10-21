@@ -10,19 +10,26 @@
 
 <body>
     <header class="header">
+
+
         <div class="container">
             <div class="header__top">
                 <ul class="header__top-list">
-                    <li class="header__top-items support">
+                    <li class="header__top-items">
+                        <img class="header__top-icon-img" src="./images/icons/support.svg" alt="Поддержка">
                         Служба поддержки:
                         <a class="header__top-link" href="tel:880012345678">
                             8 (800) 1234-56-78
                         </a>
                     </li>
-                    <li class="header__top-items phone">
-                        Перезвонить?
+                    <li class="header__top-items">
+                        <img class="header__top-icon-img" src="./images/icons/phone.svg" alt="Поддержка">
+                        <a class="header__top-link" href="tel:880012345678">
+                            Перезвонить?
+                        </a>
                     </li>
-                    <li class="header__top-items massage">
+                    <li class="header__top-items">
+                        <img class="header__top-icon-img" src="./images/icons/email.svg" alt="Поддержка">
                         <a class="header__top-link" href="mailtu:myemail@gmail.com">
                             Отправить сообщение
                         </a>
@@ -31,13 +38,15 @@
                 <form class="form__carancy" action="#" method="post">
                     <label class="form__carancy-title">Валюта: </label>
                     <select class="form__carancy-list" name="carancy">
-                        <option value="1">BYN</option>
-                        <option value="2">USD</option>
+                        <option value="1">USD</option>
+                        <option value="2">BYN</option>
                         <option value="3">RUB</option>
                     </select>
                 </form>
             </div>
         </div>
+
+
         <div class="header__center">
             <div class="container">
                 <div class="header__main">
@@ -71,8 +80,8 @@
                             </div>
                         </form>
                         <div class="header__info-address">
-                                <p class="header__info-title">Наш адрес</p>
-                                <p class="header__info-subtitle">1234 Donec semper lorem, 65c.</p>
+                            <p class="header__info-title">Наш адрес</p>
+                            <p class="header__info-subtitle">1234 Donec semper lorem, 65c.</p>
                         </div>
                         <div class="header__info-time">
                             <p class="header__info-title">Часы работы</p>
@@ -82,6 +91,8 @@
                 </div>
             </div>
         </div>
+
+
         <div class="header__bottom">
             <div class="container">
                 <div class="header__menu">
@@ -103,7 +114,7 @@
                             <li class="menu__list-item">
                                 <a class="menu__list-link" href="#">
                                     О магазине
-                                </a>  
+                                </a>
                             </li>
                             <li class="menu__list-item">
                                 <a class="menu__list-link" href="#">
@@ -142,6 +153,148 @@
     </header>
 
     <main class="main">
+        <section class="top-slider">
+            <div class="container">
+                <div class="top-slider__inner">
+                    <div class="top-slider__items">
+                        <nav class="top-slider__menu">
+                            <ul class="top-slider__list">
+                                <li class="top-slider__item">
+                                    <a class="top-slider__link top-slider__arrow-link" href="#">
+                                        Детская одежда
+                                    </a>
+                                </li>
+                                <li class="top-slider__item">
+                                    <a class="top-slider__link top-slider__arrow-link" href="#">
+                                        Мягкие игрушки
+                                    </a>
+                                </li>
+                                <li class="top-slider__item">
+                                    <a class="top-slider__link" href="#">
+                                        Обувь летняя
+                                    </a>
+                                </li>
+                                <li class="top-slider__item">
+                                    <a class="top-slider__link top-slider__arrow-link" href="#">
+                                        Развивающие игры
+                                    </a>
+                                </li>
+                                <li class="top-slider__item">
+                                    <a class="top-slider__link" href="#">
+                                        Канцтовары
+                                    </a>
+                                </li>
+                                <li class="top-slider__item">
+                                    <a class="top-slider__link" href="#">
+                                        Сумки и рюкзаки
+                                    </a>
+                                </li>
+                                <li class="top-slider__item">
+                                    <a class="top-slider__link" href="#">
+                                        Головные уборы
+                                    </a>
+                                </li>
+                                <li class="top-slider__item">
+                                    <a class="top-slider__link" href="#">
+                                        Аксессуары
+                                    </a>
+                                </li>
+                                <li class="top-slider__item">
+                                    <a class="top-slider__link top-slider__link-color" href="#">
+                                        <span>+</span>
+                                        Все категории
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div class="top-slider__slider">
+                        <div class="top-slider__content">
+                            <div class="top-slider__content-inner">
+                                <h3 class="top-slider__sybtitle">Минус 30% на все</h3>
+                                <h3 class="top-slider__title">Скейтборды</h3>
+                                <a class="top-slider__btn" href="#">Купить сейчас</a>
+                            </div>
+                            <img class="top-slider__img" src="./images/slider/top-slider-baner.jpg"
+                                alt="Слайдер картинка со скидками">
+                        </div>
+                        <div class="top-slider__content">
+                            <div class="top-slider__content-inner">
+                                <h3 class="top-slider__sybtitle">Новое поступление</h3>
+                                <h3 class="top-slider__title">Для девочек</h3>
+                                <a class="top-slider__btn" href="#">Купить сейчас</a>
+                            </div>
+                            <img class="top-slider__img" src="./images/slider/banner-children-girl.jpg"
+                                alt="Слайдер картинка со скидками">
+                        </div>
+                        <div class="top-slider__content">
+                            <div class="top-slider__content-inner">
+                                <h3 class="top-slider__sybtitle">Для самых маленьких</h3>
+                                <h3 class="top-slider__title">Скидки до 30%</h3>
+                                <a class="top-slider__btn" href="#">Купить сейчас</a>
+                            </div>
+                            <img class="top-slider__img" src="./images/slider/banner-children-baby.jpg"
+                                alt="Слайдер картинка со скидками">
+                        </div>
+                    </div>
+
+                    <div class="top-slider__banner">
+                        <div class="top-slider__banner-traine">
+                            <span class="top-slider__banner-sybtitle">Детям до 3 лет</span>
+                            <a class="top-slider__banner__link" href="#">Купить</a>
+                        </div>
+                        <div class="top-slider__banner-children">
+                            <span class="top-slider__banner-sybtitle">Для развития</span>
+                            <a class="top-slider__banner__link" href="#">Купить</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="benefits">
+            <div class="container">
+                <div class="benefits__info">
+                    <div class="benefits__info-item">
+                        <img class="benefits__info-img" src="images/icons/benefits/rocket.svg" alt="Ракета">
+                        <div class="benefits__info-items">
+                            <div class="benefits__info-title">Быстрая доставка</div>
+                            <p class="benefits__info-subtitle">Базовый вектор развития</p>
+                        </div>
+                    </div>
+                    <div class="benefits__info-item">
+                        <img class="benefits__info-img" src="images/icons/benefits/support-benefits.svg" alt="Ракета">
+                        <div class="benefits__info-items">
+                            <div class="benefits__info-title">Техподдержка 24/7</div>
+                            <p class="benefits__info-subtitle">Базовый вектор развития</p>
+                        </div>
+                    </div>
+                    <div class="benefits__info-item">
+                        <img class="benefits__info-img" src="images/icons/benefits/redo-arrow.svg" alt="Ракета">
+                        <div class="benefits__info-items">
+                            <div class="benefits__info-title">100% возврат денег</div>
+                            <p class="benefits__info-subtitle">Базовый вектор развития</p>
+                        </div>
+                    </div>
+                    <div class="benefits__info-item">
+                        <img class="benefits__info-img" src="images/icons/benefits/security-shield.svg" alt="Ракета">
+                        <div class="benefits__info-items">
+                            <div class="benefits__info-title">Безопасная оплата</div>
+                            <p class="benefits__info-subtitle">Базовый вектор развития</p>
+                        </div>
+                    </div>
+                    <div class="benefits__info-item">
+                        <img class="benefits__info-img" src="images/icons/benefits/discount.svg" alt="Ракета">
+                        <div class="benefits__info-items benefits__info-items--none">
+                            <div class="benefits__info-title">Постоянные скидки</div>
+                            <p class="benefits__info-subtitle">Базовый вектор развития</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
 
 
 
