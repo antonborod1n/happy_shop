@@ -447,11 +447,9 @@ div .form__search-btn {
     border-right: 1px solid $darkgrey;
     padding-right: 40px; 
 }
-
 .benefits__info-items--none {
     border-right: none;
 }
-
 .benefits__info-img {
     margin-right: 20px;
 }
@@ -460,103 +458,209 @@ div .form__search-btn {
     font-size: 15px;
     color: $title;
 }
-
 .benefits__info-subtitle {
     @extend %montserrat-alternates-400;
     font-size: 13px;
     color: $default;
 }
 
+/* PRODUKT */
+
+.product {
+    padding-bottom: 57px;
+}
+.product__inner {
+}
+.product__title {
+    padding-bottom: 35px;
+}
+.title {
+    @extend %montserrat-alternates-600;
+    font-size: 30px;
+    line-height: 22px;
+    color: $title;
+}
+.product__slider {
+    display: flex;
+    justify-content: space-between; 
+    
+}
+
+.product-item {
+    max-width: 236px;
+    margin-left: 30px;
+    &:hover {
+        .product-item__link-box {
+            transform: translateY(0);
+        }
+    }
+    &:first-child {
+        margin-left: 0;
+    }
+}
+.product-item__img-box {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 18px;
+}
+.product-item__imges {
+    object-fit: cover;
+}
+.product-item__link-box {
+    display: flex;
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    transform: translateY(300%);
+    transition: all .3s;
+}
+.product-item__link-box a {
+    margin-right: 5px;
+}
+.product-item__link:last-child {
+    margin-right: 0;
+}
+.product-item__btn {
+    @extend %btnbye;
+    padding-left: 35px;
+    padding-top: 8px;
+}
+.product-item__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: $yellow;
+    border-radius: 10px;
+}
+.star {
+}
+.product-item__title {
+    @extend %montserrat-alternates-600;
+    font-size: 15px;
+    line-height: 18px;
+    color: $title;
+    margin-bottom: 20px;
+}
+.product-item__price {
+    display: flex;
+    align-items: flex-end;
+    line-height: 22px;
+}
+.product-item__new-price {
+    @extend %montserrat-alternates-600;
+    font-size: 17px;
+    color: $accent;
+    margin-right: 10px;
+}
+.product-item__old-price {
+    @extend %montserrat-alternates-400;
+    font-size: 11px;
+    color: $default;
+    text-decoration: line-through;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* DOUBLE-BANNER */
 
 .double__banner {
     padding-bottom: 50px;
-
 }
 .double__banner-inner {
     display: flex;
 }
 .double__banner-left {
-    padding-right: 50px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     justify-content: center;
+    height: 250px;
+    width: 770px;
+    padding-right: 50px;
+    margin-right: 30px;
     background-image: url(../images/dbaner-left.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     border-radius: 10px;
-    height: 250px;
-    width: 770px;
-    margin-right: 30px;
 }
 .double__banner-right {
-    padding-left: 50px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    height: 250px;
+    width: 770px;
+    padding-left: 50px;
     background-image: url(../images/dbaner-right.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     border-radius: 10px;
-    height: 250px;
-    width: 770px;
 }
 .double-bottom__banner-left {
-    padding-right: 50px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     justify-content: center;
+    height: 250px;
+    width: 770px;
+    padding-right: 50px;
+    margin-right: 30px;
     background-image: url(../images/cross-baner-left.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     border-radius: 10px;
-    height: 250px;
-    width: 770px;
-    margin-right: 30px;
 }
 .double-bottom__banner-right {
-    padding-left: 50px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    height: 250px;
+    width: 770px;
+    padding-left: 50px;
     background-image: url(../images/child-baner-right.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    border-radius: 10px;
-    height: 250px;
-    width: 770px;
+    border-radius: 10px; 
 }
 .double__banner-sybtitle {
     @extend %montserrat-alternates-600;
+    margin-bottom: 20px;
     font-size: 17px;
     color: $title;
-    margin-bottom: 20px;
 }
 .double__banner-title {
     @extend %montserrat-alternates-600;
+    margin-bottom: 40px;
     font-size: 36px;
     color: $accent;
-    margin-bottom: 40px;
 }
-
 .double__banner-link--blue {
     @extend %btnb;
 }
-
 .double__banner-link--yellow {
     @extend %btny;
 }
 
+
 /* BANNER */
+
 
 .banner {
     padding: 10px 0;
