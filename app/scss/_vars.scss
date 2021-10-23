@@ -87,3 +87,21 @@ $blue: #5ce2ec;
         left: 10px;
     }
 }
+
+%btnbye-pop {
+    position: relative;
+    /* padding: 15px 12px 15px 35px; */
+    width: 115px;
+    height: 40px;
+    background-color: $lightgrey;
+    border-radius: 10px;
+    @extend %montserrat-alternates-400;
+    font-size: 13px;
+    color: $title;
+    &::before {
+        position: absolute;
+        content: url(../images/icons/basket-pop.svg);
+        top: 10px;
+        left: 10px;
+    }
+}

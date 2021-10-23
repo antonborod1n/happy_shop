@@ -32,6 +32,10 @@ dd {
   margin: 0;
 }
 
+button[class] {
+  cursor: pointer;
+}
+
 ul[class] {
   list-style: none;
 }

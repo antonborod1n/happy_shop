@@ -611,12 +611,81 @@ div .form__search-btn {
     color: $default;
 }
 
+/* POPULAR */
 
+.popular {
+    padding-bottom: 50px;
+}
 
-
-
-
-
+.popular__tabs{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+   grid-gap: 30px;
+}
+.popular__title {
+    padding-bottom: 30px;
+}
+.popular-item {
+    border-radius: 10px;
+    border: 1px solid $darkgrey;
+    max-width: 500px;
+    display: flex;
+    padding: 28px;
+}
+.popular-item__link-box {
+    margin-left: 20px;
+}
+.popular-item__link-panel {
+    display: flex;
+}
+.popular-item__title {
+    margin-bottom: 16px;
+}
+.popular-item__price{
+    display: flex;
+    margin-bottom: 10px;
+}
+.popular-item__link-panel a {
+    margin-right: 5px;
+}
+.popular-item__btn {
+    @extend %btnbye-pop;
+    padding-left: 35px;
+    padding-top: 8px;
+}
+.popular-item__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: $lightgrey;
+    border-radius: 10px;
+}
+.popular__filter-btn {
+    padding-bottom: 30px;
+}
+.popular__btn {
+    @extend %montserrat-alternates-500;
+    font-size: 13px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: $lightgrey;
+    margin-left: 5px;
+}
+.popular__btn:first-child {
+    margin-left: 0;
+}
+.popular__btn:hover {
+    background-color: #5ce2ec;
+    transition: all .3s;
+}
+.popular__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 
 
