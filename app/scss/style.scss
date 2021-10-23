@@ -146,13 +146,6 @@ div .form__search-btn {
     background-color: $yellow;
     border: none;
 }
-
-
-
-
-
-
-
 .logo__text {
     margin-left: 12px;
 }
@@ -254,37 +247,6 @@ div .form__search-btn {
         text-align: center;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* MAIN */
 
@@ -591,6 +553,88 @@ div .form__search-btn {
     margin-right: 30px;
 }
 
+/* NEW SHOP */
+
+.novelty {
+    padding-bottom: 50px;
+}
+.novelty__inner {
+    display: flex;
+    justify-content: space-between;
+}
+.slider__one{
+    max-width: 485px;
+}
+.novelty__content {
+    max-width: 1036px;
+}
+.novelty__reviews {
+    margin-left: 50px;
+}
+.novelty__reviews-inner{
+    /* не работает */ 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.novelty__reviews-content{
+    background-color: $lightgrey;
+    border-radius: 10px;
+}
+.novelty__title {
+    padding-bottom: 28px;
+}
+.manager-info {
+    margin-left: 25px;
+}
+.novelty__reviews-manager-info {
+    display: flex;
+    align-items: center;
+}
+.novelty__reviews-text {
+    @extend %montserrat-alternates-400;
+    font-size: 13px;
+    color: $default;
+    padding: 22px 30px;
+}
+.novelty__reviews-text:last-child {
+    padding-top: 0;
+}
+.novelty__reviews-manager-name {
+    @extend %montserrat-alternates-600;
+    font-size: 17px;
+    color: $title;
+}
+.novelty__reviews-manager-subname {
+    @extend %montserrat-alternates-400;
+    font-size: 13px;
+    color: $default;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* PARTNERS */
 
 .partners {
@@ -603,12 +647,54 @@ div .form__search-btn {
     object-fit: cover;
 }
 
-
-
-
-
-
-
+/* BLOG */
+.blog {
+    padding-bottom: 88px;
+}
+.blog-item {
+    max-width: 370px;
+}
+.blog__data {
+    background-color: $accent;
+    padding: 10px;
+    color: #FFFFFF;
+    border-radius: 10px;
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    @extend %montserrat-alternates-500;
+    font-size: 11px;
+}
+.blog__inner-title {
+    padding-bottom: 35px;
+}
+.blog__title {
+    margin-bottom: 22px;
+}
+.blog__btn {
+    @extend %btny;
+}
+.blog__title {
+    @extend %montserrat-alternates-600;
+    font-size: 17px;
+    color: $title;
+    line-height: 20px;
+}
+.blog__anons {
+    @extend %montserrat-alternates-400;
+    font-size: 13px;
+    color: $title;
+    line-height: 20px;
+    margin-bottom: 38px;
+}
+.blog-item__img-box {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 18px;
+}
+.blog-item__imges {
+    object-fit: cover;
+}
 
 
 /* DOUBLE-BANNER */
@@ -701,7 +787,7 @@ div .form__search-btn {
 
 
 .banner {
-    padding: 10px 0;
+    padding: 10px 0 50px;
     &__inner {
         display: flex;
         flex-direction: column;
