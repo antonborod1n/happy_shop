@@ -48,7 +48,7 @@
                 <div class="header__main">
                     <div class="header__main-logo">
                         <a class="logo" href="#">
-                            <img class="logo__img" src="images/icons/bag.svg" alt="Логотип">
+                            <img class="logo__img" src="images/icons/bag-icon.svg" alt="Логотип">
                         </a>
                         <div class="logo__text">
                             <p class="logo__text-title">магазин</p>
@@ -56,25 +56,28 @@
                         </div>
                     </div>
                     <div class="header__info">
-                        <form class="form" action="#">
-                            <div class="form__inner">
-                                <select class="form__product" name="product">
-                                    <option value="1">Товары</option>
-                                    <option value="2">Одежда</option>
-                                    <option value="3">Игрушки</option>
-                                    <option value="4">Обувь</option>
-                                    <option value="5">Инры</option>
-                                    <option value="6">Канцтовары</option>
-                                    <option value="7">Сумки</option>
-                                    <option value="8">Уборы</option>
-                                    <option value="9">Аксессуары</option>
-                                </select>
-                                <input class="form__search" type="search" placeholder="Введите поисковую фразу">
-                                <button class="form__search-btn" type="submit">
-                                    <img class="form__img" src="./images/icons/search.svg" alt="Поиск">
-                                </button>
-                            </div>
-                        </form>
+                        <div class="serche" action="#">
+                            <select class="serche__product" name="product">
+                                <option value="1">Товары</option>
+                                <option value="2">Одежда</option>
+                                <option value="3">Игрушки</option>
+                                <option value="4">Обувь</option>
+                                <option value="5">Инры</option>
+                                <option value="6">Канцтовары</option>
+                                <option value="7">Сумки</option>
+                                <option value="8">Уборы</option>
+                                <option value="9">Аксессуары</option>
+                            </select>
+                            <form class="form" action="#" method="post">
+                                <form id="search-form" class="search-shop" onsubmit="this.sfSbm.disabled=true"
+                                    method="post" action="/shop/search">
+                                    <input class="search-keyword" type="text" name="query"
+                                        placeholder="Введите поисковую фразу">
+                                    <input type="submit" class="form__search-btn" name="sfSbm" value="O-"
+                                        title="Искать">
+                                </form>
+                            </form>
+                        </div>
                         <div class="header__info-address">
                             <p class="header__info-title">Наш адрес</p>
                             <p class="header__info-subtitle">1234 Donec semper lorem, 65c.</p>
@@ -90,11 +93,12 @@
         <div class="header__bottom">
             <div class="container">
                 <div class="header__menu">
-                    <div class="menu__catalog">
-                        <a class="menu__catalog-link" href="#">
+                    <a class="menu__catalog-link" href="#">
+                        <div class="menu__catalog">
                             Категории магазина
-                        </a>
-                    </div>
+                        </div>
+                        <img class="menu__catalog-img" src="images/icons/burger.svg" alt="Burger menu">
+                    </a>
                     <nav class="menu">
                         <ul class="menu__list">
                             <li class="menu__list-item">
@@ -144,6 +148,7 @@
                 </div>
             </div>
         </div>
+
     </header>
 
     <main class="main">
@@ -151,6 +156,7 @@
             <div class="container">
                 <div class="top-slider__inner">
                     <div class="top-slider__items">
+                        <div class="top__decor"></div>
                         <nav class="top-slider__menu">
                             <ul class="top-slider__list">
                                 <li class="top-slider__item">
@@ -202,6 +208,7 @@
                             </ul>
                         </nav>
                     </div>
+
                     <div class="top-slider__slider">
                         <div class="top-slider__content">
                             <div class="top-slider__content-inner">
@@ -211,7 +218,7 @@
                             </div>
                             <img class="top-slider__img" src="./images/slider/top-slider-baner.jpg"
                                 alt="Слайдер картинка со скидками">
-                        </div>
+                        </div> 
                         <div class="top-slider__content">
                             <div class="top-slider__content-inner">
                                 <h3 class="top-slider__sybtitle">Новое поступление</h3>
@@ -234,12 +241,18 @@
 
                     <div class="top-slider__banner">
                         <div class="top-slider__banner-traine">
-                            <span class="top-slider__banner-sybtitle">Детям до 3 лет</span>
-                            <a class="top-slider__banner__link" href="#">Купить</a>
+                            <img src="images/train-banner.jpg" alt="Банер">
+                            <div class="top-slider__banner-inner">
+                                <span class="top-slider__banner-sybtitle">Детям до 3 лет</span>
+                                <a class="top-slider__banner--blue" href="#">Купить</a>
+                            </div>
                         </div>
                         <div class="top-slider__banner-children">
-                            <span class="top-slider__banner-sybtitle">Для развития</span>
-                            <a class="top-slider__banner__link" href="#">Купить</a>
+                            <img src="images/banner-children.jpg" alt="Банер">
+                            <div class="top-slider__banner-inner--yellow">
+                                <span class="top-slider__banner-sybtitle">Для развития</span>
+                                <a class="top-slider__banner--yellow" href="#">Купить</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1048,10 +1061,12 @@
                                         резервов и
                                         ресурсов. Значимость этих проблем настолько очевидна.
                                     </p>
-                                    <p class="novelty__reviews-text">
+                                    <p class="novelty__reviews-text novelty__reviews-text--last">
                                         Значимость этих проблем настолько очевидна, что постоянный количественный рост.
                                     </p>
+                                    <div class="decor__reviews"></div>
                                 </div>
+                                
                                 <div class="novelty__reviews-manager-info">
                                     <img src="images/manager.jpg" alt="Manager">
                                     <div class="manager-info">
@@ -1064,7 +1079,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="novelty__reviews-inner">
+<!--                             <div class="novelty__reviews-inner">
                                 <div class="novelty__reviews-content">
                                     <p class="novelty__reviews-text">
                                         Современные технологии достигли такого, что высокое качество позиционных
@@ -1073,7 +1088,7 @@
                                         резервов и
                                         ресурсов. Значимость этих проблем настолько очевидна.
                                     </p>
-                                    <p class="novelty__reviews-text">
+                                    <p class="novelty__reviews-text novelty__reviews-text--last">
                                         Значимость этих проблем настолько очевидна, что постоянный количественный рост.
                                     </p>
                                 </div>
@@ -1088,7 +1103,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -1181,7 +1196,7 @@
                                 Значимость этих проблем настолько очевидна, что постоянный количественный рост и сфера
                                 нашей активности играет.
                             </p>
-                            <a class="blog__btn" href="#">Ситать далее</a>
+                            <a class="blog__btn" href="#">Читать далее</a>
                         </div>
                         <div class="blog-item">
                             <div class="blog-item__img-box">
@@ -1195,7 +1210,7 @@
                                 Значимость этих проблем настолько очевидна, что постоянный количественный рост и сфера
                                 нашей активности играет.
                             </p>
-                            <a class="blog__btn" href="#">Ситать далее</a>
+                            <a class="blog__btn" href="#">Читать далее</a>
                         </div>
                         <div class="blog-item">
                             <div class="blog-item__img-box">
@@ -1237,7 +1252,7 @@
                                 Значимость этих проблем настолько очевидна, что постоянный количественный рост и сфера
                                 нашей активности играет.
                             </p>
-                            <a class="blog__btn" href="#">Ситать далее</a>
+                            <a class="blog__btn" href="#">Читать далее</a>
                         </div>
                         <div class="blog-item">
                             <div class="blog-item__img-box">
@@ -1251,7 +1266,7 @@
                                 Значимость этих проблем настолько очевидна, что постоянный количественный рост и сфера
                                 нашей активности играет.
                             </p>
-                            <a class="blog__btn" href="#">Ситать далее</a>
+                            <a class="blog__btn" href="#">Читать далее</a>
                         </div>
                     </div>
                 </div>

@@ -5,6 +5,19 @@
 @import 'global'; /* Глобальные стили */
 
 
+/* SLICK-SLIDER */
+.top-slider__content .slick-slide {
+    margin-left: 0;
+}
+.slick-slide {
+    margin-left: 30px;
+}
+
+
+
+
+
+/* HEADER */
 .header {
     color: $title;
     background-color: $lightgrey;
@@ -53,98 +66,20 @@
     border: none;
     background-color: transparent;
 }
-
-
-
-/* NEW */
-
-
-.header {
-    color: $title;
-    background-color: $lightgrey;
-    &__center {
-        background-color: $accent;
-        padding: 28px 0;
-    }
-    &__main {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        &-logo {
-            display: flex;
-        }
-    }
-    &__bottom {
-        background-color: $blue;
-        padding: 12px 0;
-    }
-    &__menu {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
+.header__center {
+    background-color: $accent;
+    padding: 28px 0;
 }
-
-.header__info {
-    @extend %montserrat-alternates-600;
+.header__main {
     display: flex;
-    align-items: center;
-    font-size: 15px;
-    line-height: 18px;
-    color: #FFFFFF;
-    &-address,
-    &-time  {
-        margin-left: 100px;
-    }
+    justify-content: space-between;
 }
-
-.header__info-address {
-    position: relative;
-    &::before {
-        position: absolute;
-        content: url(../images/icons/world.svg);
-        top: 0;
-        left: -50px;
-    }
+.header__main-logo {
+    display: flex;
 }
-.header__info-time {
-    position: relative;
-    &::before {
-        position: absolute;
-        content: url(../images/icons/clock.svg);
-        top: 0;
-        left: -50px;
-    }
+.logo {
 }
-
-.form {
-    width: 440px;
-}
-
-.form__inner {
-    background-color: #FFFFFF;
-    border-radius: 10px;
-}
-.form__search {
-    padding: 10px 0;
-    border: none;
-}
-.form__search-btn {
-    border: none;
-}
-div .form__search-btn {
-    width: 38px;
-    height: 38px;
-    background-color: transparent;
-    border-left: solid 2px $default;
-    vertical-align: middle;
-    cursor: pointer;
-}
-.form__product {
-    padding: 12px 0;
-    border-radius: 10px;
-    background-color: $yellow;
-    border: none;
+.logo__img {
 }
 .logo__text {
     margin-left: 12px;
@@ -158,95 +93,180 @@ div .form__search-btn {
 .logo__text-subtitle {
     color: #ffffff;
 }
-
-.menu {
-    display: flex;
-    align-items: center;
-    &__list {
-        display: flex;
-        &-link {
-            @extend %montserrat-alternates-500;
-            font-size: 15px;
-            line-height: 22px;
-            color: $title;  
-        }
-    }
-}
-
-.menu__new {
-    background-color: #FFFFFF;
-    border-radius: 20px;
-}
-
-.menu__new-img {
-    position: relative;
-    &::after {
-        content: url(../images/icons/new.svg);
-        top: -15px;
-        left: 60px;
-        position: absolute;
-    }
-}
-
-.catalog__arrow {
-    padding-right: 10px;
-}
-
-.link__arrow {
-    position: relative;
-    &::after {
-        position: absolute;
-        content: url(../images/icons/arrow-down.svg);
-        right: -15px;
-        bottom: -3px;
-    }
-}
-
-.menu__catalog {
+.header__info {
     @extend %montserrat-alternates-600;
-    padding: 12px 70px 12px 28px;
+    display: flex;
     font-size: 15px;
-    background-color: #FFFFFF;
-    border-radius: 10px;
+    color: #FFFFFF;
 }
-
+.serche {
+    @extend %montserrat-alternates-400;
+    font-size: 13px;
+    width: 440px;
+    position: relative;
+}
+.serche__product {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    height: 44px;
+    border: 0;
+    border-radius: 10px;
+    background-color: $yellow;
+}
+.form {
+}
+.search-shop {
+}
+.search-keyword {
+    position: absolute;
+    border-radius: 10px;
+    width: 100%;
+    border: none;
+    height: 44px;
+    padding-left: 125px;
+    padding-right: 75px;
+}
+.form__search-btn {
+    position: absolute;
+    top: 12px;
+    right: 0;
+    z-index: 2;
+    height: 20px;
+    color: #1a1a1a;
+    border: none;
+    border-left: 1px solid #1a1a1a;
+    border-radius: 0;
+    background-color: transparent;
+}
+.header__info-address {
+    position: relative;
+    margin-left: 100px;
+    padding-top: 5px;
+}
+.header__info-address::before {
+    position: absolute;
+    content: url(../images/icons/world.svg);
+    top: 5px;
+    left: -50px;
+}
+.header__info-title {   
+    @extend %montserrat-alternates-600;
+    font-size: 15px;    
+    line-height: 18px;
+}
+.header__info-subtitle {
+    @extend %montserrat-400;
+    font-size: 13px;  
+    line-height: 18px; 
+}
+.header__info-time {
+    position: relative;
+    padding-top: 5px;
+    margin-left: 100px;
+}
+.header__info-time::before {
+    position: absolute;
+    content: url(../images/icons/clock.svg);
+    top: 5px;
+    left: -50px;
+}
+.header__bottom {
+    background-color: $blue;
+    padding: 12px 0;
+}
+.header__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .menu__catalog-link {
     color: $title;
     position: relative;
 }
-
-.menu__catalog-link::before {
+.menu__catalog:hover {
+    background-color: $title;
+    color: #FFFFFF;
+}
+.menu__catalog-img {
     position: absolute;
-    content: url(../images/icons/menu-burger.svg);
-    bottom: -6px;
-    right: -50px;
-    }   
+    top: 12px;
+    right: 15px;
+}
+.menu__catalog {
+    @extend %montserrat-alternates-600;
+    padding: 12px 87px 12px 28px;
+    font-size: 15px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+}
+.menu {
+    display: flex;
+    align-items: center;
+}
+.menu__list {
+    display: flex;
+}
 .menu__list-item + .menu__list-item {
     padding-left: 40px;
+} 
+.home__img {
+}
+.catalog__arrow {
+    padding-right: 10px;
+}
+.menu__list-link {
+    @extend %montserrat-alternates-500;
+    font-size: 15px;
+    line-height: 22px;
+    color: $title;  
+}
+.link__arrow {
+    position: relative;
+}
+.link__arrow::after {
+    position: absolute;
+    content: url(../images/icons/arrow-down.svg);
+    right: -15px;
+    bottom: -3px;
+}
+.menu__new-img {
+    position: relative;
+}
+.menu__new-img::after {
+    content: url(../images/icons/new.svg);
+    top: -15px;
+    left: 60px;
+    position: absolute;
 }
 .user__nav {
     display: flex;
-    margin-left: 510px;
-    &-link {
-        position: relative;
-    }
-    &-link + .user__nav-link{
-        padding-left: 25px;
-    }
-    &-numb {
-        position: absolute;
-        top: -8px;
-        right: -10px;
-        width: 16px;
-        height: 16px;
-        @extend %montserrat-alternates-600;
-        font-size: 11px;
-        line-height: 16px;
-        background-color: #FFFFFF;
-        border-radius: 50%;
-        text-align: center;
-    }
+    margin-left: 500px;
 }
+.user__nav-link {
+    position: relative;
+}
+.user__nav-link + .user__nav-link{
+    padding-left: 25px;
+}
+.user__nav-link-img {
+}
+.user__nav-numb {
+    position: absolute;
+    top: -8px;
+     right: -10px;
+     width: 16px;
+     height: 16px;
+    @extend %montserrat-alternates-600;
+    font-size: 11px;
+    line-height: 16px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    text-align: center;
+}
+
+
 
 /* MAIN */
 
@@ -254,41 +274,48 @@ div .form__search-btn {
 
 .top-slider {
     background-color: $lightgrey;
+    padding: 30px 0;
+}
+.top__decor {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    top: -7px;
+    right: 30px;
+    background: #fff;
+    transform: rotate(45deg);
 }
 .top-slider__inner {
     display: flex;
-    padding: 30px 0;
 }
 .top-slider__items {
+    position: relative;
     @extend %montserrat-alternates-400;
     line-height: 40px;
+    max-height: 400px;
     background-color: #FFFFFF;
     border-radius: 10px;
     margin-right: 30px;
 }
 .top-slider__menu {
-    padding: 30px;
+    padding: 16px 30px;
     width: 290px;
 }
+.top-slider__list {
+}
 .top-slider__item {
+    position: relative;
     border-bottom: dashed 1px $darkgrey;
 }
 .top-slider__item:last-child{
     border-bottom: none;
 }
-.top-slider__btn {
-    position: relative;
+.top-slider__link {
+    @extend %montserrat-alternates-500;
     color: $title;
-    padding: 15px 45px 15px 25px;
-    background-color: $yellow;
-    border-radius: 10px;
-    @extend %montserrat-alternates-400;
     font-size: 13px;
-    &::after {
-        content: url(../images/icons/arrow-back-btn.svg);
-        position: absolute;
-        top: 17px;
-    }
+}
+.top-slider__arrow-link {
 }
 .top-slider__arrow-link::after {
     position: absolute;
@@ -297,11 +324,60 @@ div .form__search-btn {
     bottom: -2px;
 }
 .top-slider__link-color {
+    @extend %montserrat-alternates-700;
     color: $accent;
 }
 .top-slider__slider {
+}
+.top-slider__content {
+}
+.top-slider__content-inner {
+}
+.top-slider__sybtitle {
+}
+.top-slider__title {
+}
+.top-slider__btn {
+}
+.top-slider__img {
+}
+.top-slider__banner {
+}
+.top-slider__banner-traine {
+}
+.top-slider__banner-sybtitle {
+}
+.top-slider__banner__link {
+}
+.top-slider__banner-children {
+}
+
+
+
+
+
+
+
+
+
+.top-slider__btn {
+    position: relative;
+    color: $title;
+    padding: 10px 45px 10px 25px;
+    background-color: $yellow;
+    border-radius: 10px;
+    @extend %montserrat-alternates-400;
+    font-size: 13px;
+    &::after {
+        content: url(../images/icons/arrow-back-btn.svg);
+        position: absolute;
+        top: 12px;
+        right: 20px;
+    }
+}
+.top-slider__slider {
     max-width: 870px;
-    margin-right: 30px;
+    border-radius: 10px;
 }
 
 .top-slider__content {
@@ -313,52 +389,99 @@ div .form__search-btn {
     align-items: flex-end;
     position: absolute;
     top: 120px;
-    left: 460px;
+    left: 410px;
 }
 .top-slider__sybtitle {
     @extend %montserrat-alternates-500;
     font-size: 24px;
     line-height: 22px;
     color: #FFFFFF;
-    margin-bottom: 25px;
+    margin-bottom: 37px;
 }
 .top-slider__title {
     @extend %montserrat-alternates-700;
     font-size: 48px;
     line-height: 22px;
     color: $accent;
-    margin-bottom: 50px;
+    margin-bottom: 65px;
 }
+
+
+
+
 .top-slider__banner {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    margin-left: 30px;
 }
 .top-slider__banner-traine {
-    background-image: url(../images/train-banner.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
+    position: relative;
     border-radius: 10px;
     width: 350px;
     height: 185px;
     margin-bottom: 30px;
 }
 .top-slider__banner-children {
-    background-image: url(../images/banner-children.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
+    position: relative;
     border-radius: 10px;
     width: 350px;
     height: 185px;
 }
+
+.top-slider__banner-inner {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.top-slider__banner-inner--yellow {
+    position: absolute;
+    text-align: right;
+    top: 20px;
+    right: 20px;
+}
 .top-slider__banner-sybtitle {
+    display: block;
     @extend %montserrat-alternates-700;
     font-size: 17px;
     line-height: 22px;
+    margin-bottom: 20px;
 }
-.top-slider__banner__link {
+
+.top-slider__banner--blue {
+    display: inline-block;
+    position: relative;
+    padding: 10px 40px 10px 20px;
+    background-color: $blue;
+    border-radius: 10px;
+    @extend %montserrat-alternates-400;
+    font-size: 13px;
+    color: $title;
+    &::after {
+        position: absolute;
+        content: url(../images/icons/arrow-back-btn.svg);
+        top: 12px;
+        right: 20px;
+    }
+}
+.top-slider__banner--yellow {
+    
+    position: relative;
+    display: inline-block;
+    padding: 10px 40px 10px 20px;
+    background-color: $yellow;
+    border-radius: 10px;
+    @extend %montserrat-alternates-400;
+    font-size: 13px;
+    color: $title;
+    &::after {
+        position: absolute;
+        content: url(../images/icons/arrow-back-btn.svg);
+        top: 12px;
+        right: 20px;
+    }
+}
+
+/* .top-slider__banner__link {
     position: relative;
     padding: 15px 40px 15px 20px;
     background-color: $yellow;
@@ -371,7 +494,7 @@ div .form__search-btn {
         position: absolute;
         top: 14px;
     }
-}
+} */
 
 /* BENEFITS */
 
@@ -549,9 +672,6 @@ div .form__search-btn {
     color: $default;
     text-decoration: line-through;
 }
-.slick-slide {
-    margin-right: 30px;
-}
 
 /* NEW SHOP */
 
@@ -563,22 +683,27 @@ div .form__search-btn {
     justify-content: space-between;
 }
 .slider__one{
-    max-width: 485px;
 }
 .novelty__content {
     max-width: 1036px;
 }
 .novelty__reviews {
+    max-width: 485px;
     margin-left: 50px;
 }
-.novelty__reviews-inner{
-    /* не работает */ 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.decor__reviews{
+    width: 20px;
+    height: 20px;
+    background: #f8f8f8;
+    position: absolute;
+    bottom: -10px;
+    left: 90px;
+    transform: rotate(45deg);
 }
 .novelty__reviews-content{
+    position: relative;
     background-color: $lightgrey;
+    margin-bottom: 40px;
     border-radius: 10px;
 }
 .novelty__title {
@@ -597,7 +722,7 @@ div .form__search-btn {
     color: $default;
     padding: 22px 30px;
 }
-.novelty__reviews-text:last-child {
+.novelty__reviews-text--last {
     padding-top: 0;
 }
 .novelty__reviews-manager-name {
@@ -668,7 +793,7 @@ div .form__search-btn {
 .popular__btn {
     @extend %montserrat-alternates-500;
     font-size: 13px;
-    padding: 10px 15px;
+    padding: 5px 15px;
     border: none;
     border-radius: 10px;
     background-color: $lightgrey;
@@ -718,14 +843,14 @@ div .form__search-btn {
 
 /* BLOG */
 .blog {
-    padding-bottom: 88px;
+    padding-bottom: 70px;
 }
 .blog-item {
     max-width: 370px;
 }
 .blog__data {
     background-color: $accent;
-    padding: 10px;
+    padding: 5px;
     color: #FFFFFF;
     border-radius: 10px;
     position: absolute;
@@ -741,7 +866,22 @@ div .form__search-btn {
     margin-bottom: 22px;
 }
 .blog__btn {
-    @extend %btny;
+    display: inline-block;
+    padding: 10px 18px;
+    position: relative;
+    width: 165px;
+    height: 40px;
+    background-color: $yellow;
+    border-radius: 10px;
+    @extend %montserrat-alternates-400;
+    font-size: 13px;
+    color: $title;
+    &::after {
+        position: absolute;
+        content: url(../images/icons/arrow-back-btn.svg);
+        top: 12px;
+        right: 20px;
+    }
 }
 .blog__title {
     @extend %montserrat-alternates-600;
@@ -754,12 +894,12 @@ div .form__search-btn {
     font-size: 13px;
     color: $title;
     line-height: 20px;
-    margin-bottom: 38px;
+    margin-bottom: 20px;
 }
 .blog-item__img-box {
     position: relative;
     overflow: hidden;
-    margin-bottom: 18px;
+    margin-bottom: 20px;
 }
 .blog-item__imges {
     object-fit: cover;
@@ -769,7 +909,7 @@ div .form__search-btn {
 /* DOUBLE-BANNER */
 
 .double__banner {
-    padding-bottom: 50px;
+    padding-bottom: 40px;
 }
 .double__banner-inner {
     display: flex;
