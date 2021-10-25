@@ -13,10 +13,6 @@
     margin-left: 30px;
 }
 
-
-
-
-
 /* HEADER */
 .header {
     color: $title;
@@ -176,6 +172,9 @@
     background-color: $blue;
     padding: 12px 0;
 }
+.header__bottom--size{
+    padding: 22px 0;
+}
 .header__menu {
     display: flex;
     justify-content: space-between;
@@ -265,8 +264,6 @@
     border-radius: 50%;
     text-align: center;
 }
-
-
 
 /* MAIN */
 
@@ -682,8 +679,7 @@
     display: flex;
     justify-content: space-between;
 }
-.slider__one{
-}
+
 .novelty__content {
     max-width: 1036px;
 }
@@ -811,23 +807,6 @@
     justify-content: space-between;
     align-items: center;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* PARTNERS */
 
@@ -994,7 +973,6 @@
 
 /* BANNER */
 
-
 .banner {
     padding: 10px 0 50px;
     &__inner {
@@ -1024,7 +1002,6 @@
     &__link {
         @extend %btny;
     }
-    
 }
 
 /* FOOTER */
@@ -1138,6 +1115,49 @@
     padding: 20px 0;
     text-align: center;
 }
+
+
+/* PAGE DEFAULT 
+____________________________________________________________*/
+
+.breadcrumbs {
+    background-color: $lightgrey;
+}
+.breadcrumbs__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.breadcrumbs__item {
+    position: relative;
+    padding: 14px 0;
+    padding-right: 40px;
+}
+.breadcrumbs__link {
+    @extend %montserrat-alternates-400;
+    font-size: 13px;
+    color: $default;
+}
+.breadcrumbs__link::after {
+    content: '';
+    position: absolute;
+    background-image: url(../images/icons/arrow-back-btn.svg);
+    width: 12px;
+    height: 12px;
+    top: 20px;
+    right: 14px;
+}
+span.breadcrumbs__link:last-child {
+    color: $accent;
+}
+span.breadcrumbs__link:last-child::after {
+    display: none;
+}
+
+
+
+
+
 
 
 @import 'media'; /* медиа-запросы */
