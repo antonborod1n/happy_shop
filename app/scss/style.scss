@@ -6,14 +6,15 @@
 
 
 /* SLICK-SLIDER */
+
 .top-slider__content .slick-slide {
     margin-left: 0;
 }
 .slick-slide {
     margin-left: 30px;
 }
-
 /* HEADER */
+
 .header {
     color: $title;
     background-color: $lightgrey;
@@ -73,10 +74,6 @@
 .header__main-logo {
     display: flex;
 }
-.logo {
-}
-.logo__img {
-}
 .logo__text {
     margin-left: 12px;
 }
@@ -102,6 +99,7 @@
     position: relative;
 }
 .serche__product {
+    appearance: none;
     position: absolute;
     top: 0;
     left: 0;
@@ -110,19 +108,19 @@
     border: 0;
     border-radius: 10px;
     background-color: $yellow;
+    padding-left: 20px;
+    background-image: url(../images/icons/arrow-down.svg);  
+    background-position: 80% center;
+    background-repeat: no-repeat;
 }
-.form {
-}
-.search-shop {
-}
-.search-keyword {
+.form__search {
     position: absolute;
     border-radius: 10px;
     width: 100%;
     border: none;
     height: 44px;
     padding-left: 125px;
-    padding-right: 75px;
+    padding-right: 60px;
 }
 .form__search-btn {
     position: absolute;
@@ -135,6 +133,10 @@
     border-left: 1px solid #1a1a1a;
     border-radius: 0;
     background-color: transparent;
+    background-image: url(../images/icons/search.svg);  
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 0 20px;
 }
 .header__info-address {
     position: relative;
@@ -183,10 +185,7 @@
 .menu__catalog-link {
     color: $title;
     position: relative;
-}
-.menu__catalog:hover {
-    background-color: $title;
-    color: #FFFFFF;
+    transition: all .3s;
 }
 .menu__catalog-img {
     position: absolute;
@@ -210,8 +209,6 @@
 .menu__list-item + .menu__list-item {
     padding-left: 40px;
 } 
-.home__img {
-}
 .catalog__arrow {
     padding-right: 10px;
 }
@@ -228,7 +225,7 @@
     position: absolute;
     content: url(../images/icons/arrow-down.svg);
     right: -15px;
-    bottom: -3px;
+    bottom: -2px;
 }
 .menu__new-img {
     position: relative;
@@ -248,8 +245,6 @@
 }
 .user__nav-link + .user__nav-link{
     padding-left: 25px;
-}
-.user__nav-link-img {
 }
 .user__nav-numb {
     position: absolute;
@@ -298,8 +293,6 @@
     padding: 16px 30px;
     width: 290px;
 }
-.top-slider__list {
-}
 .top-slider__item {
     position: relative;
     border-bottom: dashed 1px $darkgrey;
@@ -312,8 +305,6 @@
     color: $title;
     font-size: 13px;
 }
-.top-slider__arrow-link {
-}
 .top-slider__arrow-link::after {
     position: absolute;
     content: url(../images/icons/arrow-right.svg);
@@ -324,39 +315,6 @@
     @extend %montserrat-alternates-700;
     color: $accent;
 }
-.top-slider__slider {
-}
-.top-slider__content {
-}
-.top-slider__content-inner {
-}
-.top-slider__sybtitle {
-}
-.top-slider__title {
-}
-.top-slider__btn {
-}
-.top-slider__img {
-}
-.top-slider__banner {
-}
-.top-slider__banner-traine {
-}
-.top-slider__banner-sybtitle {
-}
-.top-slider__banner__link {
-}
-.top-slider__banner-children {
-}
-
-
-
-
-
-
-
-
-
 .top-slider__btn {
     position: relative;
     color: $title;
@@ -402,10 +360,6 @@
     color: $accent;
     margin-bottom: 65px;
 }
-
-
-
-
 .top-slider__banner {
     display: flex;
     flex-direction: column;
@@ -477,21 +431,6 @@
         right: 20px;
     }
 }
-
-/* .top-slider__banner__link {
-    position: relative;
-    padding: 15px 40px 15px 20px;
-    background-color: $yellow;
-    border-radius: 10px;
-    @extend %montserrat-alternates-400;
-    font-size: 13px;
-    color: $title;
-    &::after {
-        content: url(../images/icons/arrow-back-btn.svg);
-        position: absolute;
-        top: 14px;
-    }
-} */
 
 /* BENEFITS */
 
@@ -884,7 +823,6 @@
     object-fit: cover;
 }
 
-
 /* DOUBLE-BANNER */
 
 .double__banner {
@@ -1120,39 +1058,7 @@
 /* PAGE DEFAULT 
 ____________________________________________________________*/
 
-.breadcrumbs {
-    background-color: $lightgrey;
-}
-.breadcrumbs__list {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.breadcrumbs__item {
-    position: relative;
-    padding: 14px 0;
-    padding-right: 40px;
-}
-.breadcrumbs__link {
-    @extend %montserrat-alternates-400;
-    font-size: 13px;
-    color: $default;
-}
-.breadcrumbs__link::after {
-    content: '';
-    position: absolute;
-    background-image: url(../images/icons/arrow-back-btn.svg);
-    width: 12px;
-    height: 12px;
-    top: 20px;
-    right: 14px;
-}
-span.breadcrumbs__link:last-child {
-    color: $accent;
-}
-span.breadcrumbs__link:last-child::after {
-    display: none;
-}
+
 
 
 

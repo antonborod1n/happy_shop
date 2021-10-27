@@ -69,13 +69,9 @@
                                 <option value="9">Аксессуары</option>
                             </select>
                             <form class="form" action="#" method="post">
-                                <form id="search-form" class="search-shop" onsubmit="this.sfSbm.disabled=true"
-                                    method="post" action="/shop/search">
-                                    <input class="search-keyword" type="text" name="query"
-                                        placeholder="Введите поисковую фразу">
-                                    <input type="submit" class="form__search-btn" name="sfSbm" value="O-"
-                                        title="Искать">
-                                </form>
+                                <input class="form__search" type="text" name="text"
+                                    placeholder="Введите поисковую фразу">
+                                <input class="form__search-btn" type="submit" name="search-btn" value="">
                             </form>
                         </div>
                         <div class="header__info-address">
@@ -144,18 +140,20 @@
         </div>
         <div class="breadcrumbs">
             <div class="container">
-                <ol class="breadcrumbs__list">
-                    <li class="breadcrumbs__item">
-                        <a class="breadcrumbs__link" href="#">
-                            Главная
-                        </a>
-                    </li>
-                    <li class="breadcrumbs__item">
-                        <span class="breadcrumbs__link" href="#">
-                            О магазине
-                        </span>
-                    </li>
-                </ol>
+                <div class="breadcrumbs__inner">
+                    <ol class="breadcrumbs__list">
+                        <li class="breadcrumbs__item">
+                            <a class="breadcrumbs__link" href="http://localhost:3000/">
+                                Главная
+                            </a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <a class="breadcrumbs__link" href="#">
+                                О магазине
+                            </a>
+                        </li>
+                    </ol>
+                </div>
             </div>
         </div>
 

@@ -21,3 +21,40 @@ body {
     margin: 0 auto;
     padding: 0 15px;
 }
+
+/* BREADCRUMBS */
+
+.breadcrumbs {
+    background-color: $lightgrey;
+}
+.breadcrumbs__inner {
+    display: flex;
+    justify-content: center;
+}
+.breadcrumbs__list {
+    display: flex;
+}
+.breadcrumbs__item {
+    color: $default;
+    position: relative;
+    padding: 14px 0;
+    padding-right: 40px;
+}
+.breadcrumbs__item:last-child {
+    color: $accent;
+}
+.breadcrumbs__link {
+    color: inherit;
+}
+.breadcrumbs__item::after {
+    content: '';
+    position: absolute;
+    background-image: url(../images/icons/arrow-back-btn.svg);
+    width: 12px;
+    height: 12px;
+    top: 20px;
+    right: 14px;
+}
+.breadcrumbs__item:last-child::after {
+    display: none;
+} 

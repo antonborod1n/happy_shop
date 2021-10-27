@@ -69,13 +69,9 @@
                                 <option value="9">Аксессуары</option>
                             </select>
                             <form class="form" action="#" method="post">
-                                <form id="search-form" class="search-shop" onsubmit="this.sfSbm.disabled=true"
-                                    method="post" action="/shop/search">
-                                    <input class="search-keyword" type="text" name="query"
-                                        placeholder="Введите поисковую фразу">
-                                    <input type="submit" class="form__search-btn" name="sfSbm" value="O-"
-                                        title="Искать">
-                                </form>
+                                <input class="form__search" type="text" name="text"
+                                    placeholder="Введите поисковую фразу">
+                                <input class="form__search-btn" type="submit" name="search-btn" value="">
                             </form>
                         </div>
                         <div class="header__info-address">
@@ -110,7 +106,7 @@
                                 </a>
                             </li>
                             <li class="menu__list-item">
-                                <a class="menu__list-link" href="#">
+                                <a class="menu__list-link" href="http://localhost:3000/page.html">
                                     О магазине
                                 </a>
                             </li>
@@ -218,7 +214,7 @@
                             </div>
                             <img class="top-slider__img" src="./images/slider/top-slider-baner.jpg"
                                 alt="Слайдер картинка со скидками">
-                        </div> 
+                        </div>
                         <div class="top-slider__content">
                             <div class="top-slider__content-inner">
                                 <h3 class="top-slider__sybtitle">Новое поступление</h3>
@@ -1066,7 +1062,7 @@
                                     </p>
                                     <div class="decor__reviews"></div>
                                 </div>
-                                
+
                                 <div class="novelty__reviews-manager-info">
                                     <img src="images/manager.jpg" alt="Manager">
                                     <div class="manager-info">
@@ -1079,7 +1075,7 @@
                                     </div>
                                 </div>
                             </div>
-<!--                             <div class="novelty__reviews-inner">
+                            <!--                             <div class="novelty__reviews-inner">
                                 <div class="novelty__reviews-content">
                                     <p class="novelty__reviews-text">
                                         Современные технологии достигли такого, что высокое качество позиционных
@@ -1275,7 +1271,6 @@
 
     </main>
 
-
     <footer class="footer">
         <div class="container">
             <div class="footer-top">
@@ -1402,8 +1397,6 @@
             Copyright МАГАЗИН © 2021. Разработка: @antonborod1n
         </div>
     </footer>
-
-
 
     <script src="js/main.min.js"></script>
 </body>
