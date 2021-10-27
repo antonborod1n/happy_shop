@@ -216,7 +216,8 @@
     @extend %montserrat-alternates-500;
     font-size: 15px;
     line-height: 22px;
-    color: $title;  
+    color: $title;
+    padding-right: 20px;  
 }
 .link__arrow {
     position: relative;
@@ -224,7 +225,7 @@
 .link__arrow::after {
     position: absolute;
     content: url(../images/icons/arrow-down.svg);
-    right: -15px;
+    right: 0;
     bottom: -2px;
 }
 .menu__new-img {
@@ -232,13 +233,13 @@
 }
 .menu__new-img::after {
     content: url(../images/icons/new.svg);
-    top: -15px;
-    left: 60px;
+    top: -21px;
+    left: 70px;
     position: absolute;
 }
 .user__nav {
     display: flex;
-    margin-left: 500px;
+    margin-left: 400px;
 }
 .user__nav-link {
     position: relative;
@@ -301,6 +302,7 @@
     border-bottom: none;
 }
 .top-slider__link {
+    display: block;
     @extend %montserrat-alternates-500;
     color: $title;
     font-size: 13px;
@@ -456,6 +458,9 @@
 }
 .benefits__info-img {
     margin-right: 20px;
+}
+.benefits__info-img:hover {
+    animation: benefits-deg 0.5s;
 }
 .benefits__info-title {
     @extend %montserrat-alternates-600;
@@ -1055,11 +1060,76 @@
 }
 
 
-/* PAGE DEFAULT 
+/* ANIMATION
 ____________________________________________________________*/
 
+@keyframes benefits-deg {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(25deg);
+    }
+}
+
+/* __________________________________________________________
+ */
 
 
+ /* REG PAGE */
+
+ .reg {
+     padding: 50px 0;
+ }
+
+ .reg__title {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 20px;
+ }
+
+.reg__inner {
+    display: flex;
+    justify-content: space-around
+}
+
+.reg__descr {
+    margin-bottom: 20px;
+}
+
+.reg__social-list {
+    display: flex;
+}
+
+.reg__social-item + .reg__social-item {
+    margin-left: 20px;
+}
+
+.reg__form {
+    max-width: 500px;
+}
+
+.form__input {
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid $darkgrey;
+    padding: 0 15px;
+    height: 40px;
+}
+
+.reg__label {
+    margin-bottom: 30px;
+    display: block;
+}
+
+.form__btn {
+    border: none;
+    background-color: $yellow;
+    border-radius: 10px;
+    padding: 15px 25px;
+    cursor: pointer;
+}
 
 
 
