@@ -1081,6 +1081,9 @@ ____________________________________________________________*/
  .reg {
      padding: 50px 0;
  }
+ .reg__wrapper {
+     display: flex;
+ }
 
  .reg__title {
     font-size: 20px;
@@ -1198,11 +1201,6 @@ ____________________________________________________________*/
     flex: 1 0 235px;
     margin-right: 50px;
 }
-
-
-
-
-
 .shop-filter {
     max-width: 235px;
 }
@@ -1260,22 +1258,13 @@ ____________________________________________________________*/
     font-size: 13px;
     color: $title;
 }
-
 .shop-filter__list {
     appearance: none;
     background-image: url(../images/icons/arrow-down.svg);
     background-position: 90% center;
     background-repeat: no-repeat;
+    background-color: #fafafa;
 }
-
-
-
-
-
-
-
-
-
 .filter-popular {
     max-width: 235px;
 }
@@ -1311,7 +1300,6 @@ ____________________________________________________________*/
     font-size: 11px;
     color: $default;
 }
-
 .filter-banner{
     position: relative;
     max-width: 235px;
@@ -1337,9 +1325,99 @@ ____________________________________________________________*/
         right: 20px;
     }
 }
+
+
+
+
+
+.shop-content__text {
+    margin: 25px 0;
+}
+
+.shop-content__text span {
+    color: $accent;
+}
+
 .shop-content__product {
     display: flex;
     flex-wrap: wrap;
+    padding-bottom: 40px;
+    border-bottom: 1px solid $darkgrey;
+}
+.shop-content__filter-btn {
+    background-color: transparent;
+    border-radius: 10px;
+    border: 2px solid $darkgrey;
+}
+.shop-content__filter-btn--active {
+    border: 2px solid $title;
+    path {
+        fill: $title;
+    }
+}
+.max-sort {
+    padding: 10px 10px 0 15px;
+}
+.min-sort {
+    padding: 10px 13px 0 12px;
+}
+.shop-content__inner {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.shop-content__selects {
+    border: 2px solid $darkgrey;
+    color: $default;
+    padding: 5px 18px;
+    border-radius: 10px;
+}
+.shop-content__selects-btn {
+    @extend %montserrat-400;
+    line-height: 28px;
+    background-color: transparent;
+    border-radius: 10px;
+    border: none;
+    color: inherit;
+}
+
+.shop-content__bottom {
+    margin-top: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.shop-content__bottom-btn {
+    padding: 15px 20px;
+    background-color: $blue;
+    border-radius: 10px;
+    @extend %montserrat-alternates-400;
+    font-size: 13px;
+    color: $title; 
+}
+.pagination a {
+    margin-left: 5px;
+}
+.pagination__link-prev,
+.pagination__link-next,
+.pagination__link {
+    padding: 15px;
+    background-color: #eeeeee;
+    border-radius: 10px;
+    @extend %montserrat-alternates-400;
+    font-size: 13px;
+    color: $title; 
+}
+.pagination__link {
+    padding: 15px 20px;
+}
+.pagination__link--active {
+    background-color: $accent;
+    color: #FFFFFF; 
+}
+.pagination__link-prev {
+    opacity: 0.4;
 }
 
 

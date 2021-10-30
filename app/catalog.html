@@ -149,7 +149,7 @@
                         </li>
                         <li class="breadcrumbs__item">
                             <a class="breadcrumbs__link" href="#">
-                                Каталог
+                                Все товары
                             </a>
                         </li>
                     </ol>
@@ -191,7 +191,7 @@
                                     </select>
                                 </label>
                                 <label class="shop-filter__subtitle">
-                                    <p class="shop-filter__name">Цена:</p> 
+                                    <p class="shop-filter__name">Цена:</p>
                                     <input class="shop-filter__text-price" type="text" name="name" placeholder="от:">
                                     <input class="shop-filter__text-price" type="text" name="name" placeholder="до:">
                                 </label>
@@ -261,8 +261,43 @@
                         </div>
                     </div>
                     <div class="shop-content">
+                        <h2 class="shop-content__title title">Все товары</h2>
+                        <p class="shop-content__text">
+                            Задача организации, в особенности же новая модель организационной деятельности позволяет
+                            выполнять важные задания по <span>разработке дальнейших</span> аправлений развития. С другой
+                            стороны
+                            начало повседневной работы по формированию позиции требуют анализа системы.
+                        </p>
+                        <div class="shop-content__inner">
+                            <div class="shop-content__filter-sort">
+                                <button class="shop-content__filter-btn max-sort shop-content__filter-btn--active">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px">
+                                        <path fill-rule="evenodd" fill="#ededed"
+                                            d="M-0.000,3.750 L3.750,3.750 L3.750,-0.000 L-0.000,-0.000 L-0.000,3.750 ZM5.625,15.000 L9.375,15.000 L9.375,11.250 L5.625,11.250 L5.625,15.000 ZM-0.000,15.000 L3.750,15.000 L3.750,11.250 L-0.000,11.250 L-0.000,15.000 ZM-0.000,9.375 L3.750,9.375 L3.750,5.625 L-0.000,5.625 L-0.000,9.375 ZM5.625,9.375 L9.375,9.375 L9.375,5.625 L5.625,5.625 L5.625,9.375 ZM11.250,-0.000 L11.250,3.750 L15.000,3.750 L15.000,-0.000 L11.250,-0.000 ZM5.625,3.750 L9.375,3.750 L9.375,-0.000 L5.625,-0.000 L5.625,3.750 ZM11.250,9.375 L15.000,9.375 L15.000,5.625 L11.250,5.625 L11.250,9.375 ZM11.250,15.000 L15.000,15.000 L15.000,11.250 L11.250,11.250 L11.250,15.000 Z" />
+                                    </svg>
+                                </button>
+                                <button class="shop-content__filter-btn min-sort">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px">
+                                        <path fill-rule="evenodd" fill="#ededed"
+                                            d="M5.835,14.998 L5.835,10.827 L19.994,10.827 L19.994,14.998 L5.835,14.998 ZM5.835,5.413 L19.994,5.413 L19.994,9.585 L5.835,9.585 L5.835,5.413 ZM5.835,0.000 L19.994,0.000 L19.994,4.172 L5.835,4.172 L5.835,0.000 ZM0.007,10.827 L4.429,10.827 L4.429,14.998 L0.007,14.998 L0.007,10.827 ZM0.007,5.413 L4.429,5.413 L4.429,9.585 L0.007,9.585 L0.007,5.413 ZM0.007,0.000 L4.429,0.000 L4.429,4.172 L0.007,4.172 L0.007,0.000 Z" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="shop-content__selects">
+                                <span class="shop-content__selects-title">Сортировка:</span>
+                                <button class="shop-content__selects-btn">
+                                    Наименование
+                                </button>
+                                <button class="shop-content__selects-btn">
+                                    Цена
+                                </button>
+                                <button class="shop-content__selects-btn">
+                                    Дата добавления
+                                </button>
+                            </div>
+                        </div>
                         <div class="shop-content__product">
-                            <div class="shop-content__product-item">
+                            <!-- <div class="shop-content__product-item">
                                 <div class="product-item__img-box">
                                     <div class="new__product">new</div>
                                     <div class="sale__product">15%</div>
@@ -307,100 +342,8 @@
                                     <div class="product-item__new-price">2590.00 ₽</div>
                                     <div class="product-item__old-price">3590.00 ₽</div>
                                 </div>
-                            </div>
-                            <div class="shop-content__product-item">
-                                <div class="product-item__img-box">
-                                    <div class="sale__product">20%</div>
-                                    <img class="product-item__imges" src="images/product/3.jpg" alt="Игрушка товар">
-                                    <div class="product-item__link-box">
-                                        <a class="product-item__btn" href="#">В корзину</a>
-                                        <a class="product-item__link" href="#">
-                                            <img src="images/product/icons/heart-product.svg" alt="Heart">
-                                        </a>
-                                        <a class="product-item__link" href="#">
-                                            <img src="images/product/icons/eye-product.svg" alt="Eye">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="star" data-rateyo-rating="1"></div>
-                                <h4 class="product-item__title">
-                                    Плюшевая игрушка «Мишка Тедди»
-                                </h4>
-                                <div class="product-item__price">
-                                    <div class="product-item__new-price">2590.00 ₽</div>
-                                    <div class="product-item__old-price">3590.00 ₽</div>
-                                </div>
-                            </div>
-                            <div class="shop-content__product-item">
-                                <div class="product-item__img-box">
-                                    <div class="sale__product">7%</div>
-                                    <div class="new__product">new</div>
-                                    <img class="product-item__imges" src="images/product/4.jpg" alt="Игрушка товар">
-                                    <div class="product-item__link-box">
-                                        <a class="product-item__btn" href="#">В корзину</a>
-                                        <a class="product-item__link" href="#">
-                                            <img src="images/product/icons/heart-product.svg" alt="Heart">
-                                        </a>
-                                        <a class="product-item__link" href="#">
-                                            <img src="images/product/icons/eye-product.svg" alt="Eye">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="star" data-rateyo-rating="2"></div>
-                                <h4 class="product-item__title">
-                                    Плюшевая игрушка «Мишка Тедди»
-                                </h4>
-                                <div class="product-item__price">
-                                    <div class="product-item__new-price">2590.00 ₽</div>
-                                    <div class="product-item__old-price">3590.00 ₽</div>
-                                </div>
-                            </div>
-                            <div class="shop-content__product-item">
-                                <div class="product-item__img-box">
-                                    <div class="new__product">new</div>
-                                    <img class="product-item__imges" src="images/product/5.jpg" alt="Игрушка товар">
-                                    <div class="product-item__link-box">
-                                        <a class="product-item__btn" href="#">В корзину</a>
-                                        <a class="product-item__link" href="#">
-                                            <img src="images/product/icons/heart-product.svg" alt="Heart">
-                                        </a>
-                                        <a class="product-item__link" href="#">
-                                            <img src="images/product/icons/eye-product.svg" alt="Eye">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="star" data-rateyo-rating="3"></div>
-                                <h4 class="product-item__title">
-                                    Плюшевая игрушка «Мишка Тедди»
-                                </h4>
-                                <div class="product-item__price">
-                                    <div class="product-item__new-price">2590.00 ₽</div>
-                                    <div class="product-item__old-price">3590.00 ₽</div>
-                                </div>
-                            </div>
-                            <div class="shop-content__product-item">
-                                <div class="product-item__img-box">
-                                    <img class="product-item__imges" src="images/product/6.jpg" alt="Игрушка товар">
-                                    <div class="product-item__link-box">
-                                        <a class="product-item__btn" href="#">В корзину</a>
-                                        <a class="product-item__link" href="#">
-                                            <img src="images/product/icons/heart-product.svg" alt="Heart">
-                                        </a>
-                                        <a class="product-item__link" href="#">
-                                            <img src="images/product/icons/eye-product.svg" alt="Eye">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="star" data-rateyo-rating="5"></div>
-                                <h4 class="product-item__title">
-                                    Плюшевая игрушка «Мишка Тедди»
-                                </h4>
-                                <div class="product-item__price">
-                                    <div class="product-item__new-price">2590.00 ₽</div>
-                                    <div class="product-item__old-price">3590.00 ₽</div>
-                                </div>
-                            </div>
-                            <div class="shop-content__product-item">
+                            </div> -->
+                            <div class="product-item">
                                 <div class="product-item__img-box">
                                     <div class="new__product">new</div>
                                     <div class="sale__product">15%</div>
@@ -424,7 +367,7 @@
                                     <div class="product-item__old-price">3590.00 ₽</div>
                                 </div>
                             </div>
-                            <div class="shop-content__product-item">
+                            <div class="product-item">
                                 <div class="product-item__img-box">
                                     <img class="product-item__imges" src="images/product/2.jpg" alt="Игрушка товар">
                                     <div class="product-item__link-box">
@@ -446,7 +389,7 @@
                                     <div class="product-item__old-price">3590.00 ₽</div>
                                 </div>
                             </div>
-                            <div class="shop-content__product-item">
+                            <div class="product-item">
                                 <div class="product-item__img-box">
                                     <div class="sale__product">20%</div>
                                     <img class="product-item__imges" src="images/product/3.jpg" alt="Игрушка товар">
@@ -469,7 +412,7 @@
                                     <div class="product-item__old-price">3590.00 ₽</div>
                                 </div>
                             </div>
-                            <div class="shop-content__product-item">
+                            <div class="product-item">
                                 <div class="product-item__img-box">
                                     <div class="sale__product">7%</div>
                                     <div class="new__product">new</div>
@@ -493,7 +436,7 @@
                                     <div class="product-item__old-price">3590.00 ₽</div>
                                 </div>
                             </div>
-                            <div class="shop-content__product-item">
+                            <div class="product-item">
                                 <div class="product-item__img-box">
                                     <div class="new__product">new</div>
                                     <img class="product-item__imges" src="images/product/5.jpg" alt="Игрушка товар">
@@ -516,7 +459,7 @@
                                     <div class="product-item__old-price">3590.00 ₽</div>
                                 </div>
                             </div>
-                            <div class="shop-content__product-item">
+                            <div class="product-item">
                                 <div class="product-item__img-box">
                                     <img class="product-item__imges" src="images/product/6.jpg" alt="Игрушка товар">
                                     <div class="product-item__link-box">
@@ -537,6 +480,153 @@
                                     <div class="product-item__new-price">2590.00 ₽</div>
                                     <div class="product-item__old-price">3590.00 ₽</div>
                                 </div>
+                            </div>
+                            <div class="product-item">
+                                <div class="product-item__img-box">
+                                    <div class="new__product">new</div>
+                                    <div class="sale__product">15%</div>
+                                    <img class="product-item__imges" src="images/product/1.jpg" alt="Игрушка товар">
+                                    <div class="product-item__link-box">
+                                        <a class="product-item__btn" href="#">В корзину</a>
+                                        <a class="product-item__link" href="#">
+                                            <img src="images/product/icons/heart-product.svg" alt="Heart">
+                                        </a>
+                                        <a class="product-item__link" href="#">
+                                            <img src="images/product/icons/eye-product.svg" alt="Eye">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="star" data-rateyo-rating="4"></div>
+                                <h4 class="product-item__title">
+                                    Плюшевая игрушка «Мишка Тедди»
+                                </h4>
+                                <div class="product-item__price">
+                                    <div class="product-item__new-price">2590.00 ₽</div>
+                                    <div class="product-item__old-price">3590.00 ₽</div>
+                                </div>
+                            </div>
+                            <div class="product-item">
+                                <div class="product-item__img-box">
+                                    <img class="product-item__imges" src="images/product/2.jpg" alt="Игрушка товар">
+                                    <div class="product-item__link-box">
+                                        <a class="product-item__btn" href="#">В корзину</a>
+                                        <a class="product-item__link" href="#">
+                                            <img src="images/product/icons/heart-product.svg" alt="Heart">
+                                        </a>
+                                        <a class="product-item__link" href="#">
+                                            <img src="images/product/icons/eye-product.svg" alt="Eye">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="star" data-rateyo-rating="3"></div>
+                                <h4 class="product-item__title">
+                                    Плюшевая игрушка «Мишка Тедди»
+                                </h4>
+                                <div class="product-item__price">
+                                    <div class="product-item__new-price">2590.00 ₽</div>
+                                    <div class="product-item__old-price">3590.00 ₽</div>
+                                </div>
+                            </div>
+                            <div class="product-item">
+                                <div class="product-item__img-box">
+                                    <div class="sale__product">20%</div>
+                                    <img class="product-item__imges" src="images/product/3.jpg" alt="Игрушка товар">
+                                    <div class="product-item__link-box">
+                                        <a class="product-item__btn" href="#">В корзину</a>
+                                        <a class="product-item__link" href="#">
+                                            <img src="images/product/icons/heart-product.svg" alt="Heart">
+                                        </a>
+                                        <a class="product-item__link" href="#">
+                                            <img src="images/product/icons/eye-product.svg" alt="Eye">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="star" data-rateyo-rating="1"></div>
+                                <h4 class="product-item__title">
+                                    Плюшевая игрушка «Мишка Тедди»
+                                </h4>
+                                <div class="product-item__price">
+                                    <div class="product-item__new-price">2590.00 ₽</div>
+                                    <div class="product-item__old-price">3590.00 ₽</div>
+                                </div>
+                            </div>
+                            <div class="product-item">
+                                <div class="product-item__img-box">
+                                    <div class="sale__product">7%</div>
+                                    <div class="new__product">new</div>
+                                    <img class="product-item__imges" src="images/product/4.jpg" alt="Игрушка товар">
+                                    <div class="product-item__link-box">
+                                        <a class="product-item__btn" href="#">В корзину</a>
+                                        <a class="product-item__link" href="#">
+                                            <img src="images/product/icons/heart-product.svg" alt="Heart">
+                                        </a>
+                                        <a class="product-item__link" href="#">
+                                            <img src="images/product/icons/eye-product.svg" alt="Eye">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="star" data-rateyo-rating="2"></div>
+                                <h4 class="product-item__title">
+                                    Плюшевая игрушка «Мишка Тедди»
+                                </h4>
+                                <div class="product-item__price">
+                                    <div class="product-item__new-price">2590.00 ₽</div>
+                                    <div class="product-item__old-price">3590.00 ₽</div>
+                                </div>
+                            </div>
+                            <div class="product-item">
+                                <div class="product-item__img-box">
+                                    <div class="new__product">new</div>
+                                    <img class="product-item__imges" src="images/product/5.jpg" alt="Игрушка товар">
+                                    <div class="product-item__link-box">
+                                        <a class="product-item__btn" href="#">В корзину</a>
+                                        <a class="product-item__link" href="#">
+                                            <img src="images/product/icons/heart-product.svg" alt="Heart">
+                                        </a>
+                                        <a class="product-item__link" href="#">
+                                            <img src="images/product/icons/eye-product.svg" alt="Eye">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="star" data-rateyo-rating="3"></div>
+                                <h4 class="product-item__title">
+                                    Плюшевая игрушка «Мишка Тедди»
+                                </h4>
+                                <div class="product-item__price">
+                                    <div class="product-item__new-price">2590.00 ₽</div>
+                                    <div class="product-item__old-price">3590.00 ₽</div>
+                                </div>
+                            </div>
+                            <div class="product-item">
+                                <div class="product-item__img-box">
+                                    <img class="product-item__imges" src="images/product/6.jpg" alt="Игрушка товар">
+                                    <div class="product-item__link-box">
+                                        <a class="product-item__btn" href="#">В корзину</a>
+                                        <a class="product-item__link" href="#">
+                                            <img src="images/product/icons/heart-product.svg" alt="Heart">
+                                        </a>
+                                        <a class="product-item__link" href="#">
+                                            <img src="images/product/icons/eye-product.svg" alt="Eye">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="star" data-rateyo-rating="5"></div>
+                                <h4 class="product-item__title">
+                                    Плюшевая игрушка «Мишка Тедди»
+                                </h4>
+                                <div class="product-item__price">
+                                    <div class="product-item__new-price">2590.00 ₽</div>
+                                    <div class="product-item__old-price">3590.00 ₽</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shop-content__bottom">
+                            <a class="shop-content__bottom-btn"href="#">Показать еще</a>
+                            <div class="pagination">
+                                <a class="pagination__link-prev" href="#">Предыдущая</a>
+                                <a class="pagination__link pagination__link--active" href="#">1</a>
+                                <a class="pagination__link" href="#">2</a>
+                                <a class="pagination__link-next" href="#">Следующая</a>
                             </div>
                         </div>
                     </div>
