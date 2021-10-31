@@ -533,8 +533,9 @@
     color: $title;
 }
 .product-item {
-    max-width: 236px;
-    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 236px !important;
     &:hover {
         .product-item__link-box {
             transform: translateY(0);
@@ -594,7 +595,8 @@
     font-size: 15px;
     line-height: 18px;
     color: $title;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
+    flex-grow: 1;
 }
 .product-item__price {
     display: flex;
@@ -917,7 +919,7 @@
 /* BANNER */
 
 .banner {
-    padding: 10px 0 50px;
+    padding-bottom: 50px;
     &__inner {
         display: flex;
         flex-direction: column;
@@ -1333,14 +1335,13 @@ ____________________________________________________________*/
 .shop-content__text {
     margin: 25px 0;
 }
-
 .shop-content__text span {
     color: $accent;
 }
-
 .shop-content__product {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 40px 30px;
     padding-bottom: 40px;
     border-bottom: 1px solid $darkgrey;
 }
@@ -1379,15 +1380,24 @@ ____________________________________________________________*/
     border-radius: 10px;
     border: none;
     color: inherit;
+    position: relative;
 }
-
+.shop-content__selects-btn::before {
+    content: '.';
+    position: absolute;
+    top: -4px;
+    right: -3PX;
+    font-size: 24px;
+}
+.shop-content__selects-btn:last-child::before {
+    content: none;
+}
 .shop-content__bottom {
     margin-top: 45px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
 .shop-content__bottom-btn {
     padding: 15px 20px;
     background-color: $blue;
@@ -1399,7 +1409,6 @@ ____________________________________________________________*/
 .pagination a {
     margin-left: 5px;
 }
-.pagination__link-prev,
 .pagination__link-next,
 .pagination__link {
     padding: 15px;
@@ -1416,8 +1425,102 @@ ____________________________________________________________*/
     background-color: $accent;
     color: #FFFFFF; 
 }
-.pagination__link-prev {
-    opacity: 0.4;
+
+
+/* ABOUT */
+
+.about {
+    padding: 70px 0;
+}
+.about__inner {
+    display: flex;
+}
+.about__img {
+    flex-basis: 800px;
+    margin-right: 70px;
+}
+.about__img-shop-peaple {
+    border-radius: 10px;
+    margin-left: auto;
+    margin-top: -315px;
+}
+.about__info {
+    flex-basis: 700px;
+}
+.about__info__title {
+    margin-bottom: 46px;
+}
+.about__info-text {
+    margin-bottom: 30px;
+}
+.about__info-item {
+    position: relative;
+}
+.about__info-item::before{
+    content: url(../images/about/ok.svg);
+    position: absolute;
+    top: 0;
+    left: -20px;
+}
+.about__info-link {
+    display: inline-block;
+    margin-top: 40px;
+    @extend %btny;
+}
+
+.client {
+    background-color: $blue;
+    padding: 40px 0;
+    margin-bottom: 70px;
+    position: relative;
+}
+.client::after {
+    content: url(../images/about/boy.png);
+    position: absolute;
+    bottom: -6px;
+    right: 175px;
+ }
+.client__info {  
+    max-width: 960px;
+    margin: 0 0 40px 30px;
+}
+.client__text {
+    @extend %montserrat-alternates-400;
+    font-size: 13px;
+    color: $title;
+    margin-bottom: 40px;
+}
+
+.client__titile {
+    margin-bottom: 40px;
+}
+.client__subtitile {
+    @extend %montserrat-alternates-600;
+    font-size: 15px;
+    margin-bottom: 20px;
+    color: $title;
+    position: relative;
+}
+.client__subtitile::before {
+    content: url(../images/about/ok.svg);
+    position: absolute;
+    top: 0;
+    left: -30px;
+}
+.client__link {
+    position: relative;
+    padding: 15px 32px 15px 20px;
+    background-color: $accent;
+    border-radius: 10px;
+    @extend %montserrat-alternates-400;
+    font-size: 13px;
+    color: #FFFFFF;
+    &::after {
+        position: absolute;
+        content: url(../images/icons/arrow-back-btn.svg);
+        top: 15px;
+        right: 13px;
+    }
 }
 
 

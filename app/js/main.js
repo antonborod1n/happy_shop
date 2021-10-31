@@ -21,7 +21,7 @@ $ (function(){
         prevArrow: '<button type="button" class="slick-prev"><img src="images/product/icons/product-arrows-left.svg" alt="arrow"></button>',
         nextArrow: '<button type="button" class="slick-next"><img src="images/product/icons/product-arrows-right.svg" alt="arrow"></button>',
     });
-   /*  $('.slider__one').slick({
+    /* $('.slider__one').slick({
         infinite: true,
         speed: 300,
         slidesToShow: 1,
