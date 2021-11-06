@@ -689,7 +689,7 @@
 .popular__tabs{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-   grid-gap: 30px;
+    grid-gap: 30px;
 }
 .popular__title {
     padding-bottom: 30px;
@@ -1063,19 +1063,6 @@
     text-align: center;
 }
 
-
-/* ANIMATION
-____________________________________________________________*/
-
-@keyframes benefits-deg {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(25deg);
-    }
-}
-
 /* __________________________________________________________
  */
 
@@ -1208,7 +1195,8 @@ ____________________________________________________________*/
 .shop-filter {
     max-width: 235px;
 }
-.shop-filter__title {
+.shop-filter__title,
+.blog-filter__title {
     color: $title;
     @extend %montserrat-alternates-600;
     font-size: 24px;
@@ -1597,6 +1585,76 @@ ____________________________________________________________*/
 }
 
 
+/* BLOG */
+
+
+.blog__inner {
+    display: flex;
+    padding-top: 50px;
+}
+
+.blog-content__inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px 30px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #ededed;
+    margin-bottom: 50px;
+}
+
+.blog-items {
+    margin-right: 50px;
+}
+
+.blog-item-page {
+    max-width: 630px;
+}
+
+.blog-content .pagination__link:first-child {
+    margin-left: 0;
+}
+
+.blog-filter__menu {
+    margin: 25px 0 30px;
+}
+
+.blog-filter__item {
+    padding-bottom: 14px;
+}
+
+.blog-filter__img {
+    display: inline;
+    padding-right: 10px;
+}
+
+.blog-filter__link {
+    @extend %montserrat-alternates-400;
+    color: $default;
+    transition: all .3s;
+}
+
+.blog-filter__link:hover {
+    font-weight: 900;
+    color: $title;
+}
+
+
+
+
+
+
 
 
 @import 'media'; /* медиа-запросы */
+
+/* ANIMATION
+____________________________________________________________*/
+
+@keyframes benefits-deg {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(25deg);
+    }
+}
