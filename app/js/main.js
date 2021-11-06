@@ -21,7 +21,7 @@ $ (function(){
         prevArrow: '<button type="button" class="slick-prev"><img src="images/product/icons/product-arrows-left.svg" alt="arrow"></button>',
         nextArrow: '<button type="button" class="slick-next"><img src="images/product/icons/product-arrows-right.svg" alt="arrow"></button>',
     });
-    /* $('.slider__one').slick({
+    $('.slider__one').slick({
         infinite: true,
         speed: 300,
         slidesToShow: 1,
@@ -29,7 +29,7 @@ $ (function(){
         variableWidth: true,
         prevArrow: '<button type="button" class="slick-prev"><img src="images/product/icons/product-arrows-left.svg" alt="arrow"></button>',
         nextArrow: '<button type="button" class="slick-next"><img src="images/product/icons/product-arrows-right.svg" alt="arrow"></button>',
-    }); */
+    });
     $('.blog_slider').slick({
         infinite: true,
         speed: 300,
@@ -46,3 +46,13 @@ $ (function(){
         readOnly: true
       });
 });
+
+
+$(document).ready(function () {
+    $('.reviews__slider').slick({
+      nextArrow: '<button type="button" class=slick-next"><img src="images/Arrow_Left.png" alt=""></button>',
+      prevArrow: '<button type="button" class=slick-prev"><img src="images/Arrow_Left.png" alt=""></button>'
+  
+    });
+  });
+  

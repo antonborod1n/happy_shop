@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>О магазине</title>
+    <title>Контакты</title>
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -149,7 +149,7 @@
                         </li>
                         <li class="breadcrumbs__item">
                             <a class="breadcrumbs__link" href="#">
-                                О магазине
+                                Контакты
                             </a>
                         </li>
                     </ol>
@@ -158,103 +158,57 @@
         </div>
     </header>
     <main class="main">
-        <section class="about">
+        <section class="contact">
             <div class="container">
-                <div class="about__inner">
-                    <div class="about__img">
-                        <img class="about__img-girl" src="images/about/girl.jpg" alt="Девочка">
-                        <img class="about__img-shop-peaple" src="images/about/shop-peaple.jpg" alt="Люди в магазине">
+                <div class="contact__inner">
+                    <div class="contact__form">
+                        <form class="form__cont" action="#">
+                            <input class="contact__form-input" type="text" name="name" placeholder="Ваше имя*" required>
+                            <input class="contact__form-input" type="text" name="numb" placeholder="Номер телефона">
+                            <input class="contact__form-input" type="text" name="tema" placeholder="Тема письма*"
+                                required>
+                            <input class="contact__form-input" type="text" name="email" placeholder="E-mail адрес"
+                                required>
+                            <input class="contact__form-input-text" type="text" name="text"
+                                placeholder="Текст сообщения*" required>
+                            <label>
+                                <input class="contact__form-input-checkbox" type="checkbox">Я согласен(а) на обработку
+                                персональных данных
+                            </label>
+                            <button class="contact__form-btn" type="submit">Отправить сообщение</button>
+                        </form>
                     </div>
-                    <div class="about__info">
-                        <h2 class="about__info__title title">Приветствуем в нашем магазине</h2>
-                        <p class="about__info-text">
-                            Идейные соображения высшего порядка, а также постоянный количественный рост и сфера нашей
-                            активности представляет собой интересный эксперимент проверки систем массового участия. Не
-                            следует, однако забывать, что новая модель организационной деятельности способствует
-                            подготовки
-                            и реализации позиций, занимаемых участниками в отношении поставленных задач.
-                        </p>
-                        <p class="about__info-text">
-                            Задача организации, в особенности же постоянное информационно-пропагандистское обеспечение
-                            нашей
-                            деятельности влечет за собой процесс внедрения и модернизации направлений прогрессивного
-                            развития.
-                        </p>
-                        <ul class="about__info-list">
-                            <li class="about__info-item">Значимость этих проблем</li>
-                            <li class="about__info-item">Настолько очевидна</li>
-                            <li class="about__info-item">Что постоянный количественный</li>
-                            <li class="about__info-item">Рост и сфера нашей активности</li>
-                            <li class="about__info-item">Играет важную роль</li>
-                        </ul>
-                        <a class="about__info-link" href="#">Узнать больше</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="benefits">
-            <div class="container">
-                <div class="benefits__info">
-                    <div class="benefits__info-item">
-                        <img class="benefits__info-img" src="images/icons/benefits/rocket.svg" alt="Ракета">
-                        <div class="benefits__info-items">
-                            <div class="benefits__info-title">Быстрая доставка</div>
-                            <p class="benefits__info-subtitle">Базовый вектор развития</p>
+                    <div class="contact__info">
+                        <div class="contact__info-time">
+                            <p class="contact__info-title">Офис</p>
+                            <p class="contact__info-subtitle">1234 Donec semper lorem, 65c.</p>
                         </div>
-                    </div>
-                    <div class="benefits__info-item">
-                        <img class="benefits__info-img" src="images/icons/benefits/support-benefits.svg" alt="Ракета">
-                        <div class="benefits__info-items">
-                            <div class="benefits__info-title">Техподдержка 24/7</div>
-                            <p class="benefits__info-subtitle">Базовый вектор развития</p>
+                        <div class="contact__info-time">
+                            <p class="contact__info-title">Склад</p>
+                            <p class="contact__info-subtitle">98765 Lorem semper dolor, 132-7a.</p>
                         </div>
-                    </div>
-                    <div class="benefits__info-item">
-                        <img class="benefits__info-img" src="images/icons/benefits/redo-arrow.svg" alt="Ракета">
-                        <div class="benefits__info-items">
-                            <div class="benefits__info-title">100% возврат денег</div>
-                            <p class="benefits__info-subtitle">Базовый вектор развития</p>
+                        <div class="contact__info-time">
+                            <p class="contact__info-title">Телефоны</p>
+                            <p class="contact__info-subtitle">
+                                <a href="tel:+78001234567" class="contact__info-time-link">+7 (800) 123-45-67,</a>
+                                <a href="tel:+79876543210" class="contact__info-time-link">+7 (987) 654-32-10</a>
+                            </p>
                         </div>
-                    </div>
-                    <div class="benefits__info-item">
-                        <img class="benefits__info-img" src="images/icons/benefits/security-shield.svg" alt="Ракета">
-                        <div class="benefits__info-items">
-                            <div class="benefits__info-title">Безопасная оплата</div>
-                            <p class="benefits__info-subtitle">Базовый вектор развития</p>
-                        </div>
-                    </div>
-                    <div class="benefits__info-item">
-                        <img class="benefits__info-img" src="images/icons/benefits/discount.svg" alt="Ракета">
-                        <div class="benefits__info-items benefits__info-items--none">
-                            <div class="benefits__info-title">Постоянные скидки</div>
-                            <p class="benefits__info-subtitle">Базовый вектор развития</p>
+                        <div class="contact__info-time">
+                            <p class="contact__info-title">E-mail</p>
+                            <p class="contact__info-subtitle">
+                                <a href="mailto:support@example.com" class="contact__info-time-link">support@example.com,</a><br>
+                                <a href="mailto:order@example.com" class="contact__info-time-link">order@example.com</a>
+                            </p>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="client">
-            <div class="container">
-                <h2 class="client__titile title">Клиенты выбирают нас</h2>
-                <div class="client__info">
-                    <h3 class="client__subtitile">Идейные соображения высшего порядка</h3>
-                    <p class="client__text">
-                        А также постоянный количественный рост и сфера нашей активности представляет
-                        собой интересный эксперимент проверки систем массового участия. Не следует, однако забывать, что
-                        новая модель организационной деятельно занимаемых участниками в отношении поставленных задач.
-                        Повседневная практика показывает, что реализация намеченных плановых заданий позволяет выполнять
-                        важные задания по разработке модели развития.
-                    </p>
-                    <h3 class="client__subtitile">Идейные соображения высшего порядка</h3>
-                    <p class="client__text">
-                        А также постоянный количественный рост и сфера нашей активности представляет
-                        собой интересный эксперимент проверки систем массового участия. Не следует, однако забывать, что
-                        новая модель организационной деятельно занимаемых участниками в отношении поставленных задач.
-                        Повседневная практика показывает, что реализация намеченных плановых заданий позволяет выполнять
-                        важные задания по разработке модели развития.
-                    </p>
+                <div class="contact__map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d75252.67256813997!2d27.523329137631805!3d53.88472079821034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbcfd35b1e6ad3%3A0xb61b853ddb570d9!2z0JzQuNC90YHQug!5e0!3m2!1sru!2sby!4v1635872188098!5m2!1sru!2sby"
+                        width="1570" height="350" style="border:0; border-radius: 10px;" allowfullscreen=""
+                        loading="lazy"></iframe>
                 </div>
-                <a class="client__link" href="#">Больше информации </a>
             </div>
         </section>
 
