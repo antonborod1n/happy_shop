@@ -105,3 +105,11 @@ $blue: #5ce2ec;
         left: 10px;
     }
 }
+
+%checkbox-hidden {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    clip: rect(0 0 0 0);
+}
