@@ -144,7 +144,6 @@
                 </div>
             </div>
         </div>
-
     </header>
 
     <main class="main">
@@ -210,16 +209,16 @@
                             <div class="top-slider__content-inner">
                                 <h3 class="top-slider__sybtitle">Минус 30% на все</h3>
                                 <h3 class="top-slider__title">Скейтборды</h3>
-                                <a class="top-slider__btn" href="#">Купить сейчас</a>
+                                <a class="top-slider__btn btn-scale" href="#">Купить сейчас</a>
                             </div>
                             <img class="top-slider__img" src="./images/slider/top-slider-baner.jpg"
                                 alt="Слайдер картинка со скидками">
                         </div>
                         <div class="top-slider__content">
-                            <div class="top-slider__content-inner">
+                            <div class="top-slider__content-inner top-slider__content-inner--left">
                                 <h3 class="top-slider__sybtitle">Новое поступление</h3>
                                 <h3 class="top-slider__title">Для девочек</h3>
-                                <a class="top-slider__btn" href="#">Купить сейчас</a>
+                                <a class="top-slider__btn top-slider__btn--left btn-scale" href="#">Купить сейчас</a>
                             </div>
                             <img class="top-slider__img" src="./images/slider/banner-children-girl.jpg"
                                 alt="Слайдер картинка со скидками">
@@ -228,7 +227,7 @@
                             <div class="top-slider__content-inner">
                                 <h3 class="top-slider__sybtitle">Для самых маленьких</h3>
                                 <h3 class="top-slider__title">Скидки до 30%</h3>
-                                <a class="top-slider__btn" href="#">Купить сейчас</a>
+                                <a class="top-slider__btn btn-scale" href="#">Купить сейчас</a>
                             </div>
                             <img class="top-slider__img" src="./images/slider/banner-children-baby.jpg"
                                 alt="Слайдер картинка со скидками">
@@ -237,14 +236,16 @@
 
                     <div class="top-slider__banner">
                         <div class="top-slider__banner-traine">
-                            <img src="images/train-banner.jpg" alt="Банер">
+                            <img class="top-slider__banner-traine-img img__scale" src="images/train-banner.jpg"
+                                alt="Банер">
                             <div class="top-slider__banner-inner">
                                 <span class="top-slider__banner-sybtitle">Детям до 3 лет</span>
                                 <a class="top-slider__banner--blue" href="#">Купить</a>
                             </div>
                         </div>
                         <div class="top-slider__banner-children">
-                            <img src="images/banner-children.jpg" alt="Банер">
+                            <img class="top-slider__banner-traine-img img__scale" src="images/banner-children.jpg"
+                                alt="Банер">
                             <div class="top-slider__banner-inner--yellow">
                                 <span class="top-slider__banner-sybtitle">Для развития</span>
                                 <a class="top-slider__banner--yellow" href="#">Купить</a>
@@ -296,7 +297,6 @@
                 </div>
             </div>
         </section>
-
 
         <section class="product">
             <div class="container">
@@ -584,19 +584,24 @@
             </div>
         </section>
 
-
         <section class="double__banner">
             <div class="container">
                 <div class="double__banner-inner">
                     <div class="double__banner-left">
-                        <span class="double__banner-sybtitle">Горы игрушек</span>
-                        <span class="double__banner-title">Супер скидки</span>
-                        <a class="double__banner-link--blue" href="#">Посмотреть</a>
+                        <img class="img__scale" src="images/dbaner-left.jpg" alt="Банер">
+                        <div class="double__banner-box--right">
+                            <span class="double__banner-sybtitle">Горы игрушек</span>
+                            <span class="double__banner-title">Супер скидки</span>
+                            <a class="double__banner-link--blue" href="#">Посмотреть</a>
+                        </div>
                     </div>
                     <div class="double__banner-right">
-                        <span class="double__banner-sybtitle">Одежда для всех</span>
-                        <span class="double__banner-title">Одежда для всех</span>
-                        <a class="double__banner-link--yellow" href="#">Посмотреть</a>
+                        <img class="img__scale" src="images/dbaner-right.jpg" alt="Банер">
+                        <div class="double__banner-box--left">
+                            <span class="double__banner-sybtitle">Новое поступление</span>
+                            <span class="double__banner-title">Одежда для всех</span>
+                            <a class="double__banner-link--yellow" href="#">Посмотреть</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -615,7 +620,10 @@
                     </div>
                     <div class="popular__tabs">
                         <div class="popular-item">
-                            <img class="popular-item__imges" src="images/popular/1.jpg" alt="Игрушка товар">
+                            <div class="popular-item__img">
+                                <div class="sale__product">15%</div>
+                                <img src="images/popular/1.jpg" alt="Игрушка товар">
+                            </div>
                             <div class="popular-item__link-box">
                                 <h4 class="product-item__title popular-item__title">
                                     Джинсовка синяя детская
@@ -637,7 +645,11 @@
                             </div>
                         </div>
                         <div class="popular-item">
-                            <img class="popular-item__imges" src="images/popular/2.jpg" alt="Игрушка товар">
+                            <div class="popular-item__img">
+                                <div class="sale__product">10%</div>
+                                <div class="new__product">new</div>
+                                <img src="images/popular/2.jpg" alt="Игрушка товар">
+                            </div>
                             <div class="popular-item__link-box">
                                 <h4 class="product-item__title popular-item__title">
                                     Толстовка с надписью
@@ -659,7 +671,9 @@
                             </div>
                         </div>
                         <div class="popular-item">
-                            <img class="popular-item__imges" src="images/popular/3.jpg" alt="Игрушка товар">
+                            <div class="popular-item__img">
+                                <img src="images/popular/3.jpg" alt="Игрушка товар">
+                            </div>
                             <div class="popular-item__link-box">
                                 <h4 class="product-item__title popular-item__title">
                                     Пинетки вязанные
@@ -680,7 +694,10 @@
                             </div>
                         </div>
                         <div class="popular-item">
-                            <img class="popular-item__imges" src="images/popular/4.jpg" alt="Игрушка товар">
+                            <div class="popular-item__img">
+                                <div class="new__product">new</div>
+                                <img class="popular-item__imges" src="images/popular/4.jpg" alt="Игрушка товар">
+                            </div>
                             <div class="popular-item__link-box">
                                 <h4 class="product-item__title popular-item__title">
                                     Шапка в горошек
@@ -701,10 +718,13 @@
                             </div>
                         </div>
                         <div class="popular-item">
-                            <img class="popular-item__imges" src="images/popular/5.jpg" alt="Игрушка товар">
+                            <div class="popular-item__img">
+                                <div class="sale__product">35%</div>
+                                <img src="images/popular/5.jpg" alt="Игрушка товар">
+                            </div>
                             <div class="popular-item__link-box">
                                 <h4 class="product-item__title popular-item__title">
-                                    Пижама ночная с рисунком
+                                    Платье детское
                                 </h4>
                                 <div class="star" data-rateyo-rating="4"></div>
                                 <div class="popular-item__price">
@@ -723,7 +743,10 @@
                             </div>
                         </div>
                         <div class="popular-item">
-                            <img class="popular-item__imges" src="images/popular/6.jpg" alt="Игрушка товар">
+                            <div class="popular-item__img">
+                                <div class="new__product">new</div>
+                                <img src="images/popular/6.jpg" alt="Игрушка товар">
+                            </div>
                             <div class="popular-item__link-box">
                                 <h4 class="product-item__title popular-item__title">
                                     Платье без рукавов
@@ -748,17 +771,18 @@
             </div>
         </section>
 
-
         <section class="banner">
             <div class="container">
                 <div class="banner__inner">
-                    <span class="banner__sybtitle">Готовьтесь к школе вместе с нами!</span>
-                    <span class="banner__title">Ассортимент канцтоваров</span>
-                    <a class="banner__link" href="#">Посмотреть</a>
+                    <img class="img__scale" src="images/sv.jpg" alt="Главный баннер">
+                    <div class="banner__inner-box">
+                        <span class="banner__sybtitle">Готовьтесь к школе вместе с нами!</span>
+                        <span class="banner__title">Ассортимент канцтоваров</span>
+                        <a class="banner__link" href="#">Посмотреть</a>
+                    </div>
                 </div>
             </div>
         </section>
-
 
         <section class="novelty">
             <div class="container">
@@ -1061,9 +1085,8 @@
                                     </p>
                                     <div class="decor__reviews"></div>
                                 </div>
-
                                 <div class="novelty__reviews-manager-info">
-                                    <img src="images/manager.jpg" alt="Manager">
+                                    <img class="novelty__reviews-manager-img" src="images/manager-1.jpg" alt="Manager">
                                     <div class="manager-info">
                                         <div class="novelty__reviews-manager-name">
                                             Вероника Кудрявцева
@@ -1086,15 +1109,42 @@
                                     <p class="novelty__reviews-text novelty__reviews-text--last">
                                         Значимость этих проблем настолько очевидна, что постоянный количественный рост.
                                     </p>
+                                    <div class="decor__reviews"></div>
                                 </div>
                                 <div class="novelty__reviews-manager-info">
-                                    <img src="images/manager.jpg" alt="Manager">
+                                    <img class="novelty__reviews-manager-img" src="images/manager-2.jpg" alt="Manager">
                                     <div class="manager-info">
                                         <div class="novelty__reviews-manager-name">
-                                            Ангелина Кудрявцева
+                                            Владимир Быстров
                                         </div>
                                         <div class="novelty__reviews-manager-subname">
-                                            Директор сервиса «Майсервис»
+                                            сотрудник компании «Майкорп
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="novelty__reviews-inner">
+                                <div class="novelty__reviews-content">
+                                    <p class="novelty__reviews-text">
+                                        Современные технологии достигли такого, что высокое качество позиционных
+                                        исследований
+                                        влечет за собой процесс внедрения и модернизации распределения внутренних
+                                        резервов и
+                                        ресурсов. Значимость этих проблем настолько очевидна.
+                                    </p>
+                                    <p class="novelty__reviews-text novelty__reviews-text--last">
+                                        Значимость этих проблем настолько очевидна, что постоянный количественный рост.
+                                    </p>
+                                    <div class="decor__reviews"></div>
+                                </div>
+                                <div class="novelty__reviews-manager-info">
+                                    <img class="novelty__reviews-manager-img" src="images/manager-3.jpg" alt="Manager">
+                                    <div class="manager-info">
+                                        <div class="novelty__reviews-manager-name">
+                                            Алексей Димитров
+                                        </div>
+                                        <div class="novelty__reviews-manager-subname">
+                                            Гендиректор «ООО Майкомани
                                         </div>
                                     </div>
                                 </div>
@@ -1105,24 +1155,28 @@
             </div>
         </section>
 
-
         <section class="double__banner">
             <div class="container">
                 <div class="double__banner-inner">
-                    <div class="double-bottom__banner-left">
-                        <span class="double__banner-sybtitle">На все случаи</span>
-                        <span class="double__banner-title">Много обуви</span>
-                        <a class="double__banner-link--blue" href="#">Посмотреть</a>
+                    <div class="double__banner-left">
+                        <img class="img__scale" src="images/cross-baner-left.jpg" alt="Банер">
+                        <div class="double__banner-box--right">
+                            <span class="double__banner-sybtitle">На все случаи</span>
+                            <span class="double__banner-title">Много обуви</span>
+                            <a class="double__banner-link--blue" href="#">Посмотреть</a>
+                        </div>
                     </div>
-                    <div class="double-bottom__banner-right">
-                        <span class="double__banner-sybtitle">Пора утепляться</span>
-                        <span class="double__banner-title">Готовимся к зиме</span>
-                        <a class="double__banner-link--yellow" href="#">Посмотреть</a>
+                    <div class="double__banner-right">
+                        <img class="img__scale" src="images/child-baner-right.jpg" alt="Банер">
+                        <div class="double__banner-box--left">
+                            <span class="double__banner-sybtitle">Пора утепляться</span>
+                            <span class="double__banner-title">Готовимся к зиме</span>
+                            <a class="double__banner-link--yellow" href="#">Посмотреть</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-
 
         <section class="partners">
             <div class="container">
@@ -1154,7 +1208,7 @@
                         <div class="blog-item">
                             <div class="blog-item__img-box">
                                 <div class="blog__data">08.10.2019</div>
-                                <img class="blog-item__imges" src="images/blog/1.jpg" alt="Игрушка товар">
+                                <img class="blog-item__imges img__scale" src="images/blog/1.jpg" alt="Игрушка товар">
                             </div>
                             <h4 class="blog__title">
                                 Значимость этих проблем настолько очевидна этих
@@ -1168,7 +1222,7 @@
                         <div class="blog-item">
                             <div class="blog-item__img-box">
                                 <div class="blog__data">08.10.2019</div>
-                                <img class="blog-item__imges" src="images/blog/2.jpg" alt="Игрушка товар">
+                                <img class="blog-item__imges img__scale" src="images/blog/2.jpg" alt="Игрушка товар">
                             </div>
                             <h4 class="blog__title">
                                 Богатый опыт укрепление и развитие структуры
@@ -1182,7 +1236,7 @@
                         <div class="blog-item">
                             <div class="blog-item__img-box">
                                 <div class="blog__data">08.10.2019</div>
-                                <img class="blog-item__imges" src="images/blog/3.jpg" alt="Игрушка товар">
+                                <img class="blog-item__imges img__scale" src="images/blog/3.jpg" alt="Игрушка товар">
                             </div>
                             <h4 class="blog__title">
                                 Стремящиеся вытеснить традиционное
@@ -1196,7 +1250,7 @@
                         <div class="blog-item">
                             <div class="blog-item__img-box">
                                 <div class="blog__data">08.10.2019</div>
-                                <img class="blog-item__imges" src="images/blog/4.jpg" alt="Игрушка товар">
+                                <img class="blog-item__imges img__scale" src="images/blog/4.jpg" alt="Игрушка товар">
                             </div>
                             <h4 class="blog__title">
                                 Идейные соображения высшего порядка также
@@ -1210,7 +1264,7 @@
                         <div class="blog-item">
                             <div class="blog-item__img-box">
                                 <div class="blog__data">08.10.2019</div>
-                                <img class="blog-item__imges" src="images/blog/1.jpg" alt="Игрушка товар">
+                                <img class="blog-item__imges img__scale" src="images/blog/1.jpg" alt="Игрушка товар">
                             </div>
                             <h4 class="blog__title">
                                 Значимость этих проблем настолько очевидна этих
@@ -1224,7 +1278,7 @@
                         <div class="blog-item">
                             <div class="blog-item__img-box">
                                 <div class="blog__data">08.10.2019</div>
-                                <img class="blog-item__imges" src="images/blog/2.jpg" alt="Игрушка товар">
+                                <img class="blog-item__imges img__scale" src="images/blog/2.jpg" alt="Игрушка товар">
                             </div>
                             <h4 class="blog__title">
                                 Богатый опыт укрепление и развитие структуры
@@ -1238,7 +1292,7 @@
                         <div class="blog-item">
                             <div class="blog-item__img-box">
                                 <div class="blog__data">08.10.2019</div>
-                                <img class="blog-item__imges" src="images/blog/3.jpg" alt="Игрушка товар">
+                                <img class="blog-item__imges img__scale" src="images/blog/3.jpg" alt="Игрушка товар">
                             </div>
                             <h4 class="blog__title">
                                 Стремящиеся вытеснить традиционное
@@ -1252,7 +1306,7 @@
                         <div class="blog-item">
                             <div class="blog-item__img-box">
                                 <div class="blog__data">08.10.2019</div>
-                                <img class="blog-item__imges" src="images/blog/4.jpg" alt="Игрушка товар">
+                                <img class="blog-item__imges img__scale" src="images/blog/4.jpg" alt="Игрушка товар">
                             </div>
                             <h4 class="blog__title">
                                 Идейные соображения высшего порядка также
@@ -1396,6 +1450,7 @@
             Copyright МАГАЗИН © 2021. Разработка: @antonborod1n
         </div>
     </footer>
+
     <a class="arrow-up" href="#"></a>
     </a>
 

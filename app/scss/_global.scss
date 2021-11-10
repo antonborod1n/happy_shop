@@ -11,7 +11,7 @@ body {
 body {
     @extend %montserrat-alternates-400;
     font-size: 13px;
-    line-height: 22px;
+    line-height: 20px;
     color: $default;
     display: flex;
     flex-direction: column;
@@ -73,4 +73,15 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
     cursor: pointer;
+}
+
+/* SLICK-SLIDER */
+
+.top-slider__content .slick-slide,
+.goods-content__slide-thumb .slick-slide,
+.goods-content__slide-big .slick-slide{
+    margin-left: 0;
+}
+.slick-slide {
+    margin-left: 30px;
 }

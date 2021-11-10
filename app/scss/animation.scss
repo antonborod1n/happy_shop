@@ -1,0 +1,23 @@
+/* ANIMATION */
+
+@keyframes benefits-deg {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(25deg);
+    }
+}
+
+.img__scale {
+    transition: all 0.5s;
+    &:hover {
+    transform: scale(1.1);
+    }
+}
+
+.btn-scale:hover {
+    transform: scale(1.1);
+    background-color: $accent;
+    color: #ffffff;
+}

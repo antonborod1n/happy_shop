@@ -1,0 +1,231 @@
+.shop {
+    padding: 50px 0 70px;
+}
+.shop__inner {
+    display: flex;
+}
+.shop-item {
+    flex: 1 0 235px;
+    margin-right: 50px;
+}
+.shop-filter {
+    max-width: 235px;
+}
+.shop-filter__title,
+.blog-filter__title {
+    color: $title;
+    @extend %montserrat-alternates-600;
+    font-size: 24px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid $darkgrey;
+}
+.shop-filter__form {
+    padding: 25px 0 50px;
+}
+.shop-filter__name {
+    margin-bottom: 5px;
+}
+.shop-filter__subtitle {
+    display: block;
+    margin-bottom: 10px;
+}
+.shop-filter__subtitle select {
+    border-radius: 10px;
+    width: 100%;
+    border: 1px solid $darkgrey;
+    padding: 6px 15px;
+}
+.shop-filter__text-price {
+    border-radius: 10px;
+    width: 113px;
+    border: 1px solid $darkgrey;
+    padding: 6px 70px 6px 15px;
+    margin: 0 5px 20px 0;
+}
+.shop-filter__text-price:last-child {
+    margin-right: 0;
+} 
+.shop-filter__btn--filt{
+    border: none;
+    width: 100%;
+    height: 40px;
+    background-color: $accent;
+    border-radius: 10px;
+    @extend %montserrat-alternates-400;
+    font-size: 13px;
+    color: #FFFFFF;
+    margin-bottom: 5px;
+}
+.shop-filter__btn--res {
+    border: none;
+    width: 100%;
+    height: 40px;
+    background-color: $yellow;
+    border-radius: 10px;
+    @extend %montserrat-alternates-400;
+    font-size: 13px;
+    color: $title;
+}
+.shop-filter__list {
+    appearance: none;
+    background-image: url(../images/icons/arrow-down.svg);
+    background-position: 90% center;
+    background-repeat: no-repeat;
+    background-color: #fafafa;
+}
+.filter-popular {
+    max-width: 235px;
+}
+.filter-popular-box{
+    padding-bottom: 60px;
+}
+.filter-popular__item {
+    padding-top: 25px;
+    display: flex;
+}
+.filter-popular__item-imges {
+    width: 60px;
+    height: 60px;
+    margin-right: 18px;
+}
+.filter-popular__item-title {
+    @extend %montserrat-alternates-600;
+    font-size: 13px;
+    line-height: 16px;
+    color: $title;
+    margin-bottom: 5px;
+}
+.filter-popular__item-price-new {
+    display: inline;
+    @extend %montserrat-alternates-600;
+    font-size: 15px;
+    color: $accent;
+    margin-right: 5px;
+}
+.filter-popular__item-price-old {
+    display: inline;
+    @extend %montserrat-400;
+    font-size: 11px;
+    color: $default;
+}
+.filter-banner{
+    position: relative;
+    max-width: 235px;
+}
+.filter-banner__inner {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+.filter-banner__sybtitle {
+    display: block;
+    @extend %montserrat-alternates-700;
+    font-size: 17px;
+    line-height: 22px;
+    margin-bottom: 35px;
+}
+.filter-banner__btn--blue {
+    @extend %btnb;
+    &::after {
+        position: absolute;
+        content: url(../images/icons/arrow-back-btn.svg);
+        top: 14px;
+        right: 20px;
+    }
+}
+.shop-content__text {
+    margin: 25px 0;
+}
+.shop-content__text span {
+    color: $accent;
+}
+.shop-content__product {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 40px 30px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid $darkgrey;
+}
+.shop-content__filter-btn {
+    background-color: transparent;
+    border-radius: 10px;
+    border: 2px solid $darkgrey;
+}
+.shop-content__filter-btn--active {
+    border: 2px solid $title;
+    path {
+        fill: $title;
+    }
+}
+.max-sort {
+    padding: 10px 10px 0 15px;
+}
+.min-sort {
+    padding: 10px 13px 0 12px;
+}
+.shop-content__inner {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.shop-content__selects {
+    border: 2px solid $darkgrey;
+    color: $default;
+    padding: 5px 18px;
+    border-radius: 10px;
+}
+.shop-content__selects-btn {
+    @extend %montserrat-400;
+    line-height: 28px;
+    background-color: transparent;
+    border-radius: 10px;
+    border: none;
+    color: inherit;
+    position: relative;
+}
+.shop-content__selects-btn::before {
+    content: '.';
+    position: absolute;
+    top: -4px;
+    right: -3PX;
+    font-size: 24px;
+}
+.shop-content__selects-btn:last-child::before {
+    content: none;
+}
+.shop-content__bottom {
+    margin-top: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.shop-content__bottom-btn {
+    padding: 15px 20px;
+    background-color: $blue;
+    border-radius: 10px;
+    @extend %montserrat-alternates-400;
+    font-size: 13px;
+    color: $title; 
+}
+
+
+
+.pagination a {
+    margin-left: 5px;
+}
+.pagination__link-next,
+.pagination__link {
+    padding: 15px;
+    background-color: #eeeeee;
+    border-radius: 10px;
+    @extend %montserrat-alternates-400;
+    font-size: 13px;
+    color: $title; 
+}
+.pagination__link {
+    padding: 15px 20px;
+}
+.pagination__link--active {
+    background-color: $accent;
+    color: #FFFFFF; 
+}

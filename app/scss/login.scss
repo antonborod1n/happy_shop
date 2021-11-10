@@ -1,0 +1,55 @@
+.reg {
+    padding: 50px 0;
+}
+.reg__wrapper {
+    display: flex;
+}
+
+.reg__title {
+   font-size: 20px;
+   line-height: 20px;
+   margin-bottom: 20px;
+}
+
+.reg__inner {
+   display: flex;
+   justify-content: space-around
+}
+
+.reg__descr {
+   margin-bottom: 20px;
+}
+
+.reg__social-list {
+   display: flex;
+}
+
+.reg__social-item + .reg__social-item {
+   margin-left: 20px;
+}
+
+.reg__form {
+   max-width: 500px;
+}
+
+.form__input {
+   display: block;
+   width: 100%;
+   border-radius: 10px;
+   border: 1px solid $darkgrey;
+   padding: 0 15px;
+   height: 40px;
+}
+
+.reg__label {
+   margin-bottom: 30px;
+   display: block;
+}
+
+.form__btn {
+   border: none;
+   background-color: $yellow;
+   border-radius: 10px;
+   padding: 15px 25px;
+   cursor: pointer;
+}

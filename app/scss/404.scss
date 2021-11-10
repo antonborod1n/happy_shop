@@ -1,0 +1,52 @@
+.error__page {
+    background-image: url(../images/error-bg.png);
+    background-position: bottom;
+    background-size: cover;
+    text-align: center;
+    padding: 250px 0 150px;
+}
+
+.error__page-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.error__page-numb {
+    margin-bottom: 50px;
+}
+
+.error__page-subtitle {
+    @extend %montserrat-alternates-600;
+    font-size: 17px;
+    color: $accent;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.error__page-title {
+    margin-bottom: 30px;
+}
+
+.error__page-text {
+    max-width: 680px;
+}
+
+.numb-one,
+.numb-two,
+.numb-three {
+    @extend %montserrat-alternates-700;
+    font-size: 300px;
+    line-height: 20px;
+}
+
+.numb-one {
+    color: $accent;
+}
+.numb-two {
+    color: $yellow;
+}
+.numb-three {
+    color: $blue;
+}

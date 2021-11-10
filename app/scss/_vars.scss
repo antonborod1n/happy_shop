@@ -40,7 +40,7 @@ $blue: #5ce2ec;
 
 %btny {
     position: relative;
-    padding: 15px 45px 15px 25px;
+    padding: 10px 45px 10px 25px;
     background-color: $yellow;
     border-radius: 10px;
     @extend %montserrat-alternates-400;
@@ -49,14 +49,14 @@ $blue: #5ce2ec;
     &::after {
         position: absolute;
         content: url(../images/icons/arrow-back-btn.svg);
-        top: 17px;
+        top: 12px;
         right: 20px;
     }
 }
 
 %btnb {
     position: relative;
-    padding: 15px 45px 15px 25px;
+    padding: 10px 45px 10px 25px;
     background-color: $blue;
     border-radius: 10px;
     @extend %montserrat-alternates-400;
@@ -65,7 +65,7 @@ $blue: #5ce2ec;
     &::after {
         position: absolute;
         content: url(../images/icons/arrow-back-btn.svg);
-        top: 17px;
+        top: 12px;
         right: 20px;
     }
 }
