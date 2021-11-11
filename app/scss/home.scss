@@ -56,6 +56,8 @@
 }
 .header__main-logo {
     display: flex;
+    flex-grow: 1;
+    margin-right: 20px;
 }
 .logo__text {
     margin-left: 12px;
@@ -169,6 +171,7 @@
     color: $title;
     position: relative;
     transition: all .3s;
+    margin-right: 30px;
 }
 .menu__catalog-img {
     position: absolute;
@@ -185,6 +188,7 @@
 .menu {
     display: flex;
     align-items: center;
+    flex-grow: 1;
 }
 .menu__list {
     display: flex;
@@ -239,10 +243,8 @@
     background-color: #FFFFFF;
     transform: rotate(110deg) skewX(50deg);
 }
-
 .user__nav {
     display: flex;
-    margin-left: 400px;
 }
 .user__nav-link {
     position: relative;
@@ -253,9 +255,9 @@
 .user__nav-numb {
     position: absolute;
     top: -8px;
-     right: -10px;
-     width: 16px;
-     height: 16px;
+    right: -10px;
+    width: 16px;
+    height: 16px;
     @extend %montserrat-alternates-600;
     font-size: 11px;
     line-height: 16px;
@@ -891,9 +893,9 @@
     margin-bottom: 20px;
     border-radius: 10px;
 }
-.blog-item__imges {
-    /* object-fit: cover; */
-}
+/* .blog-item__imges {
+    object-fit: cover;
+} */
 
 /* DOUBLE-BANNER */
 
@@ -1014,6 +1016,8 @@
     &__items {
         width: 475px;
         flex-grow: 1;
+        margin-right: 15px;
+        padding-right: 25px;
     }
     &__title {
         @extend %montserrat-alternates-600;
@@ -1082,13 +1086,16 @@
 .footer-top__social-active {
     background-color: $yellow;
 }
+.footer-top__nav {
+    width: 600px;
+}
 .footer-top__inner {
     display: flex;
+    justify-content: space-between;
     margin-bottom: 40px;
 }
 .footer-top__menu{
     width: 215px;
-    margin-right: 180px;
     &:last-child{
         margin-right: 0;
     }
@@ -1113,4 +1120,113 @@
     background-color: $darkgrey;
     padding: 20px 0;
     text-align: center;
+}
+
+
+
+
+@media (max-width: 1600px) {
+    .menu__list {
+        display: none;
+    }
+}
+@media (max-width: 1300px) {
+    .serche {
+        display: none;
+    }
+    .footer-top__link {
+        display: block;
+    }
+}
+@media (max-width: 990px) {
+    .header__top {
+        display: none;
+    }
+    .menu {
+        &__btn {
+            width: 30px;
+            height: 30px;
+            background-color: transparent;
+            border: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            padding: 0;
+            span {
+                width: 100%;
+                background-color: $title;
+                height: 3px;
+            }
+            &::after {
+                content: '';
+                position: absolute;
+            }
+            &::before {
+                content: '';
+                position: absolute;
+            }
+        }
+    } 
+}
+
+@media (max-width: 840px) {
+    .header__main {
+        flex-direction: column;
+        align-items: center;
+    }
+    .header__info {
+        flex-direction: column;
+        align-items: start;
+    }
+    .header__info-address,
+    .header__main-logo {
+        margin-bottom: 20px;
+    }
+    .header__main-logo {
+        margin-right: 60px;
+    }
+    .header__info-time,
+    .header__info-address {
+        margin-left: 50px;
+    }
+    .footer-top {
+        flex-direction: column;
+    }
+    .footer-top__inner {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 660px) {
+    .header__menu {
+        flex-direction: column;
+    }
+    .footer-top__inner {
+        flex-direction: column;
+        width: 100%;
+    }
+    .footer_-top__items {
+        margin-bottom: 40px;
+    }
+    .footer-top__menu {
+        margin-top: 30px;
+    }
+    .footer-top__nav {
+        width: 100%;
+    }
+    .footer-top__items {
+        width: 100%;
+    }
+}
+
+
+
+@media (max-width: 440px) {
+    .footer-top__link {
+        font-size: 18px;
+    }
+    .footer-bottom {
+        padding: 20px;
+    }
 }
