@@ -1,8 +1,13 @@
-$ (function(){
+$(function(){
 
     $('.menu__btn').on('click', function(){
-        $('.menu__list').toggleClass('.menu__list--active');
+        $('.menu__list').toggleClass('menu__list--active');
     });
+
+    $('.menu__catalog-btn').on('click', function(){
+        $('.top-slider__menu').toggleClass('top-slider__menu--active');
+    });
+
     $('.top-slider__slider').slick({
         prevArrow: '<button type="button" class="slick-prev"><img src="images/icons/icons-slider/arrows-left.svg" alt="arrow"></button>',
         nextArrow: '<button type="button" class="slick-next"><img src="images/icons/icons-slider/arrows-right.svg" alt="arrow"></button>',

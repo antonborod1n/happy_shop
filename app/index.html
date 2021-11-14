@@ -86,7 +86,6 @@
                 </div>
             </div>
         </div>
-        </div>
         <div class="header__bottom">
             <div class="container">
                 <div class="header__menu">
@@ -94,12 +93,15 @@
                         <div class="menu__catalog">
                             Категории магазина
                         </div>
-                        <img class="menu__catalog-img" src="images/icons/burger.svg" alt="Burger menu">
+                        <button class="menu__catalog-btn menu__btn-visible"></button>
                     </a>
+                    <div class="menu__catalog-link-box" href="#">
+                        <div class="menu__catalog">
+                            Меню
+                        </div>
+                        <button class="menu__btn"></button>
+                    </div>
                     <nav class="menu">
-                        <button class="menu__btn">
-                            <span></span>
-                        </button>
                         <ul class="menu__list">
                             <li class="menu__list-item">
                                 <img class="home__img" src="./images/icons/home.svg" alt="Домик">
@@ -148,15 +150,15 @@
                 </div>
             </div>
         </div>
-    </header>
+    </header> 
 
-    <!-- <main class="main">
+    <main class="main">
         <section class="top-slider">
             <div class="container">
                 <div class="top-slider__inner">
                     <div class="top-slider__items">
-                        <div class="top__decor"></div>
                         <nav class="top-slider__menu">
+                            <div class="top__decor"></div>
                             <ul class="top-slider__list">
                                 <li class="top-slider__item">
                                     <a class="top-slider__link top-slider__arrow-link" href="#">
@@ -300,9 +302,9 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> 
 
-        <section class="product">
+       <section class="product">
             <div class="container">
                 <div class="product__inner">
                     <h2 class="product__title title">Бестселлеры</h2>
@@ -1326,139 +1328,145 @@
             </div>
         </section>
 
-    </main> -->
+    </main>
 
-     <footer class="footer">
-        <div class="container">
-            <div class="footer-top">
-                <div class="footer-top__items">
-                    <div class="logo__title">Магазин</div>
-                    <div class="footer-top__phone">
-                        <p class="footer-top__qestion">Возникли вопросы? Звоните!</p>
-                        <a class="footer-top__link" href="tel:88001234567">8 (800) 123-45-67,</a>
-                        <a class="footer-top__link" href="tel:+79876543210">+7 (987) 654-32-10</a>
-                    </div>
-                    <div class="footer-top__contact">
-                        <p class="footer-top__text">Мы находимся тут</p>
-                        <a class="footer-top__address" href="#">1234 Значимость этих, место обучения кадров влечет за
-                            65c.</a>
-                    </div>
-                    <ul class="footer-top__social-list">
-                        <li class="footer-top__item">
-                            <a class="footer-top__social-link footer-top__social-active"
-                                href="https://github.com/antonborod1n/" target="_blank">
-                                <img class="footer-top__social-img" src="./images/icons/social/gh.svg" alt="github">
-                            </a>
-                        </li>
-                        <li class="footer-top__item">
-                            <a class="footer-top__social-link" href="#">
-                                <img class="footer-top__social-img" src="./images/icons/social/yt.svg" alt="youtube">
-                            </a>
-                        </li>
-                        <li class="footer-top__item">
-                            <a class="footer-top__social-link" href="#">
-                                <img class="footer-top__social-img" src="./images/icons/social/fb.svg" alt="facebook">
-                            </a>
-                        </li>
-                        <li class="footer-top__item">
-                            <a class="footer-top__social-link" href="#">
-                                <img class="footer-top__social-img" src="./images/icons/social/twit.svg" alt="twitter">
-                            </a>
-                        </li>
-                        <li class="footer-top__item">
-                            <a class="footer-top__social-link" href="#">
-                                <img class="footer-top__social-img" src="./images/icons/social/ins.svg" alt="instagram">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer-top__nav">
-                    <div class="footer-top__inner">
-                        <div class="footer-top__menu">
-                            <div class="footer-top__title">
-                                Информация
-                            </div>
-                            <ul class="footer-top__menu-list">
-                                <li class="footer-top__menu-item">
-                                    <a class="footer-top__menu-link" href="#">
-                                        Доставка и возврат
-                                    </a>
-                                </li>
-                                <li class="footer-top__menu-item">
-                                    <a class="footer-top__menu-link" href="#">
-                                        Безопасные покупки
-                                    </a>
-                                </li>
-                                <li class="footer-top__menu-item">
-                                    <a class="footer-top__menu-link" href="#">
-                                        Международные перевозки
-                                    </a>
-                                </li>
-                                <li class="footer-top__menu-item">
-                                    <a class="footer-top__menu-link" href="#">
-                                        Партнеры
-                                    </a>
-                                </li>
-                                <li class="footer-top__menu-item">
-                                    <a class="footer-top__menu-link" href="#">
-                                        Группа продаж
-                                    </a>
-                                </li>
-                            </ul>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-top">
+                    <div class="footer-top__items">
+                        <div class="logo__title">Магазин</div>
+                        <div class="footer-top__phone">
+                            <p class="footer-top__qestion">Возникли вопросы? Звоните!</p>
+                            <a class="footer-top__link" href="tel:88001234567">8 (800) 123-45-67,</a>
+                            <a class="footer-top__link" href="tel:+79876543210">+7 (987) 654-32-10</a>
                         </div>
-                        <div class="footer-top__menu">
-                            <div class="footer-top__title">
-                                Мой аккаунт
-                            </div>
-                            <ul class="footer-top__menu-list">
-                                <li class="footer-top__menu-item">
-                                    <a class="footer-top__menu-link" href="#">
-                                        Вход
-                                    </a>
-                                </li>
-                                <li class="footer-top__menu-item">
-                                    <a class="footer-top__menu-link" href="#">
-                                        Регистрация
-                                    </a>
-                                </li>
-                                <li class="footer-top__menu-item">
-                                    <a class="footer-top__menu-link" href="#">
-                                        Моя корзина
-                                    </a>
-                                </li>
-                                <li class="footer-top__menu-item">
-                                    <a class="footer-top__menu-link" href="#">
-                                        Список желаний
-                                    </a>
-                                </li>
-                            </ul>
+                        <div class="footer-top__contact">
+                            <p class="footer-top__text">Мы находимся тут</p>
+                            <a class="footer-top__address" href="#">1234 Значимость этих, место обучения кадров влечет
+                                за
+                                65c.</a>
                         </div>
-                    </div>
-                    <div class="footer-top__card">
-                        <ul class="footer-top__card-list">
-                            <li class="footer-top__card-item">
-                                <img class="footer-top__card-img" src="./images/icons/mastercard.png" alt="mastercard">
+                        <ul class="footer-top__social-list">
+                            <li class="footer-top__item">
+                                <a class="footer-top__social-link footer-top__social-active"
+                                    href="https://github.com/antonborod1n/" target="_blank">
+                                    <img class="footer-top__social-img" src="./images/icons/social/gh.svg" alt="github">
+                                </a>
                             </li>
-                            <li class="footer-top__card-item">
-                                <img class="footer-top__card-img" src="./images/icons/visa.png" alt="visa">
+                            <li class="footer-top__item">
+                                <a class="footer-top__social-link" href="#">
+                                    <img class="footer-top__social-img" src="./images/icons/social/yt.svg"
+                                        alt="youtube">
+                                </a>
                             </li>
-                            <li class="footer-top__card-item">
-                                <img class="footer-top__card-img" src="./images/icons/paypal.png" alt="paypal">
+                            <li class="footer-top__item">
+                                <a class="footer-top__social-link" href="#">
+                                    <img class="footer-top__social-img" src="./images/icons/social/fb.svg"
+                                        alt="facebook">
+                                </a>
+                            </li>
+                            <li class="footer-top__item">
+                                <a class="footer-top__social-link" href="#">
+                                    <img class="footer-top__social-img" src="./images/icons/social/twit.svg"
+                                        alt="twitter">
+                                </a>
+                            </li>
+                            <li class="footer-top__item">
+                                <a class="footer-top__social-link" href="#">
+                                    <img class="footer-top__social-img" src="./images/icons/social/ins.svg"
+                                        alt="instagram">
+                                </a>
                             </li>
                         </ul>
                     </div>
+                    <div class="footer-top__nav">
+                        <div class="footer-top__inner">
+                            <div class="footer-top__menu">
+                                <div class="footer-top__title">
+                                    Информация
+                                </div>
+                                <ul class="footer-top__menu-list">
+                                    <li class="footer-top__menu-item">
+                                        <a class="footer-top__menu-link" href="#">
+                                            Доставка и возврат
+                                        </a>
+                                    </li>
+                                    <li class="footer-top__menu-item">
+                                        <a class="footer-top__menu-link" href="#">
+                                            Безопасные покупки
+                                        </a>
+                                    </li>
+                                    <li class="footer-top__menu-item">
+                                        <a class="footer-top__menu-link" href="#">
+                                            Международные перевозки
+                                        </a>
+                                    </li>
+                                    <li class="footer-top__menu-item">
+                                        <a class="footer-top__menu-link" href="#">
+                                            Партнеры
+                                        </a>
+                                    </li>
+                                    <li class="footer-top__menu-item">
+                                        <a class="footer-top__menu-link" href="#">
+                                            Группа продаж
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer-top__menu">
+                                <div class="footer-top__title">
+                                    Мой аккаунт
+                                </div>
+                                <ul class="footer-top__menu-list">
+                                    <li class="footer-top__menu-item">
+                                        <a class="footer-top__menu-link" href="#">
+                                            Вход
+                                        </a>
+                                    </li>
+                                    <li class="footer-top__menu-item">
+                                        <a class="footer-top__menu-link" href="#">
+                                            Регистрация
+                                        </a>
+                                    </li>
+                                    <li class="footer-top__menu-item">
+                                        <a class="footer-top__menu-link" href="#">
+                                            Моя корзина
+                                        </a>
+                                    </li>
+                                    <li class="footer-top__menu-item">
+                                        <a class="footer-top__menu-link" href="#">
+                                            Список желаний
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer-top__card">
+                            <ul class="footer-top__card-list">
+                                <li class="footer-top__card-item">
+                                    <img class="footer-top__card-img" src="./images/icons/mastercard.png"
+                                        alt="mastercard">
+                                </li>
+                                <li class="footer-top__card-item">
+                                    <img class="footer-top__card-img" src="./images/icons/visa.png" alt="visa">
+                                </li>
+                                <li class="footer-top__card-item">
+                                    <img class="footer-top__card-img" src="./images/icons/paypal.png" alt="paypal">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="footer-bottom">
-            Copyright МАГАЗИН © 2021. Разработка: @antonborod1n
-        </div>
-    </footer>
+            <div class="footer-bottom">
+                Copyright МАГАЗИН © 2021. Разработка: @antonborod1n
+            </div>
+        </footer>
 
-    <!-- <a class="arrow-up" href="#"></a>
+        <!-- <a class="arrow-up" href="#"></a>
     </a> -->
 
-    <script src="js/main.min.js"></script>
+        <script src="js/main.min.js"></script>
 </body>
 
 </html>
