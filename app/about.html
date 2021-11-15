@@ -48,32 +48,32 @@
                 <div class="header__main">
                     <div class="header__main-logo">
                         <a class="logo" href="#">
-                            <img class="logo__img" src="images/icons/bag-icon.svg" alt="Логотип">
+                            <img class="logo__img" src="images/icons/shopping-bag.svg" alt="Логотип">
                         </a>
                         <div class="logo__text">
                             <p class="logo__text-title">магазин</p>
                             <p class="logo__text-subtitle">для вашего ребенка</p>
                         </div>
                     </div>
-                    <div class="header__info">
-                        <div class="serche" action="#">
-                            <select class="serche__product" name="product">
-                                <option value="1">Товары</option>
-                                <option value="2">Одежда</option>
-                                <option value="3">Игрушки</option>
-                                <option value="4">Обувь</option>
-                                <option value="5">Инры</option>
-                                <option value="6">Канцтовары</option>
-                                <option value="7">Сумки</option>
-                                <option value="8">Уборы</option>
-                                <option value="9">Аксессуары</option>
-                            </select>
-                            <form class="form" action="#" method="post">
-                                <input class="form__search" type="text" name="text"
-                                    placeholder="Введите поисковую фразу">
-                                <input class="form__search-btn" type="submit" name="search-btn" value="">
-                            </form>
+
+                    <form class="serche" action="#">
+                        <select class="serche__product" name="product">
+                            <option value="1">Товары</option>
+                            <option value="2">Одежда</option>
+                            <option value="3">Игрушки</option>
+                            <option value="4">Обувь</option>
+                            <option value="5">Инры</option>
+                            <option value="6">Канцтовары</option>
+                            <option value="7">Сумки</option>
+                            <option value="8">Уборы</option>
+                            <option value="9">Аксессуары</option>
+                        </select>
+                        <div class="form" action="#" method="post">
+                            <input class="form__search" type="text" name="text" placeholder="Введите поисковую фразу">
+                            <input class="form__search-btn" type="submit" name="search-btn" value="">
                         </div>
+                    </form>
+                    <div class="header__info">
                         <div class="header__info-address">
                             <p class="header__info-title">Наш адрес</p>
                             <p class="header__info-subtitle">1234 Donec semper lorem, 65c.</p>
@@ -89,6 +89,12 @@
         <div class="header__bottom header__bottom--size">
             <div class="container">
                 <div class="header__menu">
+                    <div class="menu__catalog-link-box" href="#">
+                        <div class="menu__catalog">
+                            Меню
+                        </div>
+                        <button class="menu__btn"></button>
+                    </div>
                     <nav class="menu">
                         <ul class="menu__list">
                             <li class="menu__list-item">
@@ -127,7 +133,7 @@
                         </ul>
                     </nav>
                     <div class="user__nav">
-                        <a class="user__nav-link" href="login.html">
+                        <a class="user__nav-link" href="/login.html">
                             <img class="user__nav-link-img" src="./images/icons/user.svg" alt="Кабинет пользователя">
                         </a>
                         <a class="user__nav-link" href="#">
@@ -149,7 +155,7 @@
                         </li>
                         <li class="breadcrumbs__item">
                             <a class="breadcrumbs__link" href="#">
-                                О магазине
+                                Контакты
                             </a>
                         </li>
                     </ol>
@@ -157,6 +163,7 @@
             </div>
         </div>
     </header>
+
     <main class="main">
         <section class="about">
             <div class="container">
@@ -272,6 +279,7 @@
             </div>
         </section>
     </main>
+
     <footer class="footer">
         <div class="container">
             <div class="footer-top">
@@ -398,8 +406,6 @@
             Copyright МАГАЗИН © 2021. Разработка: @antonborod1n
         </div>
     </footer>
-
-
 
     <script src="js/main.min.js"></script>
 </body>

@@ -853,6 +853,7 @@
 }
 
 /* BLOG */
+
 .blog {
     padding-bottom: 70px;
 }
@@ -873,9 +874,6 @@
 }
 .blog__inner-title {
     padding-bottom: 35px;
-}
-.blog__title {
-    margin-bottom: 22px;
 }
 .blog__btn {
     display: inline-block;
@@ -905,6 +903,7 @@
     font-size: 17px;
     color: $title;
     line-height: 20px;
+    margin-bottom: 22px;
 }
 .blog__anons {
     @extend %montserrat-alternates-400;
@@ -919,75 +918,72 @@
     margin-bottom: 20px;
     border-radius: 10px;
 }
-/* .blog-item__imges {
-    object-fit: cover;
-} */
 
 /* DOUBLE-BANNER */
 
 .double__banner {
     padding-bottom: 40px;
-}
-.double__banner-inner {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-}
-.double__banner-left {
-    position: relative;
-    height: 250px;
-    border-radius: 10px;
-    overflow: hidden;
-}
-.double__banner-box--right {
-    position: absolute;
-    top: 60px;
-    right: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
-}
-.double__banner-box--left {
-    position: absolute;
-    top: 60px;
-    left: 50px; 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    transition: all 0.5s;
-}
-.double__banner-right {
-    position: relative;
-    align-items: flex-start;
-    height: 250px;
-    border-radius: 10px;
-    overflow: hidden;
-}
-.double__banner-sybtitle {
-    @extend %montserrat-alternates-600;
-    margin-bottom: 20px;
-    font-size: 17px;
-    color: $title;
-}
-.double__banner-title {
-    @extend %montserrat-alternates-600;
-    margin-bottom: 40px;
-    font-size: 36px;
-    color: $accent;
-}
-.double__banner-link--blue {
-    @extend %btnb;
-}
-.double__banner-link--yellow {
-    @extend %btny;
-}
-.double__banner-link--blue:hover,
-.double__banner-link--yellow:hover {
+    &-inner {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+    &-left {
+        position: relative;
+        height: 250px;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    &-box--right {
+        position: absolute;
+        top: 60px;
+        right: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    &-box--left {
+        position: absolute;
+        top: 60px;
+        left: 50px; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        transition: all 0.5s;
+    }
+    &-right {
+        position: relative;
+        align-items: flex-start;
+        height: 250px;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    &-sybtitle {
+        @extend %montserrat-alternates-600;
+        margin-bottom: 20px;
+        font-size: 17px;
+        color: $title;
+    }
+    &-title {
+        @extend %montserrat-alternates-600;
+        margin-bottom: 40px;
+        font-size: 36px;
+        color: $accent;
+    }
+    &-link--blue {
+        @extend %btnb;
+    }
+    &-link--yellow {
+        @extend %btny;
+    }
+    &--blue:hover,
+    &--yellow:hover {
     background-color: $accent;
     color: #FFFFFF;
     transition: all 0.5s;
+    }
 }
 
 /* BANNER */
@@ -1034,536 +1030,122 @@
 
 .footer {
     background-color: $lightgrey;
-}
-.footer-top {
-    display: flex;
-    padding: 80px 0 60px;
-    &__items {
-        width: 475px;
-        flex-grow: 1;
-        margin-right: 15px;
-        padding-right: 25px;
-    }
-    &__title {
-        @extend %montserrat-alternates-600;
-        font-size: 24px;
-        margin-bottom: 22px;
-        color: $title;
-    }
-    &__phone {
-        position: relative;
-        margin: 0 0 36px 70px;
-    }
-    &__phone::before {
-        position: absolute;
-        content: url(../images/icons/footer-support.svg);
-        top: 0;
-        left: -76px;
-    }
-    &__qestion {
-        @extend %montserrat-alternates-400;
-        font-size: 13px;
-        margin-bottom: 12px;
-        color: $default;
-    }
-    &__link {
-        @extend %montserrat-alternates-600;
-        font-size: 22px;
-        color: $title;
-    }
-    &__text {
-        @extend %montserrat-alternates-600;
-        font-size: 15px;
-        margin-bottom: 12px;
-        color: $title;
-    }
-    &__address {
-        display: inline-block;
-        @extend %montserrat-alternates-400;
-        font-size: 13px;
-        margin-bottom: 38px;
-        color: $default;
-    }
-}
-.logo__title {
-    @extend %montserrat-alternates-600;
-    font-size: 36px;
-    text-transform: uppercase;
-    margin-bottom: 32px;
-    color: $title;
-}
-.footer-top__social-list {
-    display: flex;
-}
-.footer-top__item + .footer-top__item {
-    margin-left: 10px;
-}
-.footer-top__social-link {
-    display: inline-block;
-    background-color: $darkgrey;
-    padding: 10px;
-    border-radius: 10px;
-}
-.footer-top__social-link:hover{
-    background-color: $yellow;
-    transition: all .3s;
-}
-.footer-top__social-active {
-    background-color: $yellow;
-}
-.footer-top__nav {
-    width: 600px;
-}
-.footer-top__inner {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 40px;
-}
-.footer-top__menu{
-    width: 215px;
-    &:last-child{
-        margin-right: 0;
-    }
-    &-link {
-        @extend %montserrat-alternates-400;
-        font-size: 13px;
-        line-height: 34px;
-        color: $default;
-    }
-    &-link::before {
-        content: url(../images/icons/arrow-right.svg);
-        vertical-align: -2px;
-    }
-}
-.footer-top__card-list {
-    display: flex;
-}
-.footer-top__card-item {
-    margin-right: 12px;
-}
-.footer-bottom {
-    background-color: $darkgrey;
-    padding: 20px 0;
-    text-align: center;
-}
-
-
-
-
-
-
-
-/* ---------------------------------------------------1600---*/
-
-@media (max-width: 1600px) { 
-    .menu {
-        &__list {
-            transform: translateX(-300%);
-            z-index: 5;
-            position: absolute;
-            width: 200px;
-            border-radius: 10px;
-            top: 242px;
-            left: 334px;
-            flex-direction: column;
-            align-items: center;
-            background-color: #fff;
-            &.menu__list--active {
-                transform: translateY(0%);
-            }
-            &-item {
-                margin-bottom: 15px;
-            }
-            &-item + .menu__list-item {
-                padding-left: 0;
-            } 
-        }
-        &__catalog-link-box {
-            display: block;
-            position: relative;
-        }
-        &__btn {
-            display: block;
-            position: absolute;
-            top: 13px;
-            right: 7px;
-            z-index: 2;
-            height: 20px;
-            color: #1a1a1a;
-            border: none;
-            border-radius: 0;
-            background-color: transparent;
-            background-image: url(../images/icons/burger.svg);  
-            background-position: center center;
-            background-repeat: no-repeat;
-            padding: 0 20px;
-        }
-        &__new-img::before,
-        &__new-img::after {
-            display: none;
-        }
-    }
-
-    .home__img {
-        display: none;
-    }
-
-    .top-slider__inner {
-        justify-content: space-around;
-    }
-    
-    .top-slider__banner {
-        display: none;
-    }
-
-    .benefits__info {
-        flex-wrap: wrap;
-    }
-
-    .benefits__info-items {
-        border-right: none;
-    }
-
-    .product,
-    .blog,
-    .partners,
-    .novelty,
-    .double__banner {
-        display: none;
-    }
-
-    .double__banner {
-        font-size: 14px;
-        margin-bottom: 15px;
-    }
-
-    .banner__title {
-        font-size: 35px;
-        margin-bottom: 20px;
-    }
-}
-
-/* ---------------------------------------------------1400---*/
-
-@media (max-width: 1400px) {
-    .popular__tabs{
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .popular-item {
-        max-width: 100%;
-    }
-}
-
-/* ---------------------------------------------------1300---*/
-
-@media (max-width: 1300px) {
-    .serche {
-        display: none;
-    }
-
-    .footer-top__link {
-        display: block;
-        margin-bottom: 10px;
-    }
-
-    .top-slider__inner {
-        flex-direction: column;
-    }
-
-    .top-slider__items {
-        display: none;
-    }
-
-    .banner__sybtitle {
-        display: none;
-    }
-
-    .banner__title {
-        font-size: 22px;
-    }
-}
-
-/* ---------------------------------------------------990---*/
-
-@media (max-width: 990px) {
-    .header__top-list {
-        display: block;
-    }
-    .header__top-items {
-        padding-left: 0;
-        margin-bottom: 10px;
-        border-right: none;
-    }
-
-    .top-slider__content-inner {
-        left: 370px;
-    }
-
-    .top-slider__content-inner--left {
-        left: 100px;
-    }
-
-    .menu__list {
-        top: 180px;
-    }
-
-    .popular__tabs{
-        display: block;
-    }
-
-    .popular-item {
-        margin-bottom: 30px;
-    }
-
-    .popular__top {
-        display: block;
-    }
-
-    .banner__inner-box{
-        top: 20px;
-        left: 300px;
-    }
-    .contact__inner {
-        display: block;
-    }
-    .contact__info {
+    &-top {
         display: flex;
-        justify-content: space-around;
-        align-items: center;
-        flex-wrap: wrap;
-        margin-top: 50px;
+        padding: 80px 0 60px;
+        &__item + .footer-top__item {
+            margin-left: 10px;
+        }
+        &__logo-title {
+            @extend %montserrat-alternates-600;
+            font-size: 36px;
+            text-transform: uppercase;
+            margin-bottom: 32px;
+            color: $title;
+        }
+        &__social-list {
+            display: flex;
+        }
+        &__menu{
+            width: 215px;
+            &:last-child{
+                margin-right: 0;
+            }
+            &-link {
+                @extend %montserrat-alternates-400;
+                font-size: 13px;
+                line-height: 34px;
+                color: $default;
+            }
+            &-link::before {
+                content: url(../images/icons/arrow-right.svg);
+                vertical-align: -2px;
+            }
+        }
+        &__social-link {
+            display: inline-block;
+            background-color: $darkgrey;
+            padding: 10px;
+            border-radius: 10px;
+            &:hover{
+                background-color: $yellow;
+                transition: all .3s;
+            }
+        }
+        &__social-active {
+            background-color: $yellow;
+        }
+        &__nav {
+            width: 600px;
+        }
+        &__inner {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 40px;
+        }
+        &__card-list {
+            display: flex;
+        }
+        &__card-item {
+            margin-right: 12px;
+        }
+        &__items {
+            width: 475px;
+            flex-grow: 1;
+            margin-right: 15px;
+            padding-right: 25px;
+        }
+        &__title {
+            @extend %montserrat-alternates-600;
+            font-size: 24px;
+            margin-bottom: 22px;
+            color: $title;
+        }
+        &__phone {
+            position: relative;
+            margin: 0 0 36px 70px;
+        }
+        &__phone::before {
+            position: absolute;
+            content: url(../images/icons/footer-support.svg);
+            top: 0;
+            left: -76px;
+        }
+        &__qestion {
+            @extend %montserrat-alternates-400;
+            font-size: 13px;
+            margin-bottom: 12px;
+            color: $default;
+        }
+        &__link {
+            @extend %montserrat-alternates-600;
+            font-size: 22px;
+            color: $title;
+        }
+        &__text {
+            @extend %montserrat-alternates-600;
+            font-size: 15px;
+            margin-bottom: 12px;
+            color: $title;
+        }
+        &__address {
+            display: inline-block;
+            @extend %montserrat-alternates-400;
+            font-size: 13px;
+            margin-bottom: 38px;
+            color: $default;
+        }
     }
-    
-    .contact__info-local,
-    .contact__info-time,
-    .contact__info-phone,
-    .contact__info-email {
-        margin-left: 75px;
-        flex-grow: 1;
-    }
-
-    .goods-item {
-        display: none;
-    }
-}
-
-/* ----------------------------------------------------840---*/
-
-@media (max-width: 840px) {
-    .header__main {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .header__info {
-        flex-direction: column;
-        align-items: start;
-    }
-
-    .header__info-address,
-    .header__main-logo {
-        margin-bottom: 20px;
-    }
-
-    .header__main-logo {
-        margin-right: 60px;
-    }
-
-    .header__info-time,
-    .header__info-address {
-        margin-left: 50px;
-    }
-
-    .footer-top {
-        flex-direction: column;
-    }
-
-    .footer-top__inner {
-        margin-top: 30px;
-    }
-
-    .top-slider__sybtitle {
-        font-size: 16px;
-        margin-bottom: 20px;
-    }
-
-    .top-slider__title {
-        font-size: 30px;
-        margin-bottom: 30px;
-    }
-
-    .top-slider__content-inner {
-        display: none;
-    }
-
-    .menu__list {
-        top: 300px;
-    }
-
-    .top-slider__btn {
-        font-size: 10px;
-    }
-
-    .banner__title {
-        display: none;
-    }
-
-    .error__page-numb span {
-        font-size: 200px;
-    }
-
-    .reg__inner {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-/* ---------------------------------------------------660---*/
-
-@media (max-width: 680px) {
-    .header__menu {
-        flex-direction: column;
-    }
-
-    .menu__catalog-link {
-        margin: 0 0 20px 0;
-    }
-
-    .menu__catalog-link-box {
-        margin-bottom: 20px;
-    }
-
-    .footer-top__inner {
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .footer_-top__items {
-        margin-bottom: 40px;
-    }
-
-    .footer-top__menu {
-        margin-top: 30px;
-    }
-
-    .footer-top__nav {
-        width: 100%;
-    }
-
-    .footer-top__items {
-        width: 100%;
-    }
-
-    .top-slider__sybtitle {
-        font-size: 14px;
-        margin-bottom: 20px;
-    }
-
-    .top-slider__title {
-        font-size: 24px;
-        margin-bottom: 30px;
-    }
-
-    .menu__list {
-        top: 350px;
-    }
-
-    .benefits__info-item {
-        margin-left: 20px;
-    }
-
-    .banner {
-        display: none;
-    }
-
-    .contact__form-btn {
-        margin-top: 30px;
+    &-bottom {
+        background-color: $darkgrey;
+        padding: 20px 0;
+        text-align: center;
     }
 }
 
-/* ---------------------------------------------------560---*/
 
-@media (max-width: 560px) {
-    .menu__list {
-        top: 350px;
-        left: 100px;
-    }
 
-    .popular__btn {
-        margin-bottom: 10px;
-    }
 
-    .popular-item {
-        display: block;
-    }
 
-    .popular__filter-btn {
-        padding-bottom: 0;
-    }
 
-    .sale__product,
-    .new__product {
-        display: none;
-    }
 
-    .popular-item__img {
-        margin-bottom: 20px;
-    }
-
-    .form__carancy {
-       margin-left: 26px;
-    }
-
-    .header__top {
-        display: block;
-    }
-    .form__carancy-title::before {
-        left: -26px;
-    }
-
-    .header__top-items {
-        padding-right: 0;
-    }
-
-    .header__top-icon-img {
-        padding-right: 10px;
-    }
-
-    .error__page-numb span {
-        font-size: 100px;
-    }
-
-    .error__page-title {
-        font-size: 20px;
-    }
-}
-
-/* ---------------------------------------------------440---*/
-
-@media (max-width: 440px) {
-    .menu__catalog {
-        font-size: 14px;
-    }
-
-    .footer-top__link {
-        font-size: 18px;
-    }
-
-    .footer-bottom {
-        padding: 20px;
-    }
-    
-    .top-slider__sybtitle {
-        font-size: 20px;
-        margin-bottom: 20px;
-    }
-
-    .top-slider__title {
-        font-size: 36px;
-        margin-bottom: 30px;
-    }
-    .reg__form {
-        margin-left: 0;
-    }
-}
