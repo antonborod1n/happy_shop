@@ -6,6 +6,10 @@
     display: flex;
 }
 
+.contact__form-title {
+    padding-bottom: 50px;
+}
+
 .form__cont {
     display: flex;
     justify-content: space-between;
@@ -33,33 +37,97 @@
     flex-grow: 1;
     margin-bottom: 30px;
 }
-А
+
 .contact__form-btn {
-    @extend %btny;
+    position: relative;
+    padding: 9px 45px 9px 20px;
+    background-color: $yellow;
+    border-radius: 10px;
+    @extend %montserrat-alternates-400;
+    font-size: 13px;
+    color: $title;
     border: none;
+    &::after {
+        position: absolute;
+        content: url(../images/icons/arrow-back-btn.svg);
+        top: 10px;
+        right: 20px;
+    }
+}
+
+.contact__form-label {
+    padding-right: 39px; 
 }
 
 .contact__map {
     padding-top: 50px;
 }
+
+#map {
+    border-radius: 10px;
+    max-width: 1570px;
+    height: 350px;
+}
+
 .contact__info-time {
     position: relative;
     padding-top: 5px;
-    margin: 0 0 30px 100px;
+    margin: 0 0 30px 137px;
+    &::before {
+        position: absolute;
+        content: url(../images/icons/globe.svg);
+        top: 5px;
+        left: -50px;
+    }
 }
-.contact__info-time::before {
-    position: absolute;
-    content: url(../images/icons/clock.svg);
-    top: 5px;
-    left: -50px;
+
+.contact__info-local {
+    position: relative;
+    padding-top: 5px;
+    margin: 0 0 30px 137px;
+    &::before {
+        position: absolute;
+        content: url(../images/icons/map.svg);
+        top: 5px;
+        left: -50px;
+    }
 }
+
+.contact__info-phone {
+    position: relative;
+    padding-top: 5px;
+    margin: 0 0 30px 137px;
+    &::before {
+        position: absolute;
+        content: url(../images/icons/phone-contact.svg);
+        top: 5px;
+        left: -50px;
+    }
+}
+
+.contact__info-email {
+    position: relative;
+    padding-top: 5px;
+    margin: 0 0 30px 137px;
+    &::before {
+        position: absolute;
+        content: url(../images/icons/telegram.svg);
+        top: 5px;
+        left: -50px;
+    }
+}
+
 .contact__info-title {   
     @extend %montserrat-alternates-600;
     font-size: 15px;    
     line-height: 18px;
+    color: $title;
 }
-.contact__info-subtitle {
+
+.contact__info-subtitle,
+.contact__info-time-link {
     @extend %montserrat-400;
     font-size: 13px;  
     line-height: 18px; 
+    color: $title;
 }

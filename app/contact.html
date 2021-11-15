@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Контакты</title>
+    <title>Контакты интернет-магазина по родаже детских игрушек</title>
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -48,32 +48,32 @@
                 <div class="header__main">
                     <div class="header__main-logo">
                         <a class="logo" href="#">
-                            <img class="logo__img" src="images/icons/bag-icon.svg" alt="Логотип">
+                            <img class="logo__img" src="images/icons/shopping-bag.svg" alt="Логотип">
                         </a>
                         <div class="logo__text">
                             <p class="logo__text-title">магазин</p>
                             <p class="logo__text-subtitle">для вашего ребенка</p>
                         </div>
                     </div>
-                    <div class="header__info">
-                        <div class="serche" action="#">
-                            <select class="serche__product" name="product">
-                                <option value="1">Товары</option>
-                                <option value="2">Одежда</option>
-                                <option value="3">Игрушки</option>
-                                <option value="4">Обувь</option>
-                                <option value="5">Инры</option>
-                                <option value="6">Канцтовары</option>
-                                <option value="7">Сумки</option>
-                                <option value="8">Уборы</option>
-                                <option value="9">Аксессуары</option>
-                            </select>
-                            <form class="form" action="#" method="post">
-                                <input class="form__search" type="text" name="text"
-                                    placeholder="Введите поисковую фразу">
-                                <input class="form__search-btn" type="submit" name="search-btn" value="">
-                            </form>
+
+                    <form class="serche" action="#">
+                        <select class="serche__product" name="product">
+                            <option value="1">Товары</option>
+                            <option value="2">Одежда</option>
+                            <option value="3">Игрушки</option>
+                            <option value="4">Обувь</option>
+                            <option value="5">Инры</option>
+                            <option value="6">Канцтовары</option>
+                            <option value="7">Сумки</option>
+                            <option value="8">Уборы</option>
+                            <option value="9">Аксессуары</option>
+                        </select>
+                        <div class="form" action="#" method="post">
+                            <input class="form__search" type="text" name="text" placeholder="Введите поисковую фразу">
+                            <input class="form__search-btn" type="submit" name="search-btn" value="">
                         </div>
+                    </form>
+                    <div class="header__info">
                         <div class="header__info-address">
                             <p class="header__info-title">Наш адрес</p>
                             <p class="header__info-subtitle">1234 Donec semper lorem, 65c.</p>
@@ -89,6 +89,12 @@
         <div class="header__bottom header__bottom--size">
             <div class="container">
                 <div class="header__menu">
+                    <div class="menu__catalog-link-box" href="#">
+                        <div class="menu__catalog">
+                            Меню
+                        </div>
+                        <button class="menu__btn"></button>
+                    </div>
                     <nav class="menu">
                         <ul class="menu__list">
                             <li class="menu__list-item">
@@ -127,7 +133,7 @@
                         </ul>
                     </nav>
                     <div class="user__nav">
-                        <a class="user__nav-link" href="login.html">
+                        <a class="user__nav-link" href="/login.html">
                             <img class="user__nav-link-img" src="./images/icons/user.svg" alt="Кабинет пользователя">
                         </a>
                         <a class="user__nav-link" href="#">
@@ -157,9 +163,11 @@
             </div>
         </div>
     </header>
+
     <main class="main">
         <section class="contact">
             <div class="container">
+                <div class="contact__form-title title">Свяжитесь с нами сейчас</div>
                 <div class="contact__inner">
                     <div class="contact__form">
                         <form class="form__cont" action="#">
@@ -171,15 +179,16 @@
                                 required>
                             <input class="contact__form-input-text" type="text" name="text"
                                 placeholder="Текст сообщения*" required>
-                            <label>
-                                <input class="contact__form-input-checkbox" type="checkbox">Я согласен(а) на обработку
+                            <label class="contact__form-label">
+                                <input class="contact__form-input-checkbox" type="checkbox">Я согласен(а) на
+                                обработку
                                 персональных данных
-                            </label>
-                            <button class="contact__form-btn" type="submit">Отправить сообщение</button>
+                            </label><br>
+                            <button class="contact__form-btn btn-scale" type="submit">Отправить сообщение</button>
                         </form>
                     </div>
                     <div class="contact__info">
-                        <div class="contact__info-time">
+                        <div class="contact__info-local">
                             <p class="contact__info-title">Офис</p>
                             <p class="contact__info-subtitle">1234 Donec semper lorem, 65c.</p>
                         </div>
@@ -187,31 +196,29 @@
                             <p class="contact__info-title">Склад</p>
                             <p class="contact__info-subtitle">98765 Lorem semper dolor, 132-7a.</p>
                         </div>
-                        <div class="contact__info-time">
+                        <div class="contact__info-phone">
                             <p class="contact__info-title">Телефоны</p>
                             <p class="contact__info-subtitle">
-                                <a href="tel:+78001234567" class="contact__info-time-link">+7 (800) 123-45-67,</a>
-                                <a href="tel:+79876543210" class="contact__info-time-link">+7 (987) 654-32-10</a>
+                                <a class="contact__info-time-link" href="tel:+78001234567">+7 (800) 123-45-67,</a>
+                                <a class="contact__info-time-link" href="tel:+79876543210">+7 (987) 654-32-10</a>
                             </p>
                         </div>
-                        <div class="contact__info-time">
+                        <div class="contact__info-email">
                             <p class="contact__info-title">E-mail</p>
                             <p class="contact__info-subtitle">
-                                <a href="mailto:support@example.com" class="contact__info-time-link">support@example.com,</a><br>
+                                <a href="mailto:support@example.com"
+                                    class="contact__info-time-link">support@example.com,</a><br>
                                 <a href="mailto:order@example.com" class="contact__info-time-link">order@example.com</a>
                             </p>
                         </div>
                     </div>
                 </div>
                 <div class="contact__map">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d75252.67256813997!2d27.523329137631805!3d53.88472079821034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbcfd35b1e6ad3%3A0xb61b853ddb570d9!2z0JzQuNC90YHQug!5e0!3m2!1sru!2sby!4v1635872188098!5m2!1sru!2sby"
-                        width="1570" height="350" style="border:0; border-radius: 10px;" allowfullscreen=""
-                        loading="lazy"></iframe>
+
+                    <div id="map"></div>
                 </div>
             </div>
         </section>
-
 
         <section class="banner">
             <div class="container">
@@ -225,9 +232,8 @@
                 </div>
             </div>
         </section>
-
-        
     </main>
+
     <footer class="footer">
         <div class="container">
             <div class="footer-top">
@@ -240,7 +246,8 @@
                     </div>
                     <div class="footer-top__contact">
                         <p class="footer-top__text">Мы находимся тут</p>
-                        <a class="footer-top__address" href="#">1234 Значимость этих, место обучения кадров влечет за
+                        <a class="footer-top__address" href="#">1234 Значимость этих, место обучения кадров влечет
+                            за
                             65c.</a>
                     </div>
                     <ul class="footer-top__social-list">
@@ -356,7 +363,17 @@
     </footer>
 
 
+    <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&v=weekly" async></script>
+    <script>
+        let map;
 
+        function initMap() {
+            map = new google.maps.Map(document.getElementById("map"), {
+                center: { lat: 53.88876551543895, lng: 27.479360320748793 },
+                zoom: 13,
+            });
+        }
+    </script>
     <script src="js/main.min.js"></script>
 </body>
 

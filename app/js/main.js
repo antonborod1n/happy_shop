@@ -1,10 +1,10 @@
-$(function(){
+$(function () {
 
-    $('.menu__btn').on('click', function(){
+    $('.menu__btn').on('click', function () {
         $('.menu__list').toggleClass('menu__list--active');
     });
 
-    $('.menu__catalog-btn').on('click', function(){
+    $('.menu__catalog-btn').on('click', function () {
         $('.top-slider__menu').toggleClass('top-slider__menu--active');
     });
 
@@ -78,7 +78,7 @@ $(function(){
         normalFill: "#ededed",
         ratedFill: "#ffcc00",
         readOnly: true,
-      });
+    });
     $(".star-big").rateYo({
         starWidth: "25px",
         normalFill: "#ededed",
@@ -86,4 +86,3 @@ $(function(){
         readOnly: true,
     });
 });
-  
