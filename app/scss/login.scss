@@ -1,35 +1,39 @@
 .reg {
     padding: 50px 0;
-}
-.reg__wrapper {
-    display: flex;
-}
-
-.reg__title {
-   font-size: 20px;
-   line-height: 20px;
-   margin-bottom: 20px;
-}
-
-.reg__inner {
-   display: flex;
-   justify-content: space-around
-}
-
-.reg__descr {
-   margin-bottom: 20px;
-}
-
-.reg__social-list {
-   display: flex;
+    &__wrapper {
+      display: flex;
+    }
+    &__title {
+      font-size: 20px;
+      line-height: 20px;
+      margin-bottom: 20px;
+   }
+   &__inner {
+      display: flex;
+      justify-content: space-around;
+   }
+   &__descr {
+      margin-bottom: 20px;
+   }
+   &__social {
+      flex-grow: 1;
+      &-list {
+         display: flex;
+      }
+   }
+   &__form {
+      max-width: 500px;
+      margin-left: 50px;
+      margin-top: 44px;
+   }
+   &__label {
+      margin-bottom: 30px;
+      display: block;
+   }
 }
 
 .reg__social-item + .reg__social-item {
    margin-left: 20px;
-}
-
-.reg__form {
-   max-width: 500px;
 }
 
 .form__input {
@@ -39,11 +43,6 @@
    border: 1px solid $darkgrey;
    padding: 0 15px;
    height: 40px;
-}
-
-.reg__label {
-   margin-bottom: 30px;
-   display: block;
 }
 
 .form__btn {

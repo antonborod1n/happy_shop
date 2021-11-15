@@ -1342,6 +1342,10 @@
         margin-left: 75px;
         flex-grow: 1;
     }
+
+    .goods-item {
+        display: none;
+    }
 }
 
 /* ----------------------------------------------------840---*/
@@ -1403,6 +1407,15 @@
 
     .banner__title {
         display: none;
+    }
+
+    .error__page-numb span {
+        font-size: 200px;
+    }
+
+    .reg__inner {
+        flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -1516,6 +1529,14 @@
     .header__top-icon-img {
         padding-right: 10px;
     }
+
+    .error__page-numb span {
+        font-size: 100px;
+    }
+
+    .error__page-title {
+        font-size: 20px;
+    }
 }
 
 /* ---------------------------------------------------440---*/
@@ -1541,5 +1562,8 @@
     .top-slider__title {
         font-size: 36px;
         margin-bottom: 30px;
+    }
+    .reg__form {
+        margin-left: 0;
     }
 }

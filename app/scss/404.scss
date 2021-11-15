@@ -4,33 +4,28 @@
     background-size: cover;
     text-align: center;
     padding: 250px 0 150px;
-}
-
-.error__page-inner {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.error__page-numb {
-    margin-bottom: 50px;
-}
-
-.error__page-subtitle {
-    @extend %montserrat-alternates-600;
-    font-size: 17px;
-    color: $accent;
-    display: block;
-    margin-bottom: 15px;
-}
-
-.error__page-title {
-    margin-bottom: 30px;
-}
-
-.error__page-text {
-    max-width: 680px;
+    &-inner {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &-numb {
+        margin-bottom: 50px;
+    }
+    &-subtitle {
+        @extend %montserrat-alternates-600;
+        font-size: 17px;
+        color: $accent;
+        display: block;
+        margin-bottom: 15px;
+    }
+    &-title {
+        margin-bottom: 30px;
+    }
+    &-text {
+        max-width: 680px;
+    }
 }
 
 .numb-one,

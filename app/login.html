@@ -48,32 +48,32 @@
                 <div class="header__main">
                     <div class="header__main-logo">
                         <a class="logo" href="#">
-                            <img class="logo__img" src="images/icons/bag-icon.svg" alt="Логотип">
+                            <img class="logo__img" src="images/icons/shopping-bag.svg" alt="Логотип">
                         </a>
                         <div class="logo__text">
                             <p class="logo__text-title">магазин</p>
                             <p class="logo__text-subtitle">для вашего ребенка</p>
                         </div>
                     </div>
-                    <div class="header__info">
-                        <div class="serche" action="#">
-                            <select class="serche__product" name="product">
-                                <option value="1">Товары</option>
-                                <option value="2">Одежда</option>
-                                <option value="3">Игрушки</option>
-                                <option value="4">Обувь</option>
-                                <option value="5">Инры</option>
-                                <option value="6">Канцтовары</option>
-                                <option value="7">Сумки</option>
-                                <option value="8">Уборы</option>
-                                <option value="9">Аксессуары</option>
-                            </select>
-                            <form class="form" action="#" method="post">
-                                <input class="form__search" type="text" name="text"
-                                    placeholder="Введите поисковую фразу">
-                                <input class="form__search-btn" type="submit" name="search-btn" value="">
-                            </form>
+
+                    <form class="serche" action="#">
+                        <select class="serche__product" name="product">
+                            <option value="1">Товары</option>
+                            <option value="2">Одежда</option>
+                            <option value="3">Игрушки</option>
+                            <option value="4">Обувь</option>
+                            <option value="5">Инры</option>
+                            <option value="6">Канцтовары</option>
+                            <option value="7">Сумки</option>
+                            <option value="8">Уборы</option>
+                            <option value="9">Аксессуары</option>
+                        </select>
+                        <div class="form" action="#" method="post">
+                            <input class="form__search" type="text" name="text" placeholder="Введите поисковую фразу">
+                            <input class="form__search-btn" type="submit" name="search-btn" value="">
                         </div>
+                    </form>
+                    <div class="header__info">
                         <div class="header__info-address">
                             <p class="header__info-title">Наш адрес</p>
                             <p class="header__info-subtitle">1234 Donec semper lorem, 65c.</p>
@@ -89,6 +89,12 @@
         <div class="header__bottom header__bottom--size">
             <div class="container">
                 <div class="header__menu">
+                    <div class="menu__catalog-link-box" href="#">
+                        <div class="menu__catalog">
+                            Меню
+                        </div>
+                        <button class="menu__btn"></button>
+                    </div>
                     <nav class="menu">
                         <ul class="menu__list">
                             <li class="menu__list-item">
@@ -127,7 +133,7 @@
                         </ul>
                     </nav>
                     <div class="user__nav">
-                        <a class="user__nav-link" href="#">
+                        <a class="user__nav-link" href="/login.html">
                             <img class="user__nav-link-img" src="./images/icons/user.svg" alt="Кабинет пользователя">
                         </a>
                         <a class="user__nav-link" href="#">
@@ -149,7 +155,7 @@
                         </li>
                         <li class="breadcrumbs__item">
                             <a class="breadcrumbs__link" href="#">
-                                Регистрация
+                                Контакты
                             </a>
                         </li>
                     </ol>
@@ -161,58 +167,123 @@
     <main class="main">
         <section class="reg">
             <div class="container">
-                <h2 class="reg__title title">Регистрация</h2>
-                <div class="reg__inner">
-                    <div class="reg__social">
-                        <p class="reg__descr">Через социальную сеть</p>
-                        <ul class="reg__social-list">
-                            <li class="reg__social-item">
-                                <a class="reg__social-link" href="#">
-                                    <img src="./images/icons/social/google-icon-black.svg" alt="Иконка входа"
-                                        title="Иконка">
-                                </a>
-                            </li>
-                            <li class="reg__social-item">
-                                <a class="reg__social-link" href="#">
-                                    <img src="./images/icons/social/facebook-icon-black.svg" alt="Иконка входа"
-                                        title="Иконка">
-                                </a>
-                            </li>
-                            <li class="reg__social-item">
-                                <a class="reg__social-link" href="#">
-                                    <img src="./images/icons/social/twitter-icon-black.svg" alt="Иконка входа"
-                                        title="Иконка">
-                                </a>
-                            </li>
-                            <li class="reg__social-item">
-                                <a class="reg__social-link" href="#">
-                                    <img src="./images/icons/social/whatsapp-icon-black.svg" alt="Иконка входа"
-                                        title="Иконка">
-                                </a>
-                            </li>
-                            <li class="reg__social-item">
-                                <a class="reg__social-link" href="#">
-                                    <img src="./images/icons/social/instagram-icon-black.svg" alt="Иконка входа"
-                                        title="Иконка">
-                                </a>
-                            </li>
-                        </ul>
+                <div class="reg__wrapper">
+                    <div class="goods-item">
+                        <div class="filter-popular filter-popular-box">
+                            <div class="shop-filter__title">Популярное</div>
+                            <a class="filter-popular__item-link" href="#">
+                                <div class="filter-popular__item">
+                                    <img class="filter-popular__item-imges" src="images/product/mini-product/1min.jpg"
+                                        alt="Игрушка товар">
+                                    <div class="filter-popular__item-price">
+                                        <h4 class="filter-popular__item-title">
+                                            Плюшевая игрушка «Мишка Тедди»
+                                        </h4>
+                                        <div class="filter-popular__item-price-new">2590.00 ₽</div>
+                                        <div class="filter-popular__item-price-old">3590.00 ₽</div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="filter-popular__item-link" href="#">
+                                <div class="filter-popular__item">
+                                    <img class="filter-popular__item-imges" src="images/product/mini-product/2min.jpg"
+                                        alt="Игрушка товар">
+                                    <div class="filter-popular__item-price">
+                                        <h4 class="filter-popular__item-title">
+                                            Кроссовки розовые для девочек
+                                        </h4>
+                                        <div class="filter-popular__item-price-new">2190.00 ₽ </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="filter-popular__item-link" href="#">
+                                <div class="filter-popular__item">
+                                    <img class="filter-popular__item-imges" src="images/product/mini-product/3min.jpg"
+                                        alt="Игрушка товар">
+                                    <div class="filter-popular__item-price">
+                                        <h4 class="filter-popular__item-title">
+                                            Пластиковая игрушка «Коровка»
+                                        </h4>
+                                        <div class="filter-popular__item-price-new">390.00 ₽</div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="filter-popular__item-link" href="#">
+                                <div class="filter-popular__item">
+                                    <img class="filter-popular__item-imges" src="images/product/mini-product/4min.jpg"
+                                        alt="Игрушка товар">
+                                    <div class="filter-popular__item-price">
+                                        <h4 class="filter-popular__item-title">
+                                            Джинсовка синяя детская
+                                        </h4>
+                                        <div class="filter-popular__item-price-new">1490.00 ₽</div>
+                                        <div class="filter-popular__item-price-old">1890.00 ₽</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="filter-banner">
+                            <img src="images/vertikal-banner.jpg" alt="Банер сайтбар">
+                            <div class="filter-banner__inner">
+                                <span class="filter-banner__sybtitle">Детям до 3 лет</span>
+                                <a class="filter-banner__btn--blue" href="#">Смотреть</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="reg__form">
-                        <p class="reg__descr">Через форму на сайте</p>
-                        <form class="registration__form" action="#" method="post">
-                            <label class="reg__label">Имя*
-                                <input class="form__input" type="text" name="name" required>
-                            </label>
-                            <label class="reg__label">Фамилия*
-                                <input class="form__input" type="text" name="subname" required>
-                            </label>
-                            <label class="reg__label">
-                                <input class="form__checkbox" type="checkbox" name="ok" required>
-                                Регистрируясь, вы соглашаетесь с правилами*
-                            </label>
-                            <input class="form__btn" type="submit" name="button" value="Продолжить">
-                        </form>
+                    
+                    <div class="reg__inner">
+                        <div class="reg__social">
+                            <h2 class="reg__title title">Регистрация</h2>
+                            <p class="reg__descr">Через социальную сеть</p>
+                            <ul class="reg__social-list">
+                                <li class="reg__social-item">
+                                    <a class="reg__social-link" href="#">
+                                        <img src="./images/icons/social/google-icon-black.svg" alt="Иконка входа"
+                                            title="Иконка">
+                                    </a>
+                                </li>
+                                <li class="reg__social-item">
+                                    <a class="reg__social-link" href="#">
+                                        <img src="./images/icons/social/facebook-icon-black.svg" alt="Иконка входа"
+                                            title="Иконка">
+                                    </a>
+                                </li>
+                                <li class="reg__social-item">
+                                    <a class="reg__social-link" href="#">
+                                        <img src="./images/icons/social/twitter-icon-black.svg" alt="Иконка входа"
+                                            title="Иконка">
+                                    </a>
+                                </li>
+                                <li class="reg__social-item">
+                                    <a class="reg__social-link" href="#">
+                                        <img src="./images/icons/social/whatsapp-icon-black.svg" alt="Иконка входа"
+                                            title="Иконка">
+                                    </a>
+                                </li>
+                                <li class="reg__social-item">
+                                    <a class="reg__social-link" href="#">
+                                        <img src="./images/icons/social/instagram-icon-black.svg" alt="Иконка входа"
+                                            title="Иконка">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="reg__form">
+                            <p class="reg__descr">Через форму на сайте</p>
+                            <form class="registration__form" action="#" method="post">
+                                <label class="reg__label">Имя*
+                                    <input class="form__input" type="text" name="name" required>
+                                </label>
+                                <label class="reg__label">Фамилия*
+                                    <input class="form__input" type="text" name="subname" required>
+                                </label>
+                                <label class="reg__label">
+                                    <input class="form__checkbox" type="checkbox" name="ok" required>
+                                    Регистрируясь, вы соглашаетесь с правилами*
+                                </label>
+                                <input class="form__btn" type="submit" name="button" value="Продолжить">
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -229,12 +300,7 @@
                 </div>
             </div>
         </section>
-
-
-
-
     </main>
-
 
     <footer class="footer">
         <div class="container">
@@ -248,7 +314,8 @@
                     </div>
                     <div class="footer-top__contact">
                         <p class="footer-top__text">Мы находимся тут</p>
-                        <a class="footer-top__address" href="#">1234 Значимость этих, место обучения кадров влечет за
+                        <a class="footer-top__address" href="#">1234 Значимость этих, место обучения кадров влечет
+                            за
                             65c.</a>
                     </div>
                     <ul class="footer-top__social-list">
@@ -362,8 +429,6 @@
             Copyright МАГАЗИН © 2021. Разработка: @antonborod1n
         </div>
     </footer>
-
-
 
     <script src="js/main.min.js"></script>
 </body>
