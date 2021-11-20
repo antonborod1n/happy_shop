@@ -7,7 +7,7 @@
             width: 200px;
             border-radius: 10px;
             top: 242px;
-            left: 334px;
+            left: 406px;
             flex-direction: column;
             align-items: center;
             background-color: #fff;
@@ -103,7 +103,7 @@
     }
 }
 
-/* ---------------------------------------------------1400---*/
+/*1400-------------------------------------------------------*/
 
 @media (max-width: 1400px) {
     .popular__tabs{
@@ -124,14 +124,26 @@
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 30px;
     }
+    .banner__inner-box {
+        margin-top: 0;
+        margin-bottom: 30px;
+        background-color: $darkgrey;
+        border-radius: 10px;
+    }
+    .banner__inner {
+        overflow: visible;
+        max-height: none;
+    }
+    .banner__sybtitle {
+        margin: 20px 0;
+    }
 }
 
-/* ---------------------------------------------------1300---*/
+/*1300-------------------------------------------------------*/
 
 @media (max-width: 1300px) {
     .serche,
-    .top-slider__items,
-    .banner__sybtitle {
+    .top-slider__items {
         display: none;
     }
     .footer-top__link {
@@ -140,9 +152,6 @@
     }
     .top-slider__inner {
         flex-direction: column;
-    }
-    .banner__title {
-        font-size: 22px;
     }
     .blog-content__inner {
         grid-gap: 40px 30px;
@@ -172,7 +181,7 @@
     }
 }
 
-/* ---------------------------------------------------1100---*/
+/*1100-------------------------------------------------------*/
 
 @media (max-width: 1100px) {
     .shop-content__product {
@@ -180,7 +189,7 @@
     }
 }
 
-/* ---------------------------------------------------990---*/
+/*990-------------------------------------------------------*/
 
 @media (max-width: 990px) {
     .header__top-items {
@@ -195,7 +204,7 @@
         left: 100px;
     }
     .menu__list {
-        top: 180px;
+        top: 313px;
     }
     .popular-item {
         margin-bottom: 30px;
@@ -242,7 +251,7 @@
     
 }
 
-/* ----------------------------------------------------840---*/
+/*840-------------------------------------------------------*/
 
 @media (max-width: 840px) {
     .header__main {
@@ -282,13 +291,10 @@
         display: none;
     }
     .menu__list {
-        top: 300px;
+        top: 434px;
     }
     .top-slider__btn {
         font-size: 10px;
-    }
-    .banner__title {
-        display: none;
     }
     .error__page-numb span {
         font-size: 200px;
@@ -309,7 +315,7 @@
     }
 }
 
-/* ---------------------------------------------------660---*/
+/*660-------------------------------------------------------*/
 
 @media (max-width: 680px) {
     .header__menu {
@@ -348,13 +354,11 @@
         }
     }
     .menu__list {
-        top: 350px;
+        top: 542px;
+        left: 100px;
     }
     .benefits__info-item {
         margin-left: 20px;
-    }
-    .banner {
-        display: none;
     }
     .contact__form-btn {
         margin-top: 30px;
@@ -381,15 +385,14 @@
     .goods__review-user {
         margin-bottom: 30px;
     }
+    .banner__title {
+        font-size: 22px;
+    }
 }
 
-/* ---------------------------------------------------560---*/
+/*560-------------------------------------------------------*/
 
 @media (max-width: 560px) {
-    .menu__list {
-        top: 350px;
-        left: 100px;
-    }
     .popular__btn {
         margin-bottom: 10px;
     }
@@ -440,7 +443,7 @@
     }
 }
 
-/* ---------------------------------------------------440---*/
+/*440-------------------------------------------------------*/
 
 @media (max-width: 440px) {
     .menu__catalog {
@@ -465,5 +468,11 @@
     }
     .client__titile {
         font-size: 20px;
+    }
+    .banner__sybtitle {
+        font-size: 13px;
+    }
+    .banner__title {
+        font-size: 16px;
     }
 }
