@@ -1,0 +1,97 @@
+.about {
+    padding: 70px 0;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__img {
+        flex-basis: 800px;
+        &-shop-peaple {
+            border-radius: 10px;
+            margin-left: auto;
+            margin-top: -315px;
+        }
+    }
+    &__info {
+        flex-basis: 700px;
+        &__title {
+            margin-bottom: 46px;
+        }
+        &-text {
+            margin-bottom: 30px;
+        }
+        &-item {
+            position: relative;
+            &::before{
+                content: url(../images/about/ok.svg);
+                position: absolute;
+                top: 0;
+                left: -20px;
+            }
+        }
+        &-link {
+            display: inline-block;
+            margin-top: 40px;
+            @extend %btny;
+        }
+    }
+}
+
+ul.about__info-list {
+    margin-left: 23px;
+}
+
+.client {
+    background-color: $blue;
+    padding: 70px 0;
+    margin-bottom: 70px;
+    position: relative;
+    &::after {
+        content: url(../images/about/boy.png);
+        position: absolute;
+        bottom: -6px;
+        right: 175px;
+    }
+    &_info {  
+        max-width: 960px;
+        margin: 0 0 40px 30px;
+    }
+    &__text {
+        @extend %montserrat-alternates-400;
+        font-size: 13px;
+        color: $title;
+        margin: 0 0 40px 30px;
+        max-width: 950px;
+    }
+    &__titile {
+        margin-bottom: 40px;
+    }
+    &__subtitile {
+        @extend %montserrat-alternates-600;
+        font-size: 15px;
+        margin: 0 0 20px 30px;
+        color: $title;
+        position: relative;
+        &::before {
+            content: url(../images/about/ok.svg);
+            position: absolute;
+            top: 0;
+            left: -30px;
+        }
+    }
+    &__link {
+        position: relative;
+        padding: 15px 32px 15px 20px;
+        background-color: $accent;
+        border-radius: 10px;
+        @extend %montserrat-alternates-400;
+        font-size: 13px;
+        color: #FFFFFF;
+        &::after {
+            position: absolute;
+            content: url(../images/icons/arrow-white-btn.svg);
+            top: 15px;
+            right: 13px;
+        }
+    }
+}

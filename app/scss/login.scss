@@ -1,0 +1,54 @@
+.reg {
+    padding: 50px 0;
+    &__wrapper {
+      display: flex;
+    }
+    &__title {
+      font-size: 20px;
+      line-height: 20px;
+      margin-bottom: 20px;
+   }
+   &__inner {
+      display: flex;
+      justify-content: space-around;
+   }
+   &__descr {
+      margin-bottom: 20px;
+   }
+   &__social {
+      flex-grow: 1;
+      &-list {
+         display: flex;
+      }
+   }
+   &__form {
+      max-width: 500px;
+      margin-left: 50px;
+      margin-top: 44px;
+   }
+   &__label {
+      margin-bottom: 30px;
+      display: block;
+   }
+}
+
+.reg__social-item + .reg__social-item {
+   margin-left: 20px;
+}
+
+.form__input {
+   display: block;
+   width: 100%;
+   border-radius: 10px;
+   border: 1px solid $darkgrey;
+   padding: 0 15px;
+   height: 40px;
+}
+
+.form__btn {
+   border: none;
+   background-color: $yellow;
+   border-radius: 10px;
+   padding: 15px 25px;
+   cursor: pointer;
+}

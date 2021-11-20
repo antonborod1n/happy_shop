@@ -32,7 +32,12 @@ dd {
   margin: 0;
 }
 
-ul[class] {
+button[class] {
+  cursor: pointer;
+}
+
+ul[class],
+ol[class] {
   list-style: none;
 }
   
@@ -41,10 +46,10 @@ img {
   display: block;
 }
   
-  input,
-  button,
-  textarea,
-  select {
+input,
+button,
+textarea,
+select {
   font: inherit;
 }
 

@@ -1,0 +1,115 @@
+/* COLOR */
+
+$accent: #f2356b;
+$default: #7a7a7a;
+$title: #1a1a1a;
+$lightgrey: #f8f8f8;
+$darkgrey: #ededed;
+$yellow: #ffdd00;
+$blue: #5ce2ec;
+
+
+/* FONTS */
+
+%montserrat-400 {
+    font-family: 'Montserrat-Regular', sans-serif;
+    font-weight: 400;
+}
+
+%montserrat-alternates-400 {
+    font-family: 'MontserratAlternates-Regular', sans-serif;
+    font-weight: 400;
+}
+
+%montserrat-alternates-500 {
+    font-family: 'MontserratAlternates-Medium', sans-serif;
+    font-weight: 500;
+}
+
+%montserrat-alternates-600 {
+    font-family: 'MontserratAlternates-SemiBold', sans-serif;
+    font-weight: 600;
+}
+
+%montserrat-alternates-700 {
+    font-family: 'MontserratAlternates-Bold', sans-serif;
+    font-weight: 700;
+}
+
+/* BUTTON */
+
+%btny {
+    position: relative;
+    padding: 10px 45px 10px 25px;
+    background-color: $yellow;
+    border-radius: 10px;
+    @extend %montserrat-alternates-400;
+    font-size: 13px;
+    color: $title;
+    &::after {
+        position: absolute;
+        content: url(../images/icons/arrow-back-btn.svg);
+        top: 12px;
+        right: 20px;
+    }
+}
+
+%btnb {
+    position: relative;
+    padding: 10px 45px 10px 25px;
+    background-color: $blue;
+    border-radius: 10px;
+    @extend %montserrat-alternates-400;
+    font-size: 13px;
+    color: $title;
+    &::after {
+        position: absolute;
+        content: url(../images/icons/arrow-back-btn.svg);
+        top: 12px;
+        right: 20px;
+    }
+}
+
+%btnbye {
+    position: relative;
+    /* padding: 15px 12px 15px 35px; */
+    width: 115px;
+    height: 40px;
+    background-color: $accent;
+    border-radius: 10px;
+    @extend %montserrat-alternates-400;
+    font-size: 13px;
+    color: #FFFFFF;
+    &::before {
+        position: absolute;
+        content: url(../images/product/icons/basket-product.svg);
+        top: 10px;
+        left: 10px;
+    }
+}
+
+%btnbye-pop {
+    position: relative;
+    /* padding: 15px 12px 15px 35px; */
+    width: 115px;
+    height: 40px;
+    background-color: $lightgrey;
+    border-radius: 10px;
+    @extend %montserrat-alternates-400;
+    font-size: 13px;
+    color: $title;
+    &::before {
+        position: absolute;
+        content: url(../images/icons/basket-pop.svg);
+        top: 10px;
+        left: 10px;
+    }
+}
+
+%checkbox-hidden {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    clip: rect(0 0 0 0);
+}

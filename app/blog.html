@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Блог интернет-магазина по проддаже игрушек</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__top">
+                <ul class="header__top-list">
+                    <li class="header__top-items">
+                        <img class="header__top-icon-img" src="./images/icons/support.svg" alt="Поддержка">
+                        Служба поддержки:
+                        <a class="header__top-link" href="tel:880012345678">
+                            8 (800) 1234-56-78
+                        </a>
+                    </li>
+                    <li class="header__top-items">
+                        <img class="header__top-icon-img" src="./images/icons/phone.svg" alt="Поддержка">
+                        <a class="header__top-link" href="tel:880012345678">
+                            Перезвонить?
+                        </a>
+                    </li>
+                    <li class="header__top-items">
+                        <img class="header__top-icon-img" src="./images/icons/email.svg" alt="Поддержка">
+                        <a class="header__top-link" href="mailtu:myemail@gmail.com">
+                            Отправить сообщение
+                        </a>
+                    </li>
+                </ul>
+                <form class="form__carancy" action="#" method="post">
+                    <label class="form__carancy-title">Валюта: </label>
+                    <select class="form__carancy-list" name="carancy">
+                        <option value="1">USD</option>
+                        <option value="2">BYN</option>
+                        <option value="3">RUB</option>
+                    </select>
+                </form>
+            </div>
+        </div>
+        <div class="header__center">
+            <div class="container">
+                <div class="header__main">
+                    <div class="header__main-logo">
+                        <a class="logo" href="#">
+                            <img class="logo__img" src="images/icons/shopping-bag.svg" alt="Логотип">
+                        </a>
+                        <div class="logo__text">
+                            <p class="logo__text-title">магазин</p>
+                            <p class="logo__text-subtitle">для вашего ребенка</p>
+                        </div>
+                    </div>
+
+                    <form class="serche" action="#">
+                        <select class="serche__product" name="product">
+                            <option value="1">Товары</option>
+                            <option value="2">Одежда</option>
+                            <option value="3">Игрушки</option>
+                            <option value="4">Обувь</option>
+                            <option value="5">Инры</option>
+                            <option value="6">Канцтовары</option>
+                            <option value="7">Сумки</option>
+                            <option value="8">Уборы</option>
+                            <option value="9">Аксессуары</option>
+                        </select>
+                        <div class="form" action="#" method="post">
+                            <input class="form__search" type="text" name="text" placeholder="Введите поисковую фразу">
+                            <input class="form__search-btn" type="submit" name="search-btn" value="">
+                        </div>
+                    </form>
+                    <div class="header__info">
+                        <div class="header__info-address">
+                            <p class="header__info-title">Наш адрес</p>
+                            <p class="header__info-subtitle">1234 Donec semper lorem, 65c.</p>
+                        </div>
+                        <div class="header__info-time">
+                            <p class="header__info-title">Часы работы</p>
+                            <p class="header__info-subtitle">Ежедневно с 09:00 до 21:00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__bottom header__bottom--size">
+            <div class="container">
+                <div class="header__menu">
+                    <div class="menu__catalog-link-box" href="#">
+                        <div class="menu__catalog">
+                            Меню
+                        </div>
+                        <button class="menu__btn"></button>
+                    </div>
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__list-item">
+                                <img class="home__img" src="./images/icons/home.svg" alt="Домик">
+                            </li>
+                            <li class="menu__list-item catalog__arrow">
+                                <a class="menu__list-link link__arrow" href="/catalog.html">
+                                    Каталог
+                                </a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="/about.html">
+                                    О магазине
+                                </a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="/blog.html">
+                                    Блог
+                                </a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="/404.html">
+                                    404
+                                </a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="contact.html">
+                                    Контакты
+                                </a>
+                            </li>
+                            <li class="menu__list-item menu__new-img">
+                                <a class="menu__list-link link__arrow" href="/login.html">
+                                    Еще
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="user__nav">
+                        <a class="user__nav-link" href="/login.html">
+                            <img class="user__nav-link-img" src="./images/icons/user.svg" alt="Кабинет пользователя">
+                        </a>
+                        <a class="user__nav-link" href="#">
+                            <img class="user__nav-link-img" src="./images/icons/basket.svg" alt="Корзина покупателя">
+                            <span class="user__nav-numb">4</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="breadcrumbs">
+            <div class="container">
+                <div class="breadcrumbs__inner">
+                    <ol class="breadcrumbs__list">
+                        <li class="breadcrumbs__item">
+                            <a class="breadcrumbs__link" href="http://localhost:3000/">
+                                Главная
+                            </a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <a class="breadcrumbs__link" href="#">
+                                Блог
+                            </a>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="blog-page">
+            <div class="container">
+                <div class="blog__inner-box">
+                    <div class="blog-items">
+                        <div class="blog-filter">
+                            <div class="blog-filter__title">Категории</div>
+                            <nav class="blog-filter__menu">
+                                <ul class="blog-filter__list">
+                                    <li class="blog-filter__item">
+                                        <a class="blog-filter__link" href="#">
+                                            <img class="blog-filter__img" src="images/icons/dot.svg" alt="Точка">
+                                            Одежда
+                                        </a>
+                                    </li>
+                                    <li class="blog-filter__item">
+                                        <a class="blog-filter__link" href="#">
+                                            <img class="blog-filter__img" src="images/icons/dot.svg" alt="Точка">
+                                            Игрушки
+                                        </a>
+                                    </li>
+                                    <li class="blog-filter__item">
+                                        <a class="blog-filter__link" href="#">
+                                            <img class="blog-filter__img" src="images/icons/dot.svg" alt="Точка">
+                                            Обувь
+                                        </a>
+                                    </li>
+                                    <li class="blog-filter__item">
+                                        <a class="blog-filter__link" href="#">
+                                            <img class="blog-filter__img" src="images/icons/dot.svg" alt="Точка">
+                                            Игры
+                                        </a>
+                                    </li>
+                                    <li class="blog-filter__item">
+                                        <a class="blog-filter__link" href="#">
+                                            <img class="blog-filter__img" src="images/icons/dot.svg" alt="Точка">
+                                            Сумки
+                                        </a>
+                                    </li>
+                                    <li class="blog-filter__item">
+                                        <a class="blog-filter__link" href="#">
+                                            <img class="blog-filter__img" src="images/icons/dot.svg" alt="Точка">
+                                            Уборы
+                                        </a>
+                                    </li>
+                                    <li class="blog-filter__item">
+                                        <a class="blog-filter__link" href="#">
+                                            <img class="blog-filter__img" src="images/icons/dot.svg" alt="Точка">
+                                            Концтовары
+                                        </a>
+                                    </li>
+                                    <li class="blog-filter__item">
+                                        <a class="blog-filter__link" href="#">
+                                            <img class="blog-filter__img" src="images/icons/dot.svg" alt="Точка">
+                                            Аксессуары
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="filter-popular filter-popular-box">
+                            <div class="shop-filter__title">Популярное</div>
+                            <a class="filter-popular__item-link" href="#">
+                                <div class="filter-popular__item">
+                                    <img class="filter-popular__item-imges" src="images/product/mini-product/1min.jpg"
+                                        alt="Игрушка товар">
+                                    <div class="filter-popular__item-price">
+                                        <h4 class="filter-popular__item-title">
+                                            Плюшевая игрушка «Мишка Тедди»
+                                        </h4>
+                                        <div class="filter-popular__item-price-new">2590.00 ₽</div>
+                                        <div class="filter-popular__item-price-old">3590.00 ₽</div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="filter-popular__item-link" href="#">
+                                <div class="filter-popular__item">
+                                    <img class="filter-popular__item-imges" src="images/product/mini-product/2min.jpg"
+                                        alt="Игрушка товар">
+                                    <div class="filter-popular__item-price">
+                                        <h4 class="filter-popular__item-title">
+                                            Кроссовки розовые для девочек
+                                        </h4>
+                                        <div class="filter-popular__item-price-new">2190.00 ₽ </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="filter-popular__item-link" href="#">
+                                <div class="filter-popular__item">
+                                    <img class="filter-popular__item-imges" src="images/product/mini-product/3min.jpg"
+                                        alt="Игрушка товар">
+                                    <div class="filter-popular__item-price">
+                                        <h4 class="filter-popular__item-title">
+                                            Пластиковая игрушка «Коровка»
+                                        </h4>
+                                        <div class="filter-popular__item-price-new">390.00 ₽</div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="filter-popular__item-link" href="#">
+                                <div class="filter-popular__item">
+                                    <img class="filter-popular__item-imges" src="images/product/mini-product/4min.jpg"
+                                        alt="Игрушка товар">
+                                    <div class="filter-popular__item-price">
+                                        <h4 class="filter-popular__item-title">
+                                            Джинсовка синяя детская
+                                        </h4>
+                                        <div class="filter-popular__item-price-new">1490.00 ₽</div>
+                                        <div class="filter-popular__item-price-old">1890.00 ₽</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="filter-banner">
+                            <img src="images/vertikal-banner.jpg" alt="Банер сайтбар">
+                            <div class="filter-banner__inner">
+                                <span class="filter-banner__sybtitle">Детям до 3 лет</span>
+                                <a class="filter-banner__btn--blue" href="#">Смотреть</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-content__inner">
+                            <div class="blog-item-page">
+                                <div class="blog-item__img-box">
+                                    <div class="blog__data">08.10.2019</div>
+                                    <img class="blog-item__imges" src="images/blog/blog-page/1.jpg" alt="Игрушка товар">
+                                </div>
+                                <h4 class="blog__title">
+                                    Значимость этих проблем настолько очевидна этих
+                                </h4>
+                                <p class="blog__anons">
+                                    Значимость этих проблем настолько очевидна, что постоянный количественный рост и
+                                    сфера
+                                    нашей активности играет.
+                                </p>
+                                <a class="blog__btn" href="#">Читать далее</a>
+                            </div>
+                            <div class="blog-item-page">
+                                <div class="blog-item__img-box">
+                                    <div class="blog__data">08.10.2019</div>
+                                    <img class="blog-item__imges" src="images/blog/blog-page/2.jpg" alt="Игрушка товар">
+                                </div>
+                                <h4 class="blog__title">
+                                    Богатый опыт укрепление и развитие структуры
+                                </h4>
+                                <p class="blog__anons">
+                                    Значимость этих проблем настолько очевидна, что постоянный количественный рост и
+                                    сфера
+                                    нашей активности играет.
+                                </p>
+                                <a class="blog__btn" href="#">Читать далее</a>
+                            </div>
+                            <div class="blog-item-page">
+                                <div class="blog-item__img-box">
+                                    <div class="blog__data">08.10.2019</div>
+                                    <img class="blog-item__imges" src="images/blog/blog-page/3.jpg" alt="Игрушка товар">
+                                </div>
+                                <h4 class="blog__title">
+                                    Стремящиеся вытеснить традиционное
+                                </h4>
+                                <p class="blog__anons">
+                                    Значимость этих проблем настолько очевидна, что постоянный количественный рост и
+                                    сфера
+                                    нашей активности играет.
+                                </p>
+                                <a class="blog__btn" href="#">Читать далее</a>
+                            </div>
+                            <div class="blog-item-page">
+                                <div class="blog-item__img-box">
+                                    <div class="blog__data">08.10.2019</div>
+                                    <img class="blog-item__imges" src="images/blog/blog-page/4.jpg" alt="Игрушка товар">
+                                </div>
+                                <h4 class="blog__title">
+                                    Идейные соображения высшего порядка также
+                                </h4>
+                                <p class="blog__anons">
+                                    Значимость этих проблем настолько очевидна, что постоянный количественный рост и
+                                    сфера
+                                    нашей активности играет.
+                                </p>
+                                <a class="blog__btn" href="#">Читать далее</a>
+                            </div>
+                            <div class="blog-item-page">
+                                <div class="blog-item__img-box">
+                                    <div class="blog__data">08.10.2019</div>
+                                    <img class="blog-item__imges" src="images/blog/blog-page/5.jpg" alt="Игрушка товар">
+                                </div>
+                                <h4 class="blog__title">
+                                    Значимость этих проблем настолько очевидна этих
+                                </h4>
+                                <p class="blog__anons">
+                                    Значимость этих проблем настолько очевидна, что постоянный количественный рост и
+                                    сфера
+                                    нашей активности играет.
+                                </p>
+                                <a class="blog__btn" href="#">Читать далее</a>
+                            </div>
+                            <div class="blog-item-page">
+                                <div class="blog-item__img-box">
+                                    <div class="blog__data">08.10.2019</div>
+                                    <img class="blog-item__imges" src="images/blog/blog-page/6.jpg" alt="Игрушка товар">
+                                </div>
+                                <h4 class="blog__title">
+                                    Богатый опыт укрепление и развитие структуры
+                                </h4>
+                                <p class="blog__anons">
+                                    Значимость этих проблем настолько очевидна, что постоянный количественный рост и
+                                    сфера
+                                    нашей активности играет.
+                                </p>
+                                <a class="blog__btn" href="#">Читать далее</a>
+                            </div>
+                            <div class="blog-item-page">
+                                <div class="blog-item__img-box">
+                                    <div class="blog__data">08.10.2019</div>
+                                    <img class="blog-item__imges" src="images/blog/blog-page/7.jpg" alt="Игрушка товар">
+                                </div>
+                                <h4 class="blog__title">
+                                    Стремящиеся вытеснить традиционное
+                                </h4>
+                                <p class="blog__anons">
+                                    Значимость этих проблем настолько очевидна, что постоянный количественный рост и
+                                    сфера
+                                    нашей активности играет.
+                                </p>
+                                <a class="blog__btn" href="#">Читать далее</a>
+                            </div>
+                            <div class="blog-item-page">
+                                <div class="blog-item__img-box">
+                                    <div class="blog__data">08.10.2019</div>
+                                    <img class="blog-item__imges" src="images/blog/blog-page/8.jpg" alt="Игрушка товар">
+                                </div>
+                                <h4 class="blog__title">
+                                    Идейные соображения высшего порядка также
+                                </h4>
+                                <p class="blog__anons">
+                                    Значимость этих проблем настолько очевидна, что постоянный количественный рост и
+                                    сфера
+                                    нашей активности играет.
+                                </p>
+                                <a class="blog__btn" href="#">Читать далее</a>
+                            </div>
+                        </div>
+                        <div class="pagination">
+                            <a class="pagination__link pagination__link--active" href="#">1</a>
+                            <a class="pagination__link" href="#">2</a>
+                            <a class="pagination__link-next" href="#">Следующая</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <section class="banner">
+            <div class="container">
+                <div class="banner__inner">
+                    <img class="img__scale" src="images/sv.jpg" alt="Главный баннер">
+                    <div class="banner__inner-box">
+                        <span class="banner__sybtitle">Готовьтесь к школе вместе с нами!</span>
+                        <span class="banner__title">Ассортимент канцтоваров</span>
+                        <a class="banner__link" href="#">Посмотреть</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-top__items">
+                    <div class="logo__title">Магазин</div>
+                    <div class="footer-top__phone">
+                        <p class="footer-top__qestion">Возникли вопросы? Звоните!</p>
+                        <a class="footer-top__link" href="tel:88001234567">8 (800) 123-45-67,</a>
+                        <a class="footer-top__link" href="tel:+79876543210">+7 (987) 654-32-10</a>
+                    </div>
+                    <div class="footer-top__contact">
+                        <p class="footer-top__text">Мы находимся тут</p>
+                        <a class="footer-top__address" href="#">1234 Значимость этих, место обучения кадров влечет за
+                            65c.</a>
+                    </div>
+                    <ul class="footer-top__social-list">
+                        <li class="footer-top__item">
+                            <a class="footer-top__social-link footer-top__social-active"
+                                href="https://github.com/antonborod1n/" target="_blank">
+                                <img class="footer-top__social-img" src="./images/icons/social/gh.svg" alt="github">
+                            </a>
+                        </li>
+                        <li class="footer-top__item">
+                            <a class="footer-top__social-link" href="#">
+                                <img class="footer-top__social-img" src="./images/icons/social/yt.svg" alt="youtube">
+                            </a>
+                        </li>
+                        <li class="footer-top__item">
+                            <a class="footer-top__social-link" href="#">
+                                <img class="footer-top__social-img" src="./images/icons/social/fb.svg" alt="facebook">
+                            </a>
+                        </li>
+                        <li class="footer-top__item">
+                            <a class="footer-top__social-link" href="#">
+                                <img class="footer-top__social-img" src="./images/icons/social/twit.svg" alt="twitter">
+                            </a>
+                        </li>
+                        <li class="footer-top__item">
+                            <a class="footer-top__social-link" href="#">
+                                <img class="footer-top__social-img" src="./images/icons/social/ins.svg" alt="instagram">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-top__nav">
+                    <div class="footer-top__inner">
+                        <div class="footer-top__menu">
+                            <div class="footer-top__title">
+                                Информация
+                            </div>
+                            <ul class="footer-top__menu-list">
+                                <li class="footer-top__menu-item">
+                                    <a class="footer-top__menu-link" href="#">
+                                        Доставка и возврат
+                                    </a>
+                                </li>
+                                <li class="footer-top__menu-item">
+                                    <a class="footer-top__menu-link" href="#">
+                                        Безопасные покупки
+                                    </a>
+                                </li>
+                                <li class="footer-top__menu-item">
+                                    <a class="footer-top__menu-link" href="#">
+                                        Международные перевозки
+                                    </a>
+                                </li>
+                                <li class="footer-top__menu-item">
+                                    <a class="footer-top__menu-link" href="#">
+                                        Партнеры
+                                    </a>
+                                </li>
+                                <li class="footer-top__menu-item">
+                                    <a class="footer-top__menu-link" href="#">
+                                        Группа продаж
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-top__menu">
+                            <div class="footer-top__title">
+                                Мой аккаунт
+                            </div>
+                            <ul class="footer-top__menu-list">
+                                <li class="footer-top__menu-item">
+                                    <a class="footer-top__menu-link" href="#">
+                                        Вход
+                                    </a>
+                                </li>
+                                <li class="footer-top__menu-item">
+                                    <a class="footer-top__menu-link" href="#">
+                                        Регистрация
+                                    </a>
+                                </li>
+                                <li class="footer-top__menu-item">
+                                    <a class="footer-top__menu-link" href="#">
+                                        Моя корзина
+                                    </a>
+                                </li>
+                                <li class="footer-top__menu-item">
+                                    <a class="footer-top__menu-link" href="#">
+                                        Список желаний
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-top__card">
+                        <ul class="footer-top__card-list">
+                            <li class="footer-top__card-item">
+                                <img class="footer-top__card-img" src="./images/icons/mastercard.png" alt="mastercard">
+                            </li>
+                            <li class="footer-top__card-item">
+                                <img class="footer-top__card-img" src="./images/icons/visa.png" alt="visa">
+                            </li>
+                            <li class="footer-top__card-item">
+                                <img class="footer-top__card-img" src="./images/icons/paypal.png" alt="paypal">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            Copyright МАГАЗИН © 2021. Разработка: @antonborod1n
+        </div>
+    </footer>
+
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

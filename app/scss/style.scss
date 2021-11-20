@@ -1,17 +1,23 @@
-@import 'vars'; /* Переменные */
-@import 'fonts'; /* Шрифты */
-@import 'reset'; /* Сброс */
+@import 'vars';   /* Переменные */
+@import 'fonts';  /* Шрифты */
+@import 'reset';  /* Сброс */
+@import 'libs';   /* Новые установки*/
 @import 'global'; /* Глобальные стили */
 
+/* Страницы */
+
+@import 'goods'; 
+@import 'blog'; 
+@import 'contact'; 
+@import 'about'; 
+@import 'catalog'; 
+@import '404'; 
+@import 'login'; 
+@import 'home'; 
+@import 'animation'; 
+
+
+@import 'media';  /* медиа-запросы */
 
 
 
-
-
-
-
-
-
-
-
-@import 'media'; /* медиа-запросы */
