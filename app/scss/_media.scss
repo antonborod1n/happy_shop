@@ -1,4 +1,4 @@
-@media (max-width: 1600px) { 
+@media screen and  (max-width: 1600px) { 
     .menu {
         &__list {
             transform: translateX(-300%);
@@ -46,6 +46,9 @@
             display: none;
         }
     }
+    .shop-content__product {
+        grid-template-columns: repeat(4, 1fr);
+    }
     .top-slider__inner {
         justify-content: space-around;
     }
@@ -89,6 +92,15 @@
     .client::after {
         display: none;
     }
+    .goods-filter__color-checkbox {
+        margin-bottom: 10px;
+    }
+    .goods-filter__size {
+        margin-bottom: 30px;
+    }
+    .goods-filter__color {
+        margin-bottom: 5px;
+    }
 }
 
 /* ---------------------------------------------------1400---*/
@@ -99,6 +111,18 @@
     }
     .popular-item {
         max-width: 100%;
+    }
+    .shop-content__product {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .goods-item {
+        display: none; 
+    }
+    .popular__tabs.popular__tabs--active {
+        display: block;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
     }
 }
 
@@ -148,6 +172,14 @@
     }
 }
 
+/* ---------------------------------------------------1100---*/
+
+@media (max-width: 1100px) {
+    .shop-content__product {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 /* ---------------------------------------------------990---*/
 
 @media (max-width: 990px) {
@@ -170,8 +202,7 @@
     }
     .header__top-list,
     .popular__top,
-    .contact__inner,
-    .popular__tabs {
+    .contact__inner {
         display: block;
     }
     .banner__inner-box{
@@ -195,6 +226,20 @@
     .goods-item {
         display: none;
     }
+    .goods-content__top {
+        display: block;
+    }
+    div.goods-content__slide {
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+    .goods__inner {
+        justify-content: center;
+    }
+    .popular__tabs.popular__tabs--active {
+        display: block;
+    }
+    
 }
 
 /* ----------------------------------------------------840---*/
@@ -251,6 +296,16 @@
     .reg__inner {
         flex-direction: column;
         align-items: center;
+    }
+    .filter-popular,
+    .filter-banner {
+        display: none;
+    }
+    .shop__inner {
+        display: block;
+    }
+    .shop-filter {
+        max-width: 100%;
     }
 }
 
@@ -316,6 +371,16 @@
     .about__info {
         margin-top: 50px;
     }
+    .goods-content__slide {
+        display: none;
+    }
+    .goods__review-bottom {
+        align-items: center;
+        flex-direction: column;
+    }
+    .goods__review-user {
+        margin-bottom: 30px;
+    }
 }
 
 /* ---------------------------------------------------560---*/
@@ -366,6 +431,12 @@
     .about__info__title {
         font-size: 24px;
         margin-bottom: 25px;
+    }
+    .shop-content__product {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .popular-item__link-box {
+        margin-left: 0;
     }
 }
 

@@ -596,7 +596,7 @@
     padding-bottom: 50px;
 }
 .product__title {
-    padding-bottom: 35px;
+    padding-bottom: 36px;
 }
 .title {
     @extend %montserrat-alternates-600;
@@ -770,14 +770,22 @@
 .popular-item__img img {
     border-radius: 10px;
 }
+
 .popular__tabs{
+    display: none;
+}
+
+.popular__tabs.popular__tabs--active {
+    display: block;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px;
 }
+
 .popular__title {
     padding-bottom: 30px;
 }
+
 .popular-item {
     border-radius: 10px;
     border: 1px solid $darkgrey;
@@ -826,12 +834,14 @@
     border-radius: 10px;
     background-color: $lightgrey;
     margin-left: 5px;
+    color: $title;
 }
 .popular__btn:first-child {
     margin-left: 0;
 }
 .popular__btn:hover {
     background-color: #5ce2ec;
+    color: #FFFFFF;
     transition: all .3s;
 }
 .popular__top {
