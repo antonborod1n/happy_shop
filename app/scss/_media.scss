@@ -248,6 +248,9 @@
     .popular__tabs.popular__tabs--active {
         display: block;
     }
+    .popular__btn {
+        margin-left: 0;
+    }
     
 }
 
@@ -394,13 +397,14 @@
 
 @media (max-width: 560px) {
     .popular__btn {
+        display: inline-block;
         margin-bottom: 10px;
     }
     .popular-item {
         display: block;
     }
     .popular__filter-btn {
-        padding-bottom: 0;
+        padding-bottom: 30px;
     }
     .sale__product,
     .new__product {

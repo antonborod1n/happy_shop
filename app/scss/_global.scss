@@ -23,43 +23,50 @@ body {
     padding: 0 15px;
 }
 
+.title {
+    @extend %montserrat-alternates-600;
+    font-size: 30px;
+    line-height: 22px;
+    color: $title;
+}
+
 /* BREADCRUMBS */
 
 .breadcrumbs {
     background-color: $lightgrey;
+    &__inner {
+        display: flex;
+        justify-content: center;
+    }
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__item {
+        color: $default;
+        position: relative;
+        padding: 14px 0;
+        padding-right: 40px;
+        &::after {
+            content: '';
+            position: absolute;
+            background-image: url(../images/icons/arrow-back-btn.svg);
+            width: 12px;
+            height: 12px;
+            top: 20px;
+            right: 14px;
+        }
+        &:last-child::after {
+            display: none;
+        } 
+        &:last-child {
+            color: $accent;
+        }
+    }
+    &__link {
+        color: inherit;
+    }
 }
-.breadcrumbs__inner {
-    display: flex;
-    justify-content: center;
-}
-.breadcrumbs__list {
-    display: flex;
-    flex-wrap: wrap;
-}
-.breadcrumbs__item {
-    color: $default;
-    position: relative;
-    padding: 14px 0;
-    padding-right: 40px;
-}
-.breadcrumbs__item:last-child {
-    color: $accent;
-}
-.breadcrumbs__link {
-    color: inherit;
-}
-.breadcrumbs__item::after {
-    content: '';
-    position: absolute;
-    background-image: url(../images/icons/arrow-back-btn.svg);
-    width: 12px;
-    height: 12px;
-    top: 20px;
-    right: 14px;
-}
-.breadcrumbs__item:last-child::after {
-    display: none;
-} 
 
 .arrow-up {
     width: 50px;
@@ -83,7 +90,45 @@ body {
 .goods-content__slide-big .slick-slide{
     margin-left: 0;
 }
+
 .slick-slide {
     margin-left: 30px;
+}
+
+.slider__one .slick-slide {
+    max-width: 485px;
+}
+
+.slick-prev,
+.slick-next {
+    position: absolute;
+    top: -57px;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    cursor: pointer;
+}
+
+.slick-prev {
+    right: 35px;
+}
+
+.slick-next {
+    right: 0;
+}
+
+/* rateYo */
+
+.star {
+    margin-bottom: 18px;
+}
+
+/* jquery */
+
+.jq-ry-container {
+    padding: 0;
+}
+.jq-ry-group-wrapper svg{
+    padding-right: 2px;
 }
 
