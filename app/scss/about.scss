@@ -37,14 +37,10 @@
     }
 }
 
-ul.about__info-list {
-    margin-left: 23px;
-}
-
 .client {
     background-color: $blue;
     padding: 70px 0;
-    margin-bottom: 70px;
+    margin: 50px 0 70px;
     position: relative;
     &::after {
         content: url(../images/about/boy.png);
@@ -95,3 +91,8 @@ ul.about__info-list {
         }
     }
 }
+
+ul.about__info-list {
+    margin-left: 23px;
+}
+
