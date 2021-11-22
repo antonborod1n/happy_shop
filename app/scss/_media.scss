@@ -334,12 +334,13 @@
         &__inner {
             flex-direction: column;
             width: 100%;
+            margin: 0;
         }
         &__items {
             margin-bottom: 40px;
         }
-        &top__menu {
-            margin-top: 30px;
+        &__menu {
+            margin-bottom: 30px;
         }
         &__nav,
         &__items {
