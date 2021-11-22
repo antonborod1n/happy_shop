@@ -1,13 +1,106 @@
 .contact {
     padding: 56px 0 70px;
-}
-
-.contact__inner {
-    display: flex;
-}
-
-.contact__form-title {
-    padding-bottom: 50px;
+    &__inner {
+        display: flex;
+    }
+    &__map {
+        padding-top: 50px;
+    }
+    &__info {
+        &-time {
+            position: relative;
+            padding-top: 5px;
+            margin: 0 0 30px 137px;
+            &::before {
+                position: absolute;
+                content: url(../images/icons/globe.svg);
+                top: 5px;
+                left: -50px;
+            }
+        }
+        &-local {
+            position: relative;
+            padding-top: 5px;
+            margin: 0 0 30px 137px;
+            &::before {
+                position: absolute;
+                content: url(../images/icons/map.svg);
+                top: 5px;
+                left: -50px;
+            }
+        }
+        &-phone {
+            position: relative;
+            padding-top: 5px;
+            margin: 0 0 30px 137px;
+            &::before {
+                position: absolute;
+                content: url(../images/icons/phone-contact.svg);
+                top: 5px;
+                left: -50px;
+            }
+        }
+        &-email {
+            position: relative;
+            padding-top: 5px;
+            margin: 0 0 30px 137px;
+            &::before {
+                position: absolute;
+                content: url(../images/icons/telegram.svg);
+                top: 5px;
+                left: -50px;
+            }
+        }
+        &-title {   
+            @extend %montserrat-alternates-600;
+            font-size: 15px;    
+            line-height: 18px;
+            color: $title;
+        }
+    }
+    &__form {
+        &-title {
+            padding-bottom: 50px;
+        }
+        &-input {
+            width: 560px;
+            height: 50px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            border: 1px solid $darkgrey;
+            color: $darkgrey;
+            padding: 20px 0 20px 20px;
+            &-text {
+                width: 100%;
+                height: 140px;
+                border-radius: 10px;
+                border: 1px solid $darkgrey;
+                color: $darkgrey;
+                padding: 20px 0 20px 20px;
+                flex-grow: 1;
+                margin-bottom: 30px;
+            }
+        }
+        &-btn {
+            position: relative;
+            padding: 9px 45px 9px 20px;
+            background-color: $yellow;
+            border-radius: 10px;
+            @extend %montserrat-alternates-400;
+            font-size: 13px;
+            color: $title;
+            border: none;
+            &::after {
+                position: absolute;
+                content: url(../images/icons/arrow-back-btn.svg);
+                top: 10px;
+                right: 20px;
+            }
+        }
+        &-label {
+            padding-right: 39px; 
+        }
+    }
 }
 
 .form__cont {
@@ -17,111 +110,10 @@
     max-width: 1150px;
 }
 
-.contact__form-input {
-    width: 560px;
-    height: 50px;
-    margin-bottom: 30px;
-    border-radius: 10px;
-    border: 1px solid $darkgrey;
-    color: $darkgrey;
-    padding: 20px 0 20px 20px;
-}
-
-.contact__form-input-text {
-    width: 100%;
-    height: 140px;
-    border-radius: 10px;
-    border: 1px solid $darkgrey;
-    color: $darkgrey;
-    padding: 20px 0 20px 20px;
-    flex-grow: 1;
-    margin-bottom: 30px;
-}
-
-.contact__form-btn {
-    position: relative;
-    padding: 9px 45px 9px 20px;
-    background-color: $yellow;
-    border-radius: 10px;
-    @extend %montserrat-alternates-400;
-    font-size: 13px;
-    color: $title;
-    border: none;
-    &::after {
-        position: absolute;
-        content: url(../images/icons/arrow-back-btn.svg);
-        top: 10px;
-        right: 20px;
-    }
-}
-
-.contact__form-label {
-    padding-right: 39px; 
-}
-
-.contact__map {
-    padding-top: 50px;
-}
-
 #map {
     border-radius: 10px;
     max-width: 1570px;
     height: 350px;
-}
-
-.contact__info-time {
-    position: relative;
-    padding-top: 5px;
-    margin: 0 0 30px 137px;
-    &::before {
-        position: absolute;
-        content: url(../images/icons/globe.svg);
-        top: 5px;
-        left: -50px;
-    }
-}
-
-.contact__info-local {
-    position: relative;
-    padding-top: 5px;
-    margin: 0 0 30px 137px;
-    &::before {
-        position: absolute;
-        content: url(../images/icons/map.svg);
-        top: 5px;
-        left: -50px;
-    }
-}
-
-.contact__info-phone {
-    position: relative;
-    padding-top: 5px;
-    margin: 0 0 30px 137px;
-    &::before {
-        position: absolute;
-        content: url(../images/icons/phone-contact.svg);
-        top: 5px;
-        left: -50px;
-    }
-}
-
-.contact__info-email {
-    position: relative;
-    padding-top: 5px;
-    margin: 0 0 30px 137px;
-    &::before {
-        position: absolute;
-        content: url(../images/icons/telegram.svg);
-        top: 5px;
-        left: -50px;
-    }
-}
-
-.contact__info-title {   
-    @extend %montserrat-alternates-600;
-    font-size: 15px;    
-    line-height: 18px;
-    color: $title;
 }
 
 .contact__info-subtitle,
