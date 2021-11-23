@@ -3,6 +3,28 @@
     padding-top: 50px;
 }
 
+.blog-filter {
+    &__menu {
+        margin: 25px 0 30px;
+    }
+    &__item {
+        padding-bottom: 14px;
+    }
+    &__img {
+        display: inline;
+        padding-right: 10px;
+    }
+    &__link {
+        @extend %montserrat-alternates-400;
+        color: $default;
+        transition: all .3s;
+        &:hover {
+            font-weight: 900;
+            color: $title;
+        }
+    }
+}
+
 .blog-content__inner {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -16,34 +38,22 @@
     margin-right: 50px;
 }
 
+.blog__anons {
+    flex-grow: 1;
+}
+
 .blog-item-page {
     max-width: 630px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .blog-content .pagination__link:first-child {
     margin-left: 0;
 }
 
-.blog-filter__menu {
-    margin: 25px 0 30px;
-}
 
-.blog-filter__item {
-    padding-bottom: 14px;
-}
 
-.blog-filter__img {
-    display: inline;
-    padding-right: 10px;
-}
 
-.blog-filter__link {
-    @extend %montserrat-alternates-400;
-    color: $default;
-    transition: all .3s;
-}
 
-.blog-filter__link:hover {
-    font-weight: 900;
-    color: $title;
-}

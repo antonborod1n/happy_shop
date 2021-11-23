@@ -129,7 +129,7 @@
     &::after {
         position: absolute;
         content: url(../images/icons/arrow-back-btn.svg);
-        top: 14px;
+        top: 10px;
         right: 20px;
     }
 }
@@ -208,7 +208,9 @@
     color: $title; 
 }
 
-
+.pagination {
+    margin-bottom: 50px;
+}
 
 .pagination a {
     margin-left: 5px;
