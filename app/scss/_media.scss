@@ -1,7 +1,7 @@
 @media screen and  (max-width: 1600px) { 
     .menu {
         &__list {
-            transform: translateX(-300%);
+            transform: translateX(-400%);
             z-index: 5;
             position: absolute;
             width: 200px;
@@ -126,7 +126,6 @@
     }
     .banner__inner-box {
         margin-top: 0;
-        margin-bottom: 30px;
         background-color: $darkgrey;
         border-radius: 10px;
     }
@@ -250,6 +249,9 @@
     }
     .popular__btn {
         margin-left: 0;
+    }
+    .shop-content__filter-btn--active {
+        margin-bottom: 5px;
     }
     
 }
@@ -392,6 +394,9 @@
     .banner__title {
         font-size: 22px;
     }
+    .shop-content__inner {
+        display: block;
+    }
 }
 
 /*560-------------------------------------------------------*/
@@ -479,5 +484,11 @@
     }
     .banner__title {
         font-size: 16px;
+    }
+    .shop-content__bottom {
+        flex-direction: column-reverse;
+    }
+    .pagination-top {
+        margin-bottom: 50px;
     }
 }
