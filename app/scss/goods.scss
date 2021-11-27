@@ -30,6 +30,9 @@
             font-size: 22px;
             margin-right: 10px;
         }
+        &__old-price {
+            text-decoration: line-through;
+        }
         &__stock {
             position: relative;
             @extend %montserrat-alternates-600;
