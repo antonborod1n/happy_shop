@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>О магазине по продаже игрушек</title>
+    <meta name="description" content="Продажа детских игрушек в интернет-магазине. Высокое качество товаров и сервиса. Доставка по всей Беларуси." />
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -14,21 +15,22 @@
             <div class="header__top">
                 <ul class="header__top-list">
                     <li class="header__top-items">
-                        <img class="header__top-icon-img" src="./images/icons/support.svg" alt="Поддержка">
+                        <img class="header__top-icon-img" src="./images/icons/support.svg" alt="Иконка поддержка"
+                            title="Иконка">
                         Служба поддержки:
-                        <a class="header__top-link" href="tel:880012345678">
-                            8 (800) 1234-56-78
-                        </a>
+                        <a class="header__top-link" href="tel:80171234567">8017 123-45-67</a>
                     </li>
                     <li class="header__top-items">
-                        <img class="header__top-icon-img" src="./images/icons/phone.svg" alt="Поддержка">
+                        <img class="header__top-icon-img" src="./images/icons/phone.svg" alt="Иконка телефон"
+                            title="Иконка">
                         <a class="header__top-link" href="tel:880012345678">
                             Перезвонить?
                         </a>
                     </li>
                     <li class="header__top-items">
-                        <img class="header__top-icon-img" src="./images/icons/email.svg" alt="Поддержка">
-                        <a class="header__top-link" href="mailtu:myemail@gmail.com">
+                        <img class="header__top-icon-img" src="./images/icons/email.svg" alt="Иконка почта"
+                            title="Иконка">
+                        <a class="header__top-link" href="mailto:myemail@gmail.com">
                             Отправить сообщение
                         </a>
                     </li>
@@ -36,26 +38,27 @@
                 <form class="form__carancy" action="#" method="post">
                     <label class="form__carancy-title">Валюта: </label>
                     <select class="form__carancy-list" name="carancy">
-                        <option value="1">USD</option>
-                        <option value="2">BYN</option>
+                        <option value="1">BYN</option>
+                        <option value="2">USD</option>
                         <option value="3">RUB</option>
                     </select>
                 </form>
             </div>
         </div>
+
         <div class="header__center">
             <div class="container">
                 <div class="header__main">
                     <div class="header__main-logo">
-                        <a class="logo" href="#">
-                            <img class="logo__img" src="images/icons/shopping-bag.svg" alt="Логотип">
+                        <a class="logo" href="http://localhost:3000/">
+                            <img class="logo__img" src="images/icons/shopping-bag.svg" alt="Логотип"
+                                title="Логотип интернет-магазина">
                         </a>
                         <div class="logo__text">
                             <p class="logo__text-title">магазин</p>
                             <p class="logo__text-subtitle">для вашего ребенка</p>
                         </div>
                     </div>
-
                     <form class="serche" action="#">
                         <select class="serche__product" name="product">
                             <option value="1">Товары</option>
@@ -68,7 +71,7 @@
                             <option value="8">Уборы</option>
                             <option value="9">Аксессуары</option>
                         </select>
-                        <div class="form" action="#" method="post">
+                        <div class="form">
                             <input class="form__search" type="text" name="text" placeholder="Введите поисковую фразу">
                             <input class="form__search-btn" type="submit" name="search-btn" value="">
                         </div>
@@ -76,7 +79,7 @@
                     <div class="header__info">
                         <div class="header__info-address">
                             <p class="header__info-title">Наш адрес</p>
-                            <p class="header__info-subtitle">1234 Donec semper lorem, 65c.</p>
+                            <p class="header__info-subtitle">221234, Минск, ул. Якуба Колоса, д. 65</p>
                         </div>
                         <div class="header__info-time">
                             <p class="header__info-title">Часы работы</p>
@@ -86,10 +89,11 @@
                 </div>
             </div>
         </div>
+
         <div class="header__bottom header__bottom--size">
             <div class="container">
                 <div class="header__menu">
-                    <div class="menu__catalog-link-box" href="#">
+                    <div class="menu__catalog-link-box">
                         <div class="menu__catalog">
                             Меню
                         </div>
@@ -144,6 +148,7 @@
                 </div>
             </div>
         </div>
+
         <div class="breadcrumbs">
             <div class="container">
                 <div class="breadcrumbs__inner">
@@ -155,7 +160,7 @@
                         </li>
                         <li class="breadcrumbs__item">
                             <a class="breadcrumbs__link" href="#">
-                                О компании
+                                О магазине
                             </a>
                         </li>
                     </ol>
@@ -169,101 +174,111 @@
             <div class="container">
                 <div class="about__inner">
                     <div class="about__img">
-                        <img class="about__img-girl" src="images/about/girl.jpg" alt="Девочка">
-                        <img class="about__img-shop-peaple" src="images/about/shop-peaple.jpg" alt="Люди в магазине">
+                        <img class="about__img-girl" src="images/about/girl.jpg" alt="Девочка" title="Девочка баннер">
+                        <img class="about__img-shop-peaple" src="images/about/shop-peaple.jpg" alt="Люди в магазине"
+                            title="Люди в магазине баннер">
                     </div>
                     <div class="about__info">
                         <h2 class="about__info__title title">Приветствуем в нашем магазине</h2>
                         <p class="about__info-text">
-                            Идейные соображения высшего порядка, а также постоянный количественный рост и сфера нашей
-                            активности представляет собой интересный эксперимент проверки систем массового участия. Не
-                            следует, однако забывать, что новая модель организационной деятельности способствует
-                            подготовки
-                            и реализации позиций, занимаемых участниками в отношении поставленных задач.
+                            У нас представлен большой и разнообразный ассортимент игрушек по очень выгодным ценам.
+                            Знаменитые на весь мир конструкторы LEGO , невероятно популярные очаровательные куколки
+                            L.O.L. Surprise, спрятанные в многослойный шарик-сюрприз, игрушки, созданные по сюжетам
+                            любимых мультфильмов: «Черепашки Ниндзя», «Рев и заводная команда», «Щенячий патруль»,
+                            «Тобот». Куклы «Принцессы Диснея», «Сказочный патруль»; интерактивные куклы Беби Борн.
+                            Мягкие игрушки Aurora, Disney, модели машинок Welly, самые разнообразные наборы для
+                            творчества , PLAY-DOH, бластеры Nerf, электромобили Peg-Perego, игрушки и наборы для малышей
+                            Fisher-Price и Mega Bloks , товары для игры на свежем воздухе от Little Tikes и даже
+                            множество самых разнообразных аксессуаров для праздника , которые помогут Вам устроить
+                            настоящую вечеринку для юных любителей приключений.
                         </p>
                         <p class="about__info-text">
-                            Задача организации, в особенности же постоянное информационно-пропагандистское обеспечение
-                            нашей
-                            деятельности влечет за собой процесс внедрения и модернизации направлений прогрессивного
-                            развития.
+                            Вы тоже можете открыть свой магазин по продаже игрушек и товаров для детей под брендом
+                            TOY.RU, приобретя прибыльную франшизу.
                         </p>
                         <ul class="about__info-list">
-                            <li class="about__info-item">Значимость этих проблем</li>
-                            <li class="about__info-item">Настолько очевидна</li>
-                            <li class="about__info-item">Что постоянный количественный</li>
-                            <li class="about__info-item">Рост и сфера нашей активности</li>
-                            <li class="about__info-item">Играет важную роль</li>
+                            <li class="about__info-item">Наличие всех товаров на складе</li>
+                            <li class="about__info-item">Доступные цены и скидки</li>
+                            <li class="about__info-item">Последние новинки из мира игрушек</li>
+                            <li class="about__info-item">Быстрое оформление заказа</li>
+                            <li class="about__info-item">Круглосуточный прием заказов</li>
                         </ul>
-                        <a class="about__info-link" href="#">Узнать больше</a>
+                        <a class="about__info-link btn-scale" href="#">Узнать больше</a>
                     </div>
                 </div>
             </div>
         </section>
+
         <section class="benefits">
             <div class="container">
                 <div class="benefits__info">
                     <div class="benefits__info-item">
-                        <img class="benefits__info-img" src="images/icons/benefits/rocket.svg" alt="Ракета">
+                        <img class="benefits__info-img" src="images/icons/benefits/rocket.svg" alt="Ракета"
+                            title="Иконка ракета">
                         <div class="benefits__info-items">
                             <div class="benefits__info-title">Быстрая доставка</div>
-                            <p class="benefits__info-subtitle">Базовый вектор развития</p>
+                            <p class="benefits__info-subtitle">Быстрая доставка по РБ</p>
                         </div>
                     </div>
                     <div class="benefits__info-item">
-                        <img class="benefits__info-img" src="images/icons/benefits/support-benefits.svg" alt="Ракета">
+                        <img class="benefits__info-img" src="images/icons/benefits/support-benefits.svg"
+                            alt="Техподдержка" title="Иконка техподдержка">
                         <div class="benefits__info-items">
                             <div class="benefits__info-title">Техподдержка 24/7</div>
-                            <p class="benefits__info-subtitle">Базовый вектор развития</p>
+                            <p class="benefits__info-subtitle">Консультации в любое время</p>
                         </div>
                     </div>
                     <div class="benefits__info-item">
-                        <img class="benefits__info-img" src="images/icons/benefits/redo-arrow.svg" alt="Ракета">
+                        <img class="benefits__info-img" src="images/icons/benefits/redo-arrow.svg"
+                            alt="Стрелка закругленная" title="Иконка стрелка закругленная">
                         <div class="benefits__info-items">
                             <div class="benefits__info-title">100% возврат денег</div>
-                            <p class="benefits__info-subtitle">Базовый вектор развития</p>
+                            <p class="benefits__info-subtitle">14 дней на обмен и возврат</p>
                         </div>
                     </div>
                     <div class="benefits__info-item">
-                        <img class="benefits__info-img" src="images/icons/benefits/security-shield.svg" alt="Ракета">
+                        <img class="benefits__info-img" src="images/icons/benefits/security-shield.svg" alt="Защита"
+                            title="Иконка скидки">
                         <div class="benefits__info-items">
-                            <div class="benefits__info-title">Безопасная оплата</div>
-                            <p class="benefits__info-subtitle">Базовый вектор развития</p>
+                            <div class="benefits__info-title">Безопасность</div>
+                            <p class="benefits__info-subtitle">Весь товар сертифицирован</p>
                         </div>
                     </div>
                     <div class="benefits__info-item">
-                        <img class="benefits__info-img" src="images/icons/benefits/discount.svg" alt="Ракета">
+                        <img class="benefits__info-img" src="images/icons/benefits/discount.svg" alt="Скидки"
+                            title="Иконка скидки">
                         <div class="benefits__info-items benefits__info-items--none">
                             <div class="benefits__info-title">Постоянные скидки</div>
-                            <p class="benefits__info-subtitle">Базовый вектор развития</p>
+                            <p class="benefits__info-subtitle">Собственный склад в Минске</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
         <section class="client">
             <div class="container">
                 <h2 class="client__titile title">Клиенты выбирают нас</h2>
                 <div class="client__info">
-                    <h3 class="client__subtitile">Идейные соображения высшего порядка</h3>
+                    <h3 class="client__subtitile">Экономьте до 50%</h3>
                     <p class="client__text">
-                        А также постоянный количественный рост и сфера нашей активности представляет
-                        собой интересный эксперимент проверки систем массового участия. Не следует, однако забывать, что
-                        новая модель организационной деятельно занимаемых участниками в отношении поставленных задач.
-                        Повседневная практика показывает, что реализация намеченных плановых заданий позволяет выполнять
-                        важные задания по разработке модели развития.
+                        От стоимости ваших покупок
+                        Ежедневно к платформе присоединяются новые продавцы, предлагая лучшие цены и расширяя
+                        ассортимент.
+                        Получайте бонусные рубли за покупки и используйте их при оплате товаров.
                     </p>
-                    <h3 class="client__subtitile">Идейные соображения высшего порядка</h3>
+                    <h3 class="client__subtitile">C нами удобно</h3>
                     <p class="client__text">
-                        А также постоянный количественный рост и сфера нашей активности представляет
-                        собой интересный эксперимент проверки систем массового участия. Не следует, однако забывать, что
-                        новая модель организационной деятельно занимаемых участниками в отношении поставленных задач.
-                        Повседневная практика показывает, что реализация намеченных плановых заданий позволяет выполнять
-                        важные задания по разработке модели развития.
+                        Не переплачивайте за комфорт
+                        Комбинируйте заказы из товаров разных категорий и продавцов, не переплачивая за доставку. Кроме
+                        того вы можете позволить себе необходимую покупку или подарок уже сейчас, а выплачивать его
+                        стоимость в течение нескольких месяцев равными суммами без переплат.
                     </p>
                 </div>
-                <a class="client__link btn-scale" href="#">Больше информации </a>
+                <a class="client__link" href="#">Больше информации </a>
             </div>
         </section>
+
         <section class="banner">
             <div class="container">
                 <div class="banner__inner">
@@ -282,16 +297,15 @@
         <div class="container">
             <div class="footer-top">
                 <div class="footer-top__items">
-                    <div class="logo__title">Магазин</div>
+                    <div class="footer-top__logo-title">Магазин</div>
                     <div class="footer-top__phone">
                         <p class="footer-top__qestion">Возникли вопросы? Звоните!</p>
-                        <a class="footer-top__link" href="tel:88001234567">8 (800) 123-45-67,</a>
-                        <a class="footer-top__link" href="tel:+79876543210">+7 (987) 654-32-10</a>
+                        <a class="footer-top__link" href="tel:80171234567">8017 123-45-67,</a>
+                        <a class="footer-top__link" href="tel:+375296543210">+375 29 654-32-10</a>
                     </div>
                     <div class="footer-top__contact">
                         <p class="footer-top__text">Мы находимся тут</p>
-                        <a class="footer-top__address" href="#">1234 Значимость этих, место обучения кадров влечет за
-                            65c.</a>
+                        <a class="footer-top__address" href="#">221234, Минск, ул. Якуба Колоса, д. 65</a>
                     </div>
                     <ul class="footer-top__social-list">
                         <li class="footer-top__item">
@@ -330,28 +344,28 @@
                             </div>
                             <ul class="footer-top__menu-list">
                                 <li class="footer-top__menu-item">
-                                    <a class="footer-top__menu-link" href="#">
-                                        Доставка и возврат
+                                    <a class="footer-top__menu-link" href="/catalog.html">
+                                        Каталог
                                     </a>
                                 </li>
                                 <li class="footer-top__menu-item">
-                                    <a class="footer-top__menu-link" href="#">
-                                        Безопасные покупки
+                                    <a class="footer-top__menu-link" href="/blog.html">
+                                        Блог
                                     </a>
                                 </li>
                                 <li class="footer-top__menu-item">
-                                    <a class="footer-top__menu-link" href="#">
-                                        Международные перевозки
+                                    <a class="footer-top__menu-link" href="/about.html">
+                                        О магазине
                                     </a>
                                 </li>
                                 <li class="footer-top__menu-item">
-                                    <a class="footer-top__menu-link" href="#">
-                                        Партнеры
+                                    <a class="footer-top__menu-link" href="/goods.html">
+                                        Товар
                                     </a>
                                 </li>
                                 <li class="footer-top__menu-item">
-                                    <a class="footer-top__menu-link" href="#">
-                                        Группа продаж
+                                    <a class="footer-top__menu-link" href="/">
+                                        Главная
                                     </a>
                                 </li>
                             </ul>
@@ -362,23 +376,23 @@
                             </div>
                             <ul class="footer-top__menu-list">
                                 <li class="footer-top__menu-item">
-                                    <a class="footer-top__menu-link" href="#">
-                                        Вход
+                                    <a class="footer-top__menu-link" href="/404.html">
+                                        404
                                     </a>
                                 </li>
                                 <li class="footer-top__menu-item">
-                                    <a class="footer-top__menu-link" href="#">
+                                    <a class="footer-top__menu-link" href="/login.html">
                                         Регистрация
                                     </a>
                                 </li>
                                 <li class="footer-top__menu-item">
-                                    <a class="footer-top__menu-link" href="#">
-                                        Моя корзина
+                                    <a class="footer-top__menu-link" href="/goods.html">
+                                        Товар
                                     </a>
                                 </li>
                                 <li class="footer-top__menu-item">
-                                    <a class="footer-top__menu-link" href="#">
-                                        Список желаний
+                                    <a class="footer-top__menu-link" href="/contact.html">
+                                        Контакты
                                     </a>
                                 </li>
                             </ul>
@@ -387,13 +401,13 @@
                     <div class="footer-top__card">
                         <ul class="footer-top__card-list">
                             <li class="footer-top__card-item">
-                                <img class="footer-top__card-img" src="./images/icons/mastercard.png" alt="mastercard">
+                                <img class="footer-top__card-img" src="./images/icons/mastercard.png" alt="mastercard" title="Способы оплаты">
                             </li>
                             <li class="footer-top__card-item">
-                                <img class="footer-top__card-img" src="./images/icons/visa.png" alt="visa">
+                                <img class="footer-top__card-img" src="./images/icons/visa.png" alt="visa" title="Способы оплаты">
                             </li>
                             <li class="footer-top__card-item">
-                                <img class="footer-top__card-img" src="./images/icons/paypal.png" alt="paypal">
+                                <img class="footer-top__card-img" src="./images/icons/paypal.png" alt="paypal" title="Способы оплаты">
                             </li>
                         </ul>
                     </div>
@@ -401,7 +415,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            Copyright МАГАЗИН © 2021. Разработка: @antonborod1n
+            Copyright МАГАЗИН © 2022. Разработка: @antonborod1n
         </div>
     </footer>
 

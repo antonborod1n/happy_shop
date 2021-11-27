@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Продажа детских игрушек в интернет-магазине - Happy Shop</title>
+    <meta name="description" content="Купите игрушки и товары для детей в интернет-магазине HappyShop.by по низким ценам. Мировые бренды качественных детских игрушек для всех возрастов. Доставка по Минску и всей Беларуси. Самовывоз." />
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -14,21 +15,22 @@
             <div class="header__top">
                 <ul class="header__top-list">
                     <li class="header__top-items">
-                        <img class="header__top-icon-img" src="./images/icons/support.svg" alt="Поддержка">
+                        <img class="header__top-icon-img" src="./images/icons/support.svg" alt="Иконка поддержка"
+                            title="Иконка">
                         Служба поддержки:
-                        <a class="header__top-link" href="tel:880012345678">
-                            8 (800) 1234-56-78
-                        </a>
+                        <a class="header__top-link" href="tel:80171234567">8017 123-45-67</a>
                     </li>
                     <li class="header__top-items">
-                        <img class="header__top-icon-img" src="./images/icons/phone.svg" alt="Поддержка">
+                        <img class="header__top-icon-img" src="./images/icons/phone.svg" alt="Иконка телефон"
+                            title="Иконка">
                         <a class="header__top-link" href="tel:880012345678">
                             Перезвонить?
                         </a>
                     </li>
                     <li class="header__top-items">
-                        <img class="header__top-icon-img" src="./images/icons/email.svg" alt="Поддержка">
-                        <a class="header__top-link" href="mailtu:myemail@gmail.com">
+                        <img class="header__top-icon-img" src="./images/icons/email.svg" alt="Иконка почта"
+                            title="Иконка">
+                        <a class="header__top-link" href="mailto:myemail@gmail.com">
                             Отправить сообщение
                         </a>
                     </li>
@@ -36,8 +38,8 @@
                 <form class="form__carancy" action="#" method="post">
                     <label class="form__carancy-title">Валюта: </label>
                     <select class="form__carancy-list" name="carancy">
-                        <option value="1">USD</option>
-                        <option value="2">BYN</option>
+                        <option value="1">BYN</option>
+                        <option value="2">USD</option>
                         <option value="3">RUB</option>
                     </select>
                 </form>
@@ -47,15 +49,15 @@
             <div class="container">
                 <div class="header__main">
                     <div class="header__main-logo">
-                        <a class="logo" href="#">
-                            <img class="logo__img" src="images/icons/shopping-bag.svg" alt="Логотип">
+                        <a class="logo" href="http://localhost:3000/">
+                            <img class="logo__img" src="images/icons/shopping-bag.svg" alt="Логотип"
+                                title="Логотип интернет-магазина">
                         </a>
                         <div class="logo__text">
                             <p class="logo__text-title">магазин</p>
                             <p class="logo__text-subtitle">для вашего ребенка</p>
                         </div>
                     </div>
-
                     <form class="serche" action="#">
                         <select class="serche__product" name="product">
                             <option value="1">Товары</option>
@@ -68,7 +70,7 @@
                             <option value="8">Уборы</option>
                             <option value="9">Аксессуары</option>
                         </select>
-                        <div class="form" action="#" method="post">
+                        <div class="form">
                             <input class="form__search" type="text" name="text" placeholder="Введите поисковую фразу">
                             <input class="form__search-btn" type="submit" name="search-btn" value="">
                         </div>
@@ -76,7 +78,7 @@
                     <div class="header__info">
                         <div class="header__info-address">
                             <p class="header__info-title">Наш адрес</p>
-                            <p class="header__info-subtitle">1234 Donec semper lorem, 65c.</p>
+                            <p class="header__info-subtitle">221234, Минск, ул. Якуба Колоса, д. 65</p>
                         </div>
                         <div class="header__info-time">
                             <p class="header__info-title">Часы работы</p>
@@ -89,13 +91,13 @@
         <div class="header__bottom">
             <div class="container">
                 <div class="header__menu">
-                    <div class="menu__catalog-link" href="#">
+                    <div class="menu__catalog-link">
                         <div class="menu__catalog">
                             Категории магазина
                         </div>
                         <button class="menu__catalog-btn menu__btn-visible"></button>
                     </div>
-                    <div class="menu__catalog-link-box" href="#">
+                    <div class="menu__catalog-link-box">
                         <div class="menu__catalog">
                             Меню
                         </div>
@@ -104,7 +106,7 @@
                     <nav class="menu">
                         <ul class="menu__list">
                             <li class="menu__list-item">
-                                <img class="home__img" src="./images/icons/home.svg" alt="Домик">
+                                <img class="home__img" src="./images/icons/home.svg" alt="Домик" title="Иконка дом">
                             </li>
                             <li class="menu__list-item catalog__arrow">
                                 <a class="menu__list-link link__arrow" href="/catalog.html">
@@ -140,10 +142,12 @@
                     </nav>
                     <div class="user__nav">
                         <a class="user__nav-link" href="/login.html">
-                            <img class="user__nav-link-img" src="./images/icons/user.svg" alt="Кабинет пользователя">
+                            <img class="user__nav-link-img" src="./images/icons/user.svg" alt="Кабинет пользователя"
+                                title="Иконка входа">
                         </a>
-                        <a class="user__nav-link" href="#">
-                            <img class="user__nav-link-img" src="./images/icons/basket.svg" alt="Корзина покупателя">
+                        <a class="user__nav-link" href="/404.html">
+                            <img class="user__nav-link-img" src="./images/icons/basket.svg" alt="Корзина покупателя"
+                                title="Корзина">
                             <span class="user__nav-numb">4</span>
                         </a>
                     </div>
@@ -218,7 +222,7 @@
                                 <a class="top-slider__btn btn-scale" href="#">Купить сейчас</a>
                             </div>
                             <img class="top-slider__img" src="./images/slider/top-slider-baner.jpg"
-                                alt="Слайдер картинка со скидками">
+                                alt="Картинка со скидками" title="Картинка со скидками">
                         </div>
                         <div class="top-slider__content">
                             <div class="top-slider__content-inner top-slider__content-inner--left">
@@ -227,7 +231,7 @@
                                 <a class="top-slider__btn top-slider__btn--left btn-scale" href="#">Купить сейчас</a>
                             </div>
                             <img class="top-slider__img" src="./images/slider/banner-children-girl.jpg"
-                                alt="Слайдер картинка со скидками">
+                                alt="Картинка со скидками" title="Картинка со скидками">
                         </div>
                         <div class="top-slider__content">
                             <div class="top-slider__content-inner">
@@ -236,14 +240,14 @@
                                 <a class="top-slider__btn btn-scale" href="#">Купить сейчас</a>
                             </div>
                             <img class="top-slider__img" src="./images/slider/banner-children-baby.jpg"
-                                alt="Слайдер картинка со скидками">
+                                alt="Картинка со скидками" title="Картинка со скидками">
                         </div>
                     </div>
 
                     <div class="top-slider__banner">
                         <div class="top-slider__banner-traine">
                             <img class="top-slider__banner-traine-img img__scale" src="images/train-banner.jpg"
-                                alt="Банер">
+                                alt="Банер" title="Картинка переход на категорию">
                             <div class="top-slider__banner-inner">
                                 <span class="top-slider__banner-sybtitle">Детям до 3 лет</span>
                                 <a class="top-slider__banner--blue" href="#">Купить</a>
@@ -251,7 +255,7 @@
                         </div>
                         <div class="top-slider__banner-children">
                             <img class="top-slider__banner-traine-img img__scale" src="images/banner-children.jpg"
-                                alt="Банер">
+                                alt="Банер" title="Картинка переход на категорию">
                             <div class="top-slider__banner-inner--yellow">
                                 <span class="top-slider__banner-sybtitle">Для развития</span>
                                 <a class="top-slider__banner--yellow" href="#">Купить</a>
@@ -266,38 +270,43 @@
             <div class="container">
                 <div class="benefits__info">
                     <div class="benefits__info-item">
-                        <img class="benefits__info-img" src="images/icons/benefits/rocket.svg" alt="Ракета">
+                        <img class="benefits__info-img" src="images/icons/benefits/rocket.svg" alt="Ракета"
+                            title="Иконка ракета">
                         <div class="benefits__info-items">
                             <div class="benefits__info-title">Быстрая доставка</div>
-                            <p class="benefits__info-subtitle">Базовый вектор развития</p>
+                            <p class="benefits__info-subtitle">Быстрая доставка по РБ</p>
                         </div>
                     </div>
                     <div class="benefits__info-item">
-                        <img class="benefits__info-img" src="images/icons/benefits/support-benefits.svg" alt="Ракета">
+                        <img class="benefits__info-img" src="images/icons/benefits/support-benefits.svg"
+                            alt="Техподдержка" title="Иконка техподдержка">
                         <div class="benefits__info-items">
                             <div class="benefits__info-title">Техподдержка 24/7</div>
-                            <p class="benefits__info-subtitle">Базовый вектор развития</p>
+                            <p class="benefits__info-subtitle">Консультации в любое время</p>
                         </div>
                     </div>
                     <div class="benefits__info-item">
-                        <img class="benefits__info-img" src="images/icons/benefits/redo-arrow.svg" alt="Ракета">
+                        <img class="benefits__info-img" src="images/icons/benefits/redo-arrow.svg"
+                            alt="Стрелка закругленная" title="Иконка стрелка закругленная">
                         <div class="benefits__info-items">
                             <div class="benefits__info-title">100% возврат денег</div>
-                            <p class="benefits__info-subtitle">Базовый вектор развития</p>
+                            <p class="benefits__info-subtitle">14 дней на обмен и возврат</p>
                         </div>
                     </div>
                     <div class="benefits__info-item">
-                        <img class="benefits__info-img" src="images/icons/benefits/security-shield.svg" alt="Ракета">
+                        <img class="benefits__info-img" src="images/icons/benefits/security-shield.svg" alt="Защита"
+                            title="Иконка скидки">
                         <div class="benefits__info-items">
-                            <div class="benefits__info-title">Безопасная оплата</div>
-                            <p class="benefits__info-subtitle">Базовый вектор развития</p>
+                            <div class="benefits__info-title">Безопасность</div>
+                            <p class="benefits__info-subtitle">Весь товар сертифицирован</p>
                         </div>
                     </div>
                     <div class="benefits__info-item">
-                        <img class="benefits__info-img" src="images/icons/benefits/discount.svg" alt="Ракета">
+                        <img class="benefits__info-img" src="images/icons/benefits/discount.svg" alt="Скидки"
+                            title="Иконка скидки">
                         <div class="benefits__info-items benefits__info-items--none">
                             <div class="benefits__info-title">Постоянные скидки</div>
-                            <p class="benefits__info-subtitle">Базовый вектор развития</p>
+                            <p class="benefits__info-subtitle">Собственный склад в Минске</p>
                         </div>
                     </div>
                 </div>
@@ -313,7 +322,8 @@
                             <div class="product-item__img-box">
                                 <div class="new__product">new</div>
                                 <div class="sale__product">15%</div>
-                                <img class="product-item__imges" src="images/product/1.jpg" alt="Игрушка товар">
+                                <img class="product-item__imges" src="images/product/1.jpg" alt="Игрушка Кролик"
+                                    title="Игрушка товар">
                                 <div class="product-item__link-box">
                                     <a class="product-item__btn" href="#">В корзину</a>
                                     <a class="product-item__link" href="#">
@@ -326,16 +336,17 @@
                             </div>
                             <div class="star" data-rateyo-rating="4"></div>
                             <h4 class="product-item__title">
-                                Плюшевая игрушка «Мишка Тедди»
+                                Плюшевая игрушка «Кролик»
                             </h4>
                             <div class="product-item__price">
-                                <div class="product-item__new-price">2590.00 ₽</div>
-                                <div class="product-item__old-price">3590.00 ₽</div>
+                                <div class="product-item__new-price">690.00 ₽</div>
+                                <div class="product-item__old-price">990.00 ₽</div>
                             </div>
                         </div>
                         <div class="product-item">
                             <div class="product-item__img-box">
-                                <img class="product-item__imges" src="images/product/2.jpg" alt="Игрушка товар">
+                                <img class="product-item__imges" src="images/product/2.jpg" alt="Коровка на колесиках"
+                                    title="Игрушка товар">
                                 <div class="product-item__link-box">
                                     <a class="product-item__btn" href="#">В корзину</a>
                                     <a class="product-item__link" href="#">
@@ -348,17 +359,18 @@
                             </div>
                             <div class="star" data-rateyo-rating="3"></div>
                             <h4 class="product-item__title">
-                                Плюшевая игрушка «Мишка Тедди»
+                                Игрушка «Коровка на колесиках»
                             </h4>
                             <div class="product-item__price">
-                                <div class="product-item__new-price">2590.00 ₽</div>
-                                <div class="product-item__old-price">3590.00 ₽</div>
+                                <div class="product-item__new-price">590.00 ₽</div>
+                                <div class="product-item__old-price">890.00 ₽</div>
                             </div>
                         </div>
                         <div class="product-item">
                             <div class="product-item__img-box">
                                 <div class="sale__product">20%</div>
-                                <img class="product-item__imges" src="images/product/3.jpg" alt="Игрушка товар">
+                                <img class="product-item__imges" src="images/product/3.jpg"
+                                    alt="Детская джинсовая куртка" title="Игрушка товар">
                                 <div class="product-item__link-box">
                                     <a class="product-item__btn" href="#">В корзину</a>
                                     <a class="product-item__link" href="#">
@@ -371,11 +383,11 @@
                             </div>
                             <div class="star" data-rateyo-rating="1"></div>
                             <h4 class="product-item__title">
-                                Плюшевая игрушка «Мишка Тедди»
+                                Детская джинсовая куртка
                             </h4>
                             <div class="product-item__price">
-                                <div class="product-item__new-price">2590.00 ₽</div>
-                                <div class="product-item__old-price">3590.00 ₽</div>
+                                <div class="product-item__new-price">3590.00 ₽</div>
+                                <div class="product-item__old-price">4590.00 ₽</div>
                             </div>
                         </div>
                         <div class="product-item">
@@ -398,14 +410,15 @@
                                 Плюшевая игрушка «Мишка Тедди»
                             </h4>
                             <div class="product-item__price">
-                                <div class="product-item__new-price">2590.00 ₽</div>
-                                <div class="product-item__old-price">3590.00 ₽</div>
+                                <div class="product-item__new-price">1590.00 ₽</div>
+                                <div class="product-item__old-price">1990.00 ₽</div>
                             </div>
                         </div>
                         <div class="product-item">
                             <div class="product-item__img-box">
                                 <div class="new__product">new</div>
-                                <img class="product-item__imges" src="images/product/5.jpg" alt="Игрушка товар">
+                                <img class="product-item__imges" src="images/product/5.jpg" alt="Кеды розовые детские"
+                                    title="Игрушка товар">
                                 <div class="product-item__link-box">
                                     <a class="product-item__btn" href="#">В корзину</a>
                                     <a class="product-item__link" href="#">
@@ -418,7 +431,7 @@
                             </div>
                             <div class="star" data-rateyo-rating="3"></div>
                             <h4 class="product-item__title">
-                                Плюшевая игрушка «Мишка Тедди»
+                                Обувь кеды детские розовые
                             </h4>
                             <div class="product-item__price">
                                 <div class="product-item__new-price">2590.00 ₽</div>
@@ -427,7 +440,8 @@
                         </div>
                         <div class="product-item">
                             <div class="product-item__img-box">
-                                <img class="product-item__imges" src="images/product/6.jpg" alt="Игрушка товар">
+                                <img class="product-item__imges" src="images/product/6.jpg"
+                                    alt="Детская игрушка Корабль" title="Игрушка товар">
                                 <div class="product-item__link-box">
                                     <a class="product-item__btn" href="#">В корзину</a>
                                     <a class="product-item__link" href="#">
@@ -440,18 +454,19 @@
                             </div>
                             <div class="star" data-rateyo-rating="5"></div>
                             <h4 class="product-item__title">
-                                Плюшевая игрушка «Мишка Тедди»
+                                Детская игрушка Корабль Трансатлантик
                             </h4>
                             <div class="product-item__price">
-                                <div class="product-item__new-price">2590.00 ₽</div>
-                                <div class="product-item__old-price">3590.00 ₽</div>
+                                <div class="product-item__new-price">790.00 ₽</div>
+                                <div class="product-item__old-price">990.00 ₽</div>
                             </div>
                         </div>
                         <div class="product-item">
                             <div class="product-item__img-box">
                                 <div class="new__product">new</div>
                                 <div class="sale__product">15%</div>
-                                <img class="product-item__imges" src="images/product/1.jpg" alt="Игрушка товар">
+                                <img class="product-item__imges" src="images/product/1.jpg" alt="Игрушка Кролик"
+                                    title="Игрушка товар">
                                 <div class="product-item__link-box">
                                     <a class="product-item__btn" href="#">В корзину</a>
                                     <a class="product-item__link" href="#">
@@ -464,16 +479,17 @@
                             </div>
                             <div class="star" data-rateyo-rating="4"></div>
                             <h4 class="product-item__title">
-                                Плюшевая игрушка «Мишка Тедди»
+                                Плюшевая игрушка «Кролик»
                             </h4>
                             <div class="product-item__price">
-                                <div class="product-item__new-price">2590.00 ₽</div>
-                                <div class="product-item__old-price">3590.00 ₽</div>
+                                <div class="product-item__new-price">690.00 ₽</div>
+                                <div class="product-item__old-price">990.00 ₽</div>
                             </div>
                         </div>
                         <div class="product-item">
                             <div class="product-item__img-box">
-                                <img class="product-item__imges" src="images/product/2.jpg" alt="Игрушка товар">
+                                <img class="product-item__imges" src="images/product/2.jpg" alt="Коровка на колесиках"
+                                    title="Игрушка товар">
                                 <div class="product-item__link-box">
                                     <a class="product-item__btn" href="#">В корзину</a>
                                     <a class="product-item__link" href="#">
@@ -486,17 +502,18 @@
                             </div>
                             <div class="star" data-rateyo-rating="3"></div>
                             <h4 class="product-item__title">
-                                Плюшевая игрушка «Мишка Тедди»
+                                Игрушка «Коровка на колесиках»
                             </h4>
                             <div class="product-item__price">
-                                <div class="product-item__new-price">2590.00 ₽</div>
-                                <div class="product-item__old-price">3590.00 ₽</div>
+                                <div class="product-item__new-price">590.00 ₽</div>
+                                <div class="product-item__old-price">890.00 ₽</div>
                             </div>
                         </div>
                         <div class="product-item">
                             <div class="product-item__img-box">
                                 <div class="sale__product">20%</div>
-                                <img class="product-item__imges" src="images/product/3.jpg" alt="Игрушка товар">
+                                <img class="product-item__imges" src="images/product/3.jpg"
+                                    alt="Детская джинсовая куртка" title="Игрушка товар">
                                 <div class="product-item__link-box">
                                     <a class="product-item__btn" href="#">В корзину</a>
                                     <a class="product-item__link" href="#">
@@ -509,11 +526,11 @@
                             </div>
                             <div class="star" data-rateyo-rating="1"></div>
                             <h4 class="product-item__title">
-                                Плюшевая игрушка «Мишка Тедди»
+                                Детская джинсовая куртка
                             </h4>
                             <div class="product-item__price">
-                                <div class="product-item__new-price">2590.00 ₽</div>
-                                <div class="product-item__old-price">3590.00 ₽</div>
+                                <div class="product-item__new-price">3590.00 ₽</div>
+                                <div class="product-item__old-price">4590.00 ₽</div>
                             </div>
                         </div>
                         <div class="product-item">
@@ -536,14 +553,15 @@
                                 Плюшевая игрушка «Мишка Тедди»
                             </h4>
                             <div class="product-item__price">
-                                <div class="product-item__new-price">2590.00 ₽</div>
-                                <div class="product-item__old-price">3590.00 ₽</div>
+                                <div class="product-item__new-price">1590.00 ₽</div>
+                                <div class="product-item__old-price">1990.00 ₽</div>
                             </div>
                         </div>
                         <div class="product-item">
                             <div class="product-item__img-box">
                                 <div class="new__product">new</div>
-                                <img class="product-item__imges" src="images/product/5.jpg" alt="Игрушка товар">
+                                <img class="product-item__imges" src="images/product/5.jpg" alt="Кеды розовые детские"
+                                    title="Игрушка товар">
                                 <div class="product-item__link-box">
                                     <a class="product-item__btn" href="#">В корзину</a>
                                     <a class="product-item__link" href="#">
@@ -556,7 +574,7 @@
                             </div>
                             <div class="star" data-rateyo-rating="3"></div>
                             <h4 class="product-item__title">
-                                Плюшевая игрушка «Мишка Тедди»
+                                Обувь кеды детские розовые
                             </h4>
                             <div class="product-item__price">
                                 <div class="product-item__new-price">2590.00 ₽</div>
@@ -565,7 +583,8 @@
                         </div>
                         <div class="product-item">
                             <div class="product-item__img-box">
-                                <img class="product-item__imges" src="images/product/6.jpg" alt="Игрушка товар">
+                                <img class="product-item__imges" src="images/product/6.jpg"
+                                    alt="Детская игрушка Корабль" title="Игрушка товар">
                                 <div class="product-item__link-box">
                                     <a class="product-item__btn" href="#">В корзину</a>
                                     <a class="product-item__link" href="#">
@@ -578,11 +597,11 @@
                             </div>
                             <div class="star" data-rateyo-rating="5"></div>
                             <h4 class="product-item__title">
-                                Плюшевая игрушка «Мишка Тедди»
+                                Детская игрушка Корабль Трансатлантик
                             </h4>
                             <div class="product-item__price">
-                                <div class="product-item__new-price">2590.00 ₽</div>
-                                <div class="product-item__old-price">3590.00 ₽</div>
+                                <div class="product-item__new-price">790.00 ₽</div>
+                                <div class="product-item__old-price">990.00 ₽</div>
                             </div>
                         </div>
                     </div>
@@ -594,7 +613,7 @@
             <div class="container">
                 <div class="double__banner-inner">
                     <div class="double__banner-left">
-                        <img class="img__scale" src="images/dbaner-left.jpg" alt="Банер">
+                        <img class="img__scale" src="images/dbaner-left.jpg" alt="Горы игрушек" title="Банер">
                         <div class="double__banner-box--right">
                             <span class="double__banner-sybtitle">Горы игрушек</span>
                             <span class="double__banner-title">Супер скидки</span>
@@ -602,7 +621,7 @@
                         </div>
                     </div>
                     <div class="double__banner-right">
-                        <img class="img__scale" src="images/dbaner-right.jpg" alt="Банер">
+                        <img class="img__scale" src="images/dbaner-right.jpg" alt="Новое поступление" title="Банер">
                         <div class="double__banner-box--left">
                             <span class="double__banner-sybtitle">Новое поступление</span>
                             <span class="double__banner-title">Одежда для всех</span>
@@ -628,7 +647,7 @@
                         <div class="popular-item">
                             <div class="popular-item__img">
                                 <div class="sale__product">15%</div>
-                                <img src="images/popular/1.jpg" alt="Игрушка товар">
+                                <img src="images/popular/1.jpg" alt="Джинсовка синяя детская" title="Игрушка товар">
                             </div>
                             <div class="popular-item__link-box">
                                 <h4 class="product-item__title popular-item__title">
@@ -654,7 +673,7 @@
                             <div class="popular-item__img">
                                 <div class="sale__product">10%</div>
                                 <div class="new__product">new</div>
-                                <img src="images/popular/2.jpg" alt="Игрушка товар">
+                                <img src="images/popular/2.jpg" alt="Толстовка с надписью" title="Игрушка товар">
                             </div>
                             <div class="popular-item__link-box">
                                 <h4 class="product-item__title popular-item__title">
@@ -678,7 +697,7 @@
                         </div>
                         <div class="popular-item">
                             <div class="popular-item__img">
-                                <img src="images/popular/3.jpg" alt="Игрушка товар">
+                                <img src="images/popular/3.jpg" alt="Пинетки вязанные" title="Игрушка товар">
                             </div>
                             <div class="popular-item__link-box">
                                 <h4 class="product-item__title popular-item__title">
@@ -702,7 +721,8 @@
                         <div class="popular-item">
                             <div class="popular-item__img">
                                 <div class="new__product">new</div>
-                                <img class="popular-item__imges" src="images/popular/4.jpg" alt="Игрушка товар">
+                                <img class="popular-item__imges" src="images/popular/4.jpg" alt="Шапка в горошек"
+                                    title="Игрушка товар">
                             </div>
                             <div class="popular-item__link-box">
                                 <h4 class="product-item__title popular-item__title">
@@ -726,7 +746,7 @@
                         <div class="popular-item">
                             <div class="popular-item__img">
                                 <div class="sale__product">35%</div>
-                                <img src="images/popular/5.jpg" alt="Игрушка товар">
+                                <img src="images/popular/5.jpg" alt="Платье детское" title="Игрушка товар">
                             </div>
                             <div class="popular-item__link-box">
                                 <h4 class="product-item__title popular-item__title">
@@ -751,336 +771,340 @@
                         <div class="popular-item">
                             <div class="popular-item__img">
                                 <div class="new__product">new</div>
-                                <img src="images/popular/6.jpg" alt="Игрушка товар">
+                                <img src="images/popular/6.jpg" alt="Платье без рукавов" title="Игрушка товар">
                             </div>
                             <div class="popular-item__link-box">
                                 <h4 class="product-item__title popular-item__title">
                                     Платье без рукавов
                                 </h4>
-                                <div class="star" data-rateyo-rating="4"></div>
-                                <div class="popular-item__price">
-                                    <div class="product-item__new-price">570.00 ₽</div>
-                                </div>
-                                <div class="popular-item__link-panel">
-                                    <a class="popular-item__btn" href="#">В корзину</a>
-                                    <a class="popular-item__link" href="#">
-                                        <img src="images/product/icons/heart-product.svg" alt="Heart">
-                                    </a>
-                                    <a class="popular-item__link" href="#">
-                                        <img src="images/product/icons/eye-product.svg" alt="Eye">
-                                    </a>
-                                </div>
+                                <div class=" star" data-rateyo-rating="4">
                             </div>
-                        </div>
-                    </div>
-
-                    <div class="popular__tabs" id="tab-2">
-                        <div class="popular-item">
-                            <div class="popular-item__img">
-                                <div class="sale__product">10%</div>
-                                <div class="new__product">new</div>
-                                <img src="images/popular/2.jpg" alt="Игрушка товар">
+                            <div class="popular-item__price">
+                                <div class="product-item__new-price">570.00 ₽</div>
                             </div>
-                            <div class="popular-item__link-box">
-                                <h4 class="product-item__title popular-item__title">
-                                    Толстовка с надписью
-                                </h4>
-                                <div class="star" data-rateyo-rating="4"></div>
-                                <div class="popular-item__price">
-                                    <div class="product-item__new-price">5430.00 ₽</div>
-                                    <div class="product-item__old-price">6990.00 ₽</div>
-                                </div>
-                                <div class="popular-item__link-panel">
-                                    <a class="popular-item__btn" href="#">В корзину</a>
-                                    <a class="popular-item__link" href="#">
-                                        <img src="images/product/icons/heart-product.svg" alt="Heart">
-                                    </a>
-                                    <a class="popular-item__link" href="#">
-                                        <img src="images/product/icons/eye-product.svg" alt="Eye">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="popular-item">
-                            <div class="popular-item__img">
-                                <div class="new__product">new</div>
-                                <img class="popular-item__imges" src="images/popular/4.jpg" alt="Игрушка товар">
-                            </div>
-                            <div class="popular-item__link-box">
-                                <h4 class="product-item__title popular-item__title">
-                                    Шапка в горошек
-                                </h4>
-                                <div class="star" data-rateyo-rating="4"></div>
-                                <div class="popular-item__price">
-                                    <div class="product-item__new-price">2690.00 ₽</div>
-                                </div>
-                                <div class="popular-item__link-panel">
-                                    <a class="popular-item__btn" href="#">В корзину</a>
-                                    <a class="popular-item__link" href="#">
-                                        <img src="images/product/icons/heart-product.svg" alt="Heart">
-                                    </a>
-                                    <a class="popular-item__link" href="#">
-                                        <img src="images/product/icons/eye-product.svg" alt="Eye">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="popular-item">
-                            <div class="popular-item__img">
-                                <div class="sale__product">15%</div>
-                                <img src="images/popular/1.jpg" alt="Игрушка товар">
-                            </div>
-                            <div class="popular-item__link-box">
-                                <h4 class="product-item__title popular-item__title">
-                                    Джинсовка синяя детская
-                                </h4>
-                                <div class="star" data-rateyo-rating="4"></div>
-                                <div class="popular-item__price">
-                                    <div class="product-item__new-price">1490.00 ₽</div>
-                                    <div class="product-item__old-price">1890.00 ₽</div>
-                                </div>
-                                <div class="popular-item__link-panel">
-                                    <a class="popular-item__btn" href="#">В корзину</a>
-                                    <a class="popular-item__link" href="#">
-                                        <img src="images/product/icons/heart-product.svg" alt="Heart">
-                                    </a>
-                                    <a class="popular-item__link" href="#">
-                                        <img src="images/product/icons/eye-product.svg" alt="Eye">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="popular-item">
-                            <div class="popular-item__img">
-                                <img src="images/popular/3.jpg" alt="Игрушка товар">
-                            </div>
-                            <div class="popular-item__link-box">
-                                <h4 class="product-item__title popular-item__title">
-                                    Пинетки вязанные
-                                </h4>
-                                <div class="star" data-rateyo-rating="4"></div>
-                                <div class="popular-item__price">
-                                    <div class="product-item__new-price">9120.00 ₽</div>
-                                </div>
-                                <div class="popular-item__link-panel">
-                                    <a class="popular-item__btn" href="#">В корзину</a>
-                                    <a class="popular-item__link" href="#">
-                                        <img src="images/product/icons/heart-product.svg" alt="Heart">
-                                    </a>
-                                    <a class="popular-item__link" href="#">
-                                        <img src="images/product/icons/eye-product.svg" alt="Eye">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="popular-item">
-                            <div class="popular-item__img">
-                                <div class="new__product">new</div>
-                                <img src="images/popular/6.jpg" alt="Игрушка товар">
-                            </div>
-                            <div class="popular-item__link-box">
-                                <h4 class="product-item__title popular-item__title">
-                                    Платье без рукавов
-                                </h4>
-                                <div class="star" data-rateyo-rating="4"></div>
-                                <div class="popular-item__price">
-                                    <div class="product-item__new-price">570.00 ₽</div>
-                                </div>
-                                <div class="popular-item__link-panel">
-                                    <a class="popular-item__btn" href="#">В корзину</a>
-                                    <a class="popular-item__link" href="#">
-                                        <img src="images/product/icons/heart-product.svg" alt="Heart">
-                                    </a>
-                                    <a class="popular-item__link" href="#">
-                                        <img src="images/product/icons/eye-product.svg" alt="Eye">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="popular-item">
-                            <div class="popular-item__img">
-                                <div class="sale__product">35%</div>
-                                <img src="images/popular/5.jpg" alt="Игрушка товар">
-                            </div>
-                            <div class="popular-item__link-box">
-                                <h4 class="product-item__title popular-item__title">
-                                    Платье детское
-                                </h4>
-                                <div class="star" data-rateyo-rating="4"></div>
-                                <div class="popular-item__price">
-                                    <div class="product-item__new-price">3890.00 ₽</div>
-                                    <div class="product-item__old-price">4890.00 ₽</div>
-                                </div>
-                                <div class="popular-item__link-panel">
-                                    <a class="popular-item__btn" href="#">В корзину</a>
-                                    <a class="popular-item__link" href="#">
-                                        <img src="images/product/icons/heart-product.svg" alt="Heart">
-                                    </a>
-                                    <a class="popular-item__link" href="#">
-                                        <img src="images/product/icons/eye-product.svg" alt="Eye">
-                                    </a>
-                                </div>
-                            </div>
-                        </div> 
-                    </div>
-
-                    <div class="popular__tabs" id="tab-3">
-                        <div class="popular-item">
-                            <div class="popular-item__img">
-                                <div class="sale__product">35%</div>
-                                <img src="images/popular/5.jpg" alt="Игрушка товар">
-                            </div>
-                            <div class="popular-item__link-box">
-                                <h4 class="product-item__title popular-item__title">
-                                    Платье детское
-                                </h4>
-                                <div class="star" data-rateyo-rating="4"></div>
-                                <div class="popular-item__price">
-                                    <div class="product-item__new-price">3890.00 ₽</div>
-                                    <div class="product-item__old-price">4890.00 ₽</div>
-                                </div>
-                                <div class="popular-item__link-panel">
-                                    <a class="popular-item__btn" href="#">В корзину</a>
-                                    <a class="popular-item__link" href="#">
-                                        <img src="images/product/icons/heart-product.svg" alt="Heart">
-                                    </a>
-                                    <a class="popular-item__link" href="#">
-                                        <img src="images/product/icons/eye-product.svg" alt="Eye">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="popular-item">
-                            <div class="popular-item__img">
-                                <div class="sale__product">15%</div>
-                                <img src="images/popular/1.jpg" alt="Игрушка товар">
-                            </div>
-                            <div class="popular-item__link-box">
-                                <h4 class="product-item__title popular-item__title">
-                                    Джинсовка синяя детская
-                                </h4>
-                                <div class="star" data-rateyo-rating="4"></div>
-                                <div class="popular-item__price">
-                                    <div class="product-item__new-price">1490.00 ₽</div>
-                                    <div class="product-item__old-price">1890.00 ₽</div>
-                                </div>
-                                <div class="popular-item__link-panel">
-                                    <a class="popular-item__btn" href="#">В корзину</a>
-                                    <a class="popular-item__link" href="#">
-                                        <img src="images/product/icons/heart-product.svg" alt="Heart">
-                                    </a>
-                                    <a class="popular-item__link" href="#">
-                                        <img src="images/product/icons/eye-product.svg" alt="Eye">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="popular-item">
-                            <div class="popular-item__img">
-                                <div class="new__product">new</div>
-                                <img class="popular-item__imges" src="images/popular/4.jpg" alt="Игрушка товар">
-                            </div>
-                            <div class="popular-item__link-box">
-                                <h4 class="product-item__title popular-item__title">
-                                    Шапка в горошек
-                                </h4>
-                                <div class="star" data-rateyo-rating="4"></div>
-                                <div class="popular-item__price">
-                                    <div class="product-item__new-price">2690.00 ₽</div>
-                                </div>
-                                <div class="popular-item__link-panel">
-                                    <a class="popular-item__btn" href="#">В корзину</a>
-                                    <a class="popular-item__link" href="#">
-                                        <img src="images/product/icons/heart-product.svg" alt="Heart">
-                                    </a>
-                                    <a class="popular-item__link" href="#">
-                                        <img src="images/product/icons/eye-product.svg" alt="Eye">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="popular-item">
-                            <div class="popular-item__img">
-                                <div class="sale__product">10%</div>
-                                <div class="new__product">new</div>
-                                <img src="images/popular/2.jpg" alt="Игрушка товар">
-                            </div>
-                            <div class="popular-item__link-box">
-                                <h4 class="product-item__title popular-item__title">
-                                    Толстовка с надписью
-                                </h4>
-                                <div class="star" data-rateyo-rating="4"></div>
-                                <div class="popular-item__price">
-                                    <div class="product-item__new-price">5430.00 ₽</div>
-                                    <div class="product-item__old-price">6990.00 ₽</div>
-                                </div>
-                                <div class="popular-item__link-panel">
-                                    <a class="popular-item__btn" href="#">В корзину</a>
-                                    <a class="popular-item__link" href="#">
-                                        <img src="images/product/icons/heart-product.svg" alt="Heart">
-                                    </a>
-                                    <a class="popular-item__link" href="#">
-                                        <img src="images/product/icons/eye-product.svg" alt="Eye">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="popular-item">
-                            <div class="popular-item__img">
-                                <div class="new__product">new</div>
-                                <img src="images/popular/6.jpg" alt="Игрушка товар">
-                            </div>
-                            <div class="popular-item__link-box">
-                                <h4 class="product-item__title popular-item__title">
-                                    Платье без рукавов
-                                </h4>
-                                <div class="star" data-rateyo-rating="4"></div>
-                                <div class="popular-item__price">
-                                    <div class="product-item__new-price">570.00 ₽</div>
-                                </div>
-                                <div class="popular-item__link-panel">
-                                    <a class="popular-item__btn" href="#">В корзину</a>
-                                    <a class="popular-item__link" href="#">
-                                        <img src="images/product/icons/heart-product.svg" alt="Heart">
-                                    </a>
-                                    <a class="popular-item__link" href="#">
-                                        <img src="images/product/icons/eye-product.svg" alt="Eye">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="popular-item">
-                            <div class="popular-item__img">
-                                <img src="images/popular/3.jpg" alt="Игрушка товар">
-                            </div>
-                            <div class="popular-item__link-box">
-                                <h4 class="product-item__title popular-item__title">
-                                    Пинетки вязанные
-                                </h4>
-                                <div class="star" data-rateyo-rating="4"></div>
-                                <div class="popular-item__price">
-                                    <div class="product-item__new-price">9120.00 ₽</div>
-                                </div>
-                                <div class="popular-item__link-panel">
-                                    <a class="popular-item__btn" href="#">В корзину</a>
-                                    <a class="popular-item__link" href="#">
-                                        <img src="images/product/icons/heart-product.svg" alt="Heart">
-                                    </a>
-                                    <a class="popular-item__link" href="#">
-                                        <img src="images/product/icons/eye-product.svg" alt="Eye">
-                                    </a>
-                                </div>
+                            <div class="popular-item__link-panel">
+                                <a class="popular-item__btn" href="#">В корзину</a>
+                                <a class="popular-item__link" href="#">
+                                    <img src="images/product/icons/heart-product.svg" alt="Heart">
+                                </a>
+                                <a class="popular-item__link" href="#">
+                                    <img src="images/product/icons/eye-product.svg" alt="Eye">
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <div class="popular__tabs" id="tab-2">
+                    <div class="popular-item">
+                        <div class="popular-item__img">
+                            <div class="sale__product">10%</div>
+                            <div class="new__product">new</div>
+                            <img src="images/popular/2.jpg" alt="Толстовка с надписью" title="Игрушка товар">
+                        </div>
+                        <div class="popular-item__link-box">
+                            <h4 class="product-item__title popular-item__title">
+                                Толстовка с надписью
+                            </h4>
+                            <div class="star" data-rateyo-rating="4"></div>
+                            <div class="popular-item__price">
+                                <div class="product-item__new-price">5430.00 ₽</div>
+                                <div class="product-item__old-price">6990.00 ₽</div>
+                            </div>
+                            <div class="popular-item__link-panel">
+                                <a class="popular-item__btn" href="#">В корзину</a>
+                                <a class="popular-item__link" href="#">
+                                    <img src="images/product/icons/heart-product.svg" alt="Heart">
+                                </a>
+                                <a class="popular-item__link" href="#">
+                                    <img src="images/product/icons/eye-product.svg" alt="Eye">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popular-item">
+                        <div class="popular-item__img">
+                            <div class="new__product">new</div>
+                            <img class="popular-item__imges" src="images/popular/4.jpg" alt="Шапка в горошек"
+                                title="Игрушка товар">
+                        </div>
+                        <div class="popular-item__link-box">
+                            <h4 class="product-item__title popular-item__title">
+                                Шапка в горошек
+                            </h4>
+                            <div class="star" data-rateyo-rating="4"></div>
+                            <div class="popular-item__price">
+                                <div class="product-item__new-price">2690.00 ₽</div>
+                            </div>
+                            <div class="popular-item__link-panel">
+                                <a class="popular-item__btn" href="#">В корзину</a>
+                                <a class="popular-item__link" href="#">
+                                    <img src="images/product/icons/heart-product.svg" alt="Heart">
+                                </a>
+                                <a class="popular-item__link" href="#">
+                                    <img src="images/product/icons/eye-product.svg" alt="Eye">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popular-item">
+                        <div class="popular-item__img">
+                            <div class="sale__product">15%</div>
+                            <img src="images/popular/1.jpg" alt="Джинсовка синяя детская" title="Игрушка товар">
+                        </div>
+                        <div class="popular-item__link-box">
+                            <h4 class="product-item__title popular-item__title">
+                                Джинсовка синяя детская
+                            </h4>
+                            <div class="star" data-rateyo-rating="4"></div>
+                            <div class="popular-item__price">
+                                <div class="product-item__new-price">1490.00 ₽</div>
+                                <div class="product-item__old-price">1890.00 ₽</div>
+                            </div>
+                            <div class="popular-item__link-panel">
+                                <a class="popular-item__btn" href="#">В корзину</a>
+                                <a class="popular-item__link" href="#">
+                                    <img src="images/product/icons/heart-product.svg" alt="Heart">
+                                </a>
+                                <a class="popular-item__link" href="#">
+                                    <img src="images/product/icons/eye-product.svg" alt="Eye">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popular-item">
+                        <div class="popular-item__img">
+                            <img src="images/popular/3.jpg" alt="Пинетки вязанalt=" title="Игрушка товар">
+                        </div>
+                        <div class="popular-item__link-box">
+                            <h4 class="product-item__title popular-item__title">
+                                Пинетки вязанные
+                            </h4>
+                            <div class="star" data-rateyo-rating="4"></div>
+                            <div class="popular-item__price">
+                                <div class="product-item__new-price">9120.00 ₽</div>
+                            </div>
+                            <div class="popular-item__link-panel">
+                                <a class="popular-item__btn" href="#">В корзину</a>
+                                <a class="popular-item__link" href="#">
+                                    <img src="images/product/icons/heart-product.svg" alt="Heart">
+                                </a>
+                                <a class="popular-item__link" href="#">
+                                    <img src="images/product/icons/eye-product.svg" alt="Eye">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popular-item">
+                        <div class="popular-item__img">
+                            <div class="new__product">new</div>
+                            <img src="images/popular/6.jpg" alt="Платье без рукавов" title="Игрушка товар">
+                        </div>
+                        <div class="popular-item__link-box">
+                            <h4 class="product-item__title popular-item__title">
+                                Платье без рукавов
+                            </h4>
+                            <div class="star" data-rateyo-rating="4"></div>
+                            <div class="popular-item__price">
+                                <div class="product-item__new-price">570.00 ₽</div>
+                            </div>
+                            <div class="popular-item__link-panel">
+                                <a class="popular-item__btn" href="#">В корзину</a>
+                                <a class="popular-item__link" href="#">
+                                    <img src="images/product/icons/heart-product.svg" alt="Heart">
+                                </a>
+                                <a class="popular-item__link" href="#">
+                                    <img src="images/product/icons/eye-product.svg" alt="Eye">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popular-item">
+                        <div class="popular-item__img">
+                            <div class="sale__product">35%</div>
+                            <img src="images/popular/5.jpg" alt="Платье детское" title="Игрушка товар">
+                        </div>
+                        <div class="popular-item__link-box">
+                            <h4 class="product-item__title popular-item__title">
+                                Платье детское
+                            </h4>
+                            <div class="star" data-rateyo-rating="4"></div>
+                            <div class="popular-item__price">
+                                <div class="product-item__new-price">3890.00 ₽</div>
+                                <div class="product-item__old-price">4890.00 ₽</div>
+                            </div>
+                            <div class="popular-item__link-panel">
+                                <a class="popular-item__btn" href="#">В корзину</a>
+                                <a class="popular-item__link" href="#">
+                                    <img src="images/product/icons/heart-product.svg" alt="Heart">
+                                </a>
+                                <a class="popular-item__link" href="#">
+                                    <img src="images/product/icons/eye-product.svg" alt="Eye">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="popular__tabs" id="tab-3">
+                    <div class="popular-item">
+                        <div class="popular-item__img">
+                            <div class="sale__product">35%</div>
+                            <img src="images/popular/5.jpg" alt="Платье детское" title="Игрушка товар">
+                        </div>
+                        <div class="popular-item__link-box">
+                            <h4 class="product-item__title popular-item__title">
+                                Платье детское
+                            </h4>
+                            <div class="star" data-rateyo-rating="4"></div>
+                            <div class="popular-item__price">
+                                <div class="product-item__new-price">3890.00 ₽</div>
+                                <div class="product-item__old-price">4890.00 ₽</div>
+                            </div>
+                            <div class="popular-item__link-panel">
+                                <a class="popular-item__btn" href="#">В корзину</a>
+                                <a class="popular-item__link" href="#">
+                                    <img src="images/product/icons/heart-product.svg" alt="Heart">
+                                </a>
+                                <a class="popular-item__link" href="#">
+                                    <img src="images/product/icons/eye-product.svg" alt="Eye">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popular-item">
+                        <div class="popular-item__img">
+                            <div class="sale__product">15%</div>
+                            <img src="images/popular/1.jpg" alt="Джинсовка синяя детская" title="Игрушка товар">
+                        </div>
+                        <div class="popular-item__link-box">
+                            <h4 class="product-item__title popular-item__title">
+                                Джинсовка синяя детская
+                            </h4>
+                            <div class="star" data-rateyo-rating="4"></div>
+                            <div class="popular-item__price">
+                                <div class="product-item__new-price">1490.00 ₽</div>
+                                <div class="product-item__old-price">1890.00 ₽</div>
+                            </div>
+                            <div class="popular-item__link-panel">
+                                <a class="popular-item__btn" href="#">В корзину</a>
+                                <a class="popular-item__link" href="#">
+                                    <img src="images/product/icons/heart-product.svg" alt="Heart">
+                                </a>
+                                <a class="popular-item__link" href="#">
+                                    <img src="images/product/icons/eye-product.svg" alt="Eye">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popular-item">
+                        <div class="popular-item__img">
+                            <div class="new__product">new</div>
+                            <img class="popular-item__imges" src="images/popular/4.jpg" alt="Шапка в горошек"
+                                title="Игрушка товар">
+                        </div>
+                        <div class="popular-item__link-box">
+                            <h4 class="product-item__title popular-item__title">
+                                Шапка в горошек
+                            </h4>
+                            <div class="star" data-rateyo-rating="4"></div>
+                            <div class="popular-item__price">
+                                <div class="product-item__new-price">2690.00 ₽</div>
+                            </div>
+                            <div class="popular-item__link-panel">
+                                <a class="popular-item__btn" href="#">В корзину</a>
+                                <a class="popular-item__link" href="#">
+                                    <img src="images/product/icons/heart-product.svg" alt="Heart">
+                                </a>
+                                <a class="popular-item__link" href="#">
+                                    <img src="images/product/icons/eye-product.svg" alt="Eye">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popular-item">
+                        <div class="popular-item__img">
+                            <div class="sale__product">10%</div>
+                            <div class="new__product">new</div>
+                            <img src="images/popular/2.jpg" alt="Толстовка с надписью" title="Игрушка товар">
+                        </div>
+                        <div class="popular-item__link-box">
+                            <h4 class="product-item__title popular-item__title">
+                                Толстовка с надписью
+                            </h4>
+                            <div class="star" data-rateyo-rating="4"></div>
+                            <div class="popular-item__price">
+                                <div class="product-item__new-price">5430.00 ₽</div>
+                                <div class="product-item__old-price">6990.00 ₽</div>
+                            </div>
+                            <div class="popular-item__link-panel">
+                                <a class="popular-item__btn" href="#">В корзину</a>
+                                <a class="popular-item__link" href="#">
+                                    <img src="images/product/icons/heart-product.svg" alt="Heart">
+                                </a>
+                                <a class="popular-item__link" href="#">
+                                    <img src="images/product/icons/eye-product.svg" alt="Eye">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popular-item">
+                        <div class="popular-item__img">
+                            <div class="new__product">new</div>
+                            <img src="images/popular/6.jpg" alt="Платье без рукавов" title="Игрушка товар">
+                        </div>
+                        <div class="popular-item__link-box">
+                            <h4 class="product-item__title popular-item__title">
+                                Платье без рукавов
+                            </h4>
+                            <div class="star" data-rateyo-rating="4"></div>
+                            <div class="popular-item__price">
+                                <div class="product-item__new-price">570.00 ₽</div>
+                            </div>
+                            <div class="popular-item__link-panel">
+                                <a class="popular-item__btn" href="#">В корзину</a>
+                                <a class="popular-item__link" href="#">
+                                    <img src="images/product/icons/heart-product.svg" alt="Heart">
+                                </a>
+                                <a class="popular-item__link" href="#">
+                                    <img src="images/product/icons/eye-product.svg" alt="Eye">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popular-item">
+                        <div class="popular-item__img">
+                            <img src="images/popular/3.jpg" alt="Пинетки вязанные" title="Игрушка товар">
+                        </div>
+                        <div class="popular-item__link-box">
+                            <h4 class="product-item__title popular-item__title">
+                                Пинетки вязанные
+                            </h4>
+                            <div class="star" data-rateyo-rating="4"></div>
+                            <div class="popular-item__price">
+                                <div class="product-item__new-price">9120.00 ₽</div>
+                            </div>
+                            <div class="popular-item__link-panel">
+                                <a class="popular-item__btn" href="#">В корзину</a>
+                                <a class="popular-item__link" href="#">
+                                    <img src="images/product/icons/heart-product.svg" alt="Heart">
+                                </a>
+                                <a class="popular-item__link" href="#">
+                                    <img src="images/product/icons/eye-product.svg" alt="Eye">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             </div>
         </section>
 
         <section class="banner">
             <div class="container">
                 <div class="banner__inner">
-                    <img class="img__scale" src="images/sv.jpg" alt="Главный баннер">
+                    <img class="banner__inner-img img__scale" src="images/sv.jpg" alt="Главный баннер"
+                        title="Большой баннер">
                     <div class="banner__inner-box">
                         <span class="banner__sybtitle">Готовьтесь к школе вместе с нами!</span>
                         <span class="banner__title">Ассортимент канцтоваров</span>
@@ -1100,7 +1124,8 @@
                                 <div class="product-item__img-box">
                                     <div class="new__product">new</div>
                                     <div class="sale__product">15%</div>
-                                    <img class="product-item__imges" src="images/product/1.jpg" alt="Игрушка товар">
+                                    <img class="product-item__imges" src="images/product/1.jpg" alt="Мишка Тедди"
+                                        title="Игрушка товар">
                                     <div class="product-item__link-box">
                                         <a class="product-item__btn" href="#">В корзину</a>
                                         <a class="product-item__link" href="#">
@@ -1113,16 +1138,17 @@
                                 </div>
                                 <div class="star" data-rateyo-rating="4"></div>
                                 <h4 class="product-item__title">
-                                    Плюшевая игрушка «Мишка Тедди»
+                                    Плюшевая игрушка «Кролик»
                                 </h4>
                                 <div class="product-item__price">
-                                    <div class="product-item__new-price">2590.00 ₽</div>
-                                    <div class="product-item__old-price">3590.00 ₽</div>
+                                    <div class="product-item__new-price">690.00 ₽</div>
+                                    <div class="product-item__old-price">890.00 ₽</div>
                                 </div>
                             </div>
                             <div class="product-item">
                                 <div class="product-item__img-box">
-                                    <img class="product-item__imges" src="images/product/2.jpg" alt="Игрушка товар">
+                                    <img class="product-item__imges" src="images/product/2.jpg"
+                                        alt="Коровка на колесиках" title="Игрушка товар">
                                     <div class="product-item__link-box">
                                         <a class="product-item__btn" href="#">В корзину</a>
                                         <a class="product-item__link" href="#">
@@ -1135,17 +1161,18 @@
                                 </div>
                                 <div class="star" data-rateyo-rating="3"></div>
                                 <h4 class="product-item__title">
-                                    Плюшевая игрушка «Мишка Тедди»
+                                    Игрушка «Коровка на колесиках»
                                 </h4>
                                 <div class="product-item__price">
-                                    <div class="product-item__new-price">2590.00 ₽</div>
-                                    <div class="product-item__old-price">3590.00 ₽</div>
+                                    <div class="product-item__new-price">590.00 ₽</div>
+                                    <div class="product-item__old-price">790.00 ₽</div>
                                 </div>
                             </div>
                             <div class="product-item">
                                 <div class="product-item__img-box">
                                     <div class="sale__product">20%</div>
-                                    <img class="product-item__imges" src="images/product/3.jpg" alt="Игрушка товар">
+                                    <img class="product-item__imges" src="images/product/3.jpg"
+                                        alt="Детская джинсовая куртка" title="Игрушка товар">
                                     <div class="product-item__link-box">
                                         <a class="product-item__btn" href="#">В корзину</a>
                                         <a class="product-item__link" href="#">
@@ -1158,7 +1185,7 @@
                                 </div>
                                 <div class="star" data-rateyo-rating="1"></div>
                                 <h4 class="product-item__title">
-                                    Плюшевая игрушка «Мишка Тедди»
+                                    Детская джинсовая куртка
                                 </h4>
                                 <div class="product-item__price">
                                     <div class="product-item__new-price">2590.00 ₽</div>
@@ -1169,7 +1196,8 @@
                                 <div class="product-item__img-box">
                                     <div class="sale__product">7%</div>
                                     <div class="new__product">new</div>
-                                    <img class="product-item__imges" src="images/product/4.jpg" alt="Игрушка товар">
+                                    <img class="product-item__imges" src="images/product/4.jpg" alt="Мишка Тедди"
+                                        title="Игрушка товар">
                                     <div class="product-item__link-box">
                                         <a class="product-item__btn" href="#">В корзину</a>
                                         <a class="product-item__link" href="#">
@@ -1185,14 +1213,15 @@
                                     Плюшевая игрушка «Мишка Тедди»
                                 </h4>
                                 <div class="product-item__price">
-                                    <div class="product-item__new-price">2590.00 ₽</div>
-                                    <div class="product-item__old-price">3590.00 ₽</div>
+                                    <div class="product-item__new-price">790.00 ₽</div>
+                                    <div class="product-item__old-price">990.00 ₽</div>
                                 </div>
                             </div>
                             <div class="product-item">
                                 <div class="product-item__img-box">
                                     <div class="new__product">new</div>
-                                    <img class="product-item__imges" src="images/product/5.jpg" alt="Игрушка товар">
+                                    <img class="product-item__imges" src="images/product/5.jpg"
+                                        alt="Детские кеды розовые" title="Игрушка товар">
                                     <div class="product-item__link-box">
                                         <a class="product-item__btn" href="#">В корзину</a>
                                         <a class="product-item__link" href="#">
@@ -1205,16 +1234,17 @@
                                 </div>
                                 <div class="star" data-rateyo-rating="3"></div>
                                 <h4 class="product-item__title">
-                                    Плюшевая игрушка «Мишка Тедди»
+                                    Обувь детские кеды розовые
                                 </h4>
                                 <div class="product-item__price">
-                                    <div class="product-item__new-price">2590.00 ₽</div>
-                                    <div class="product-item__old-price">3590.00 ₽</div>
+                                    <div class="product-item__new-price">1590.00 ₽</div>
+                                    <div class="product-item__old-price">1790.00 ₽</div>
                                 </div>
                             </div>
                             <div class="product-item">
                                 <div class="product-item__img-box">
-                                    <img class="product-item__imges" src="images/product/6.jpg" alt="Игрушка товар">
+                                    <img class="product-item__imges" src="images/product/6.jpg"
+                                        alt="Детская игрушка Корабль" title="Игрушка товар">
                                     <div class="product-item__link-box">
                                         <a class="product-item__btn" href="#">В корзину</a>
                                         <a class="product-item__link" href="#">
@@ -1227,18 +1257,19 @@
                                 </div>
                                 <div class="star" data-rateyo-rating="5"></div>
                                 <h4 class="product-item__title">
-                                    Плюшевая игрушка «Мишка Тедди»
+                                    Детская игрушка Корабль Трансатлантик
                                 </h4>
                                 <div class="product-item__price">
-                                    <div class="product-item__new-price">2590.00 ₽</div>
-                                    <div class="product-item__old-price">3590.00 ₽</div>
+                                    <div class="product-item__new-price">790.00 ₽</div>
+                                    <div class="product-item__old-price">990.00 ₽</div>
                                 </div>
                             </div>
                             <div class="product-item">
                                 <div class="product-item__img-box">
                                     <div class="new__product">new</div>
                                     <div class="sale__product">15%</div>
-                                    <img class="product-item__imges" src="images/product/1.jpg" alt="Игрушка товар">
+                                    <img class="product-item__imges" src="images/product/1.jpg" alt="Мишка Тедди"
+                                        title="Игрушка товар">
                                     <div class="product-item__link-box">
                                         <a class="product-item__btn" href="#">В корзину</a>
                                         <a class="product-item__link" href="#">
@@ -1251,16 +1282,17 @@
                                 </div>
                                 <div class="star" data-rateyo-rating="4"></div>
                                 <h4 class="product-item__title">
-                                    Плюшевая игрушка «Мишка Тедди»
+                                    Плюшевая игрушка «Кролик»
                                 </h4>
                                 <div class="product-item__price">
-                                    <div class="product-item__new-price">2590.00 ₽</div>
-                                    <div class="product-item__old-price">3590.00 ₽</div>
+                                    <div class="product-item__new-price">690.00 ₽</div>
+                                    <div class="product-item__old-price">890.00 ₽</div>
                                 </div>
                             </div>
                             <div class="product-item">
                                 <div class="product-item__img-box">
-                                    <img class="product-item__imges" src="images/product/2.jpg" alt="Игрушка товар">
+                                    <img class="product-item__imges" src="images/product/2.jpg"
+                                        alt="Коровка на колесиках" title="Игрушка товар">
                                     <div class="product-item__link-box">
                                         <a class="product-item__btn" href="#">В корзину</a>
                                         <a class="product-item__link" href="#">
@@ -1273,17 +1305,18 @@
                                 </div>
                                 <div class="star" data-rateyo-rating="3"></div>
                                 <h4 class="product-item__title">
-                                    Плюшевая игрушка «Мишка Тедди»
+                                    Игрушка «Коровка на колесиках»
                                 </h4>
                                 <div class="product-item__price">
-                                    <div class="product-item__new-price">2590.00 ₽</div>
-                                    <div class="product-item__old-price">3590.00 ₽</div>
+                                    <div class="product-item__new-price">590.00 ₽</div>
+                                    <div class="product-item__old-price">790.00 ₽</div>
                                 </div>
                             </div>
                             <div class="product-item">
                                 <div class="product-item__img-box">
                                     <div class="sale__product">20%</div>
-                                    <img class="product-item__imges" src="images/product/3.jpg" alt="Игрушка товар">
+                                    <img class="product-item__imges" src="images/product/3.jpg"
+                                        alt="Детская джинсовая куртка" title="Игрушка товар">
                                     <div class="product-item__link-box">
                                         <a class="product-item__btn" href="#">В корзину</a>
                                         <a class="product-item__link" href="#">
@@ -1296,7 +1329,7 @@
                                 </div>
                                 <div class="star" data-rateyo-rating="1"></div>
                                 <h4 class="product-item__title">
-                                    Плюшевая игрушка «Мишка Тедди»
+                                    Детская джинсовая куртка
                                 </h4>
                                 <div class="product-item__price">
                                     <div class="product-item__new-price">2590.00 ₽</div>
@@ -1307,7 +1340,8 @@
                                 <div class="product-item__img-box">
                                     <div class="sale__product">7%</div>
                                     <div class="new__product">new</div>
-                                    <img class="product-item__imges" src="images/product/4.jpg" alt="Игрушка товар">
+                                    <img class="product-item__imges" src="images/product/4.jpg" alt="Мишка Тедди"
+                                        title="Игрушка товар">
                                     <div class="product-item__link-box">
                                         <a class="product-item__btn" href="#">В корзину</a>
                                         <a class="product-item__link" href="#">
@@ -1323,14 +1357,15 @@
                                     Плюшевая игрушка «Мишка Тедди»
                                 </h4>
                                 <div class="product-item__price">
-                                    <div class="product-item__new-price">2590.00 ₽</div>
-                                    <div class="product-item__old-price">3590.00 ₽</div>
+                                    <div class="product-item__new-price">790.00 ₽</div>
+                                    <div class="product-item__old-price">990.00 ₽</div>
                                 </div>
                             </div>
                             <div class="product-item">
                                 <div class="product-item__img-box">
                                     <div class="new__product">new</div>
-                                    <img class="product-item__imges" src="images/product/5.jpg" alt="Игрушка товар">
+                                    <img class="product-item__imges" src="images/product/5.jpg"
+                                        alt="Детские кеды розовые" title="Игрушка товар">
                                     <div class="product-item__link-box">
                                         <a class="product-item__btn" href="#">В корзину</a>
                                         <a class="product-item__link" href="#">
@@ -1343,16 +1378,17 @@
                                 </div>
                                 <div class="star" data-rateyo-rating="3"></div>
                                 <h4 class="product-item__title">
-                                    Плюшевая игрушка «Мишка Тедди»
+                                    Обувь детские кеды розовые
                                 </h4>
                                 <div class="product-item__price">
-                                    <div class="product-item__new-price">2590.00 ₽</div>
-                                    <div class="product-item__old-price">3590.00 ₽</div>
+                                    <div class="product-item__new-price">1590.00 ₽</div>
+                                    <div class="product-item__old-price">1790.00 ₽</div>
                                 </div>
                             </div>
                             <div class="product-item">
                                 <div class="product-item__img-box">
-                                    <img class="product-item__imges" src="images/product/6.jpg" alt="Игрушка товар">
+                                    <img class="product-item__imges" src="images/product/6.jpg"
+                                        alt="Детская игрушка Корабль" title="Игрушка товар">
                                     <div class="product-item__link-box">
                                         <a class="product-item__btn" href="#">В корзину</a>
                                         <a class="product-item__link" href="#">
@@ -1365,11 +1401,11 @@
                                 </div>
                                 <div class="star" data-rateyo-rating="5"></div>
                                 <h4 class="product-item__title">
-                                    Плюшевая игрушка «Мишка Тедди»
+                                    Детская игрушка Корабль Трансатлантик
                                 </h4>
                                 <div class="product-item__price">
-                                    <div class="product-item__new-price">2590.00 ₽</div>
-                                    <div class="product-item__old-price">3590.00 ₽</div>
+                                    <div class="product-item__new-price">790.00 ₽</div>
+                                    <div class="product-item__old-price">990.00 ₽</div>
                                 </div>
                             </div>
                         </div>
@@ -1380,19 +1416,20 @@
                             <div class="novelty__reviews-inner">
                                 <div class="novelty__reviews-content">
                                     <p class="novelty__reviews-text">
-                                        Современные технологии достигли такого, что высокое качество позиционных
-                                        исследований
-                                        влечет за собой процесс внедрения и модернизации распределения внутренних
-                                        резервов и
-                                        ресурсов. Значимость этих проблем настолько очевидна.
+                                        Как мама двоих деток могу сказать, что не стоит пренебрегать методиками раннего
+                                        развития детей. Они действительно помогают ребенку быстрее осваивать базовые
+                                        знания, способствуют развитию речи и бытовых навыков. Современным мамам доступна
+                                        масса информации о самих методиках, о том, как они выполняются, какие требуются
+                                        пособия.
                                     </p>
                                     <p class="novelty__reviews-text novelty__reviews-text--last">
-                                        Значимость этих проблем настолько очевидна, что постоянный количественный рост.
+                                        Цветные шарики научат считать и различать цвета.
                                     </p>
                                     <div class="decor__reviews"></div>
                                 </div>
                                 <div class="novelty__reviews-manager-info">
-                                    <img class="novelty__reviews-manager-img" src="images/manager-1.jpg" alt="Manager">
+                                    <img class="novelty__reviews-manager-img" src="images/manager-1.jpg"
+                                        title="менеджер сервиса" alt="Вероника Кудрявцева">
                                     <div class="manager-info">
                                         <div class="novelty__reviews-manager-name">
                                             Вероника Кудрявцева
@@ -1406,19 +1443,19 @@
                             <div class="novelty__reviews-inner">
                                 <div class="novelty__reviews-content">
                                     <p class="novelty__reviews-text">
-                                        Современные технологии достигли такого, что высокое качество позиционных
-                                        исследований
-                                        влечет за собой процесс внедрения и модернизации распределения внутренних
-                                        резервов и
-                                        ресурсов. Значимость этих проблем настолько очевидна.
+                                        Малышку пони-Лалалупси я увидела в интернет-магазине случайно. Но сразу поняла,
+                                        что дочке она понравится.
+                                        Жаль, сейчас эта марка не очень распространена. Куколки у них были очень милые.
+                                        Но сейчас - о пони.
                                     </p>
                                     <p class="novelty__reviews-text novelty__reviews-text--last">
-                                        Значимость этих проблем настолько очевидна, что постоянный количественный рост.
+                                        Пони-ананасик удивляет и очаровывает - милейшая игрушка с историей и философией
                                     </p>
                                     <div class="decor__reviews"></div>
                                 </div>
                                 <div class="novelty__reviews-manager-info">
-                                    <img class="novelty__reviews-manager-img" src="images/manager-2.jpg" alt="Manager">
+                                    <img class="novelty__reviews-manager-img" src="images/manager-2.jpg"
+                                        title="сотрудник компании" alt="Владимир Быстров">
                                     <div class="manager-info">
                                         <div class="novelty__reviews-manager-name">
                                             Владимир Быстров
@@ -1432,19 +1469,20 @@
                             <div class="novelty__reviews-inner">
                                 <div class="novelty__reviews-content">
                                     <p class="novelty__reviews-text">
-                                        Современные технологии достигли такого, что высокое качество позиционных
-                                        исследований
-                                        влечет за собой процесс внедрения и модернизации распределения внутренних
-                                        резервов и
-                                        ресурсов. Значимость этих проблем настолько очевидна.
+                                        Дедушка Мороз подарил сыну на новый год эту машинку как и было заказано. Утром 1
+                                        января подарок был найден и после радостных объятий с коробкой, машинку сразу
+                                        включили. Но каково же было расстройство, когда у машинки после 2 метров на ходу
+                                        отлетело колесо!!!! Просто невозможно описать глаза сына, ну как же так!
                                     </p>
                                     <p class="novelty__reviews-text novelty__reviews-text--last">
-                                        Значимость этих проблем настолько очевидна, что постоянный количественный рост.
+                                        От полного разочарования испорченным подарком до обожания ребенком. Много фото и
+                                        видео
                                     </p>
                                     <div class="decor__reviews"></div>
                                 </div>
                                 <div class="novelty__reviews-manager-info">
-                                    <img class="novelty__reviews-manager-img" src="images/manager-3.jpg" alt="Manager">
+                                    <img class="novelty__reviews-manager-img" src="images/manager-3.jpg"
+                                        title="Гендиректор" alt="Алексей Димитров">
                                     <div class="manager-info">
                                         <div class="novelty__reviews-manager-name">
                                             Алексей Димитров
@@ -1465,7 +1503,7 @@
             <div class="container">
                 <div class="double__banner-inner">
                     <div class="double__banner-left">
-                        <img class="img__scale" src="images/cross-baner-left.jpg" alt="Банер">
+                        <img class="img__scale" src="images/cross-baner-left.jpg" alt="Много обуви" title="Баннер">
                         <div class="double__banner-box--right">
                             <span class="double__banner-sybtitle">На все случаи</span>
                             <span class="double__banner-title">Много обуви</span>
@@ -1473,7 +1511,8 @@
                         </div>
                     </div>
                     <div class="double__banner-right">
-                        <img class="img__scale" src="images/child-baner-right.jpg" alt="Банер">
+                        <img class="img__scale" src="images/child-baner-right.jpg" alt="Готовимся к зиме"
+                            title="Баннер">
                         <div class="double__banner-box--left">
                             <span class="double__banner-sybtitle">Пора утепляться</span>
                             <span class="double__banner-title">Готовимся к зиме</span>
@@ -1489,18 +1528,30 @@
                 <div class="product__inner">
                     <h2 class="product__title title">Наши партнеры</h2>
                     <div class="slider_slider">
-                        <img class="partners-item__imges" src="images/partners/1.jpg" alt="Игрушка товар">
-                        <img class="partners-item__imges" src="images/partners/2.jpg" alt="Игрушка товар">
-                        <img class="partners-item__imges" src="images/partners/3.jpg" alt="Игрушка товар">
-                        <img class="partners-item__imges" src="images/partners/4.jpg" alt="Игрушка товар">
-                        <img class="partners-item__imges" src="images/partners/5.jpg" alt="Игрушка товар">
-                        <img class="partners-item__imges" src="images/partners/6.jpg" alt="Игрушка товар">
-                        <img class="partners-item__imges" src="images/partners/1.jpg" alt="Игрушка товар">
-                        <img class="partners-item__imges" src="images/partners/2.jpg" alt="Игрушка товар">
-                        <img class="partners-item__imges" src="images/partners/3.jpg" alt="Игрушка товар">
-                        <img class="partners-item__imges" src="images/partners/4.jpg" alt="Игрушка товар">
-                        <img class="partners-item__imges" src="images/partners/5.jpg" alt="Игрушка товар">
-                        <img class="partners-item__imges" src="images/partners/6.jpg" alt="Игрушка товар">
+                        <img class="partners-item__imges" src="images/partners/1.jpg" alt="Игрушка товар"
+                            title="Партнеры">
+                        <img class="partners-item__imges" src="images/partners/2.jpg" alt="Игрушка товар"
+                            title="Партнеры">
+                        <img class="partners-item__imges" src="images/partners/3.jpg" alt="Игрушка товар"
+                            title="Партнеры">
+                        <img class="partners-item__imges" src="images/partners/4.jpg" alt="Игрушка товар"
+                            title="Партнеры">
+                        <img class="partners-item__imges" src="images/partners/5.jpg" alt="Игрушка товар"
+                            title="Партнеры">
+                        <img class="partners-item__imges" src="images/partners/6.jpg" alt="Игрушка товар"
+                            title="Партнеры">
+                        <img class="partners-item__imges" src="images/partners/1.jpg" alt="Игрушка товар"
+                            title="Партнеры">
+                        <img class="partners-item__imges" src="images/partners/2.jpg" alt="Игрушка товар"
+                            title="Партнеры">
+                        <img class="partners-item__imges" src="images/partners/3.jpg" alt="Игрушка товар"
+                            title="Партнеры">
+                        <img class="partners-item__imges" src="images/partners/4.jpg" alt="Игрушка товар"
+                            title="Партнеры">
+                        <img class="partners-item__imges" src="images/partners/5.jpg" alt="Игрушка товар"
+                            title="Партнеры">
+                        <img class="partners-item__imges" src="images/partners/6.jpg" alt="Игрушка товар"
+                            title="Партнеры">
                     </div>
                 </div>
             </div>
@@ -1513,113 +1564,116 @@
                     <div class="blog_slider">
                         <div class="blog-item">
                             <div class="blog-item__img-box">
-                                <div class="blog__data">08.10.2019</div>
-                                <img class="blog-item__imges img__scale" src="images/blog/1.jpg" alt="Игрушка товар">
+                                <div class="blog__data">08.11.2021</div>
+                                <img class="blog-item__imges img__scale" src="images/blog/1.jpg"
+                                    alt="Выбрать игрушку для ребёнка" title="Статья в блоге">
                             </div>
                             <h4 class="blog__title">
-                                Значимость этих проблем настолько очевидна этих
+                                Как правильно выбрать игрушку для ребёнка?
                             </h4>
                             <p class="blog__anons">
-                                Значимость этих проблем настолько очевидна, что постоянный количественный рост и сфера
-                                нашей активности играет.
+                                Значимость этих проблем настолько очевидна, что постоянный количественный рост.
                             </p>
                             <a class="blog__btn" href="#">Читать далее</a>
                         </div>
                         <div class="blog-item">
                             <div class="blog-item__img-box">
-                                <div class="blog__data">08.10.2019</div>
-                                <img class="blog-item__imges img__scale" src="images/blog/2.jpg" alt="Игрушка товар">
+                                <div class="blog__data">01.01.2022</div>
+                                <img class="blog-item__imges img__scale" src="images/blog/2.jpg"
+                                    alt="Новое направление в творчестве" title="Статья в блоге">
                             </div>
                             <h4 class="blog__title">
-                                Богатый опыт укрепление и развитие структуры
+                                Новое направление в творчестве своими руками
                             </h4>
                             <p class="blog__anons">
-                                Значимость этих проблем настолько очевидна, что постоянный количественный рост и сфера
-                                нашей активности играет.
+                                Посмотрите какие картины можно сделать своими руками, и украсить
+                                комнату или офис.
                             </p>
                             <a class="blog__btn" href="#">Читать далее</a>
                         </div>
                         <div class="blog-item">
                             <div class="blog-item__img-box">
-                                <div class="blog__data">08.10.2019</div>
-                                <img class="blog-item__imges img__scale" src="images/blog/3.jpg" alt="Игрушка товар">
+                                <div class="blog__data">14.02.2022</div>
+                                <img class="blog-item__imges img__scale" src="images/blog/3.jpg"
+                                    alt="Производство одежды для кукол" title="Статья в блоге">
                             </div>
                             <h4 class="blog__title">
-                                Стремящиеся вытеснить традиционное
+                                Мы наладили производство одежды для кукол!
                             </h4>
                             <p class="blog__anons">
-                                Значимость этих проблем настолько очевидна, что постоянный количественный рост и сфера
-                                нашей активности играет.
+                                Вы только посмотрите какие модели и цвета! Ваша куколка будет выглядеть неотразимо.
                             </p>
                             <a class="blog__btn" href="#">Читать далее</a>
                         </div>
                         <div class="blog-item">
                             <div class="blog-item__img-box">
-                                <div class="blog__data">08.10.2019</div>
-                                <img class="blog-item__imges img__scale" src="images/blog/4.jpg" alt="Игрушка товар">
+                                <div class="blog__data">08.03.2022</div>
+                                <img class="blog-item__imges img__scale" src="images/blog/4.jpg"
+                                    alt="Игрушки от компании Vtech" title="Статья в блоге">
                             </div>
                             <h4 class="blog__title">
-                                Идейные соображения высшего порядка также
+                                Развивающие игрушки от компании Vtech в Минске
                             </h4>
                             <p class="blog__anons">
-                                Значимость этих проблем настолько очевидна, что постоянный количественный рост и сфера
-                                нашей активности играет.
+                                Вся линейка игрушек в одном онлайн-магазине! Выбирайте прямо сейчас.
                             </p>
                             <a class="blog__btn" href="#">Читать далее</a>
                         </div>
                         <div class="blog-item">
                             <div class="blog-item__img-box">
-                                <div class="blog__data">08.10.2019</div>
-                                <img class="blog-item__imges img__scale" src="images/blog/1.jpg" alt="Игрушка товар">
+                                <div class="blog__data">08.11.2021</div>
+                                <img class="blog-item__imges img__scale" src="images/blog/1.jpg"
+                                    alt="Выбрать игрушку для ребёнка" title="Статья в блоге">
                             </div>
                             <h4 class="blog__title">
-                                Значимость этих проблем настолько очевидна этих
+                                Как правильно выбрать игрушку для ребёнка?
                             </h4>
                             <p class="blog__anons">
-                                Значимость этих проблем настолько очевидна, что постоянный количественный рост и сфера
-                                нашей активности играет.
+                                Вы родители ребёнка у которого всё есть? Вас пригласили в гости и не знаете что
+                                подарить?
                             </p>
                             <a class="blog__btn" href="#">Читать далее</a>
                         </div>
                         <div class="blog-item">
                             <div class="blog-item__img-box">
-                                <div class="blog__data">08.10.2019</div>
-                                <img class="blog-item__imges img__scale" src="images/blog/2.jpg" alt="Игрушка товар">
+                                <div class="blog__data">01.01.2022</div>
+                                <img class="blog-item__imges img__scale" src="images/blog/2.jpg"
+                                    alt="Новое направление в творчестве" title="Статья в блоге">
                             </div>
                             <h4 class="blog__title">
-                                Богатый опыт укрепление и развитие структуры
+                                Новое направление в творчестве своими руками
                             </h4>
                             <p class="blog__anons">
-                                Значимость этих проблем настолько очевидна, что постоянный количественный рост и сфера
-                                нашей активности играет.
+                                Посмотрите какие картины можно сделать своими руками, и украсить
+                                комнату или офис.
                             </p>
                             <a class="blog__btn" href="#">Читать далее</a>
                         </div>
                         <div class="blog-item">
                             <div class="blog-item__img-box">
-                                <div class="blog__data">08.10.2019</div>
-                                <img class="blog-item__imges img__scale" src="images/blog/3.jpg" alt="Игрушка товар">
+                                <div class="blog__data">14.02.2022</div>
+                                <img class="blog-item__imges img__scale" src="images/blog/3.jpg"
+                                    alt="Производство одежды для кукол" title="Статья в блоге">
                             </div>
                             <h4 class="blog__title">
-                                Стремящиеся вытеснить традиционное
+                                Мы наладили производство одежды для кукол!
                             </h4>
                             <p class="blog__anons">
-                                Значимость этих проблем настолько очевидна, что постоянный количественный рост и сфера
-                                нашей активности играет.
+                                Вы только посмотрите какие модели и цвета! Ваша куколка будет выглядеть неотразимо.
                             </p>
                             <a class="blog__btn" href="#">Читать далее</a>
                         </div>
                         <div class="blog-item">
                             <div class="blog-item__img-box">
-                                <div class="blog__data">08.10.2019</div>
-                                <img class="blog-item__imges img__scale" src="images/blog/4.jpg" alt="Игрушка товар">
+                                <div class="blog__data">08.03.2022</div>
+                                <img class="blog-item__imges img__scale" src="images/blog/4.jpg"
+                                    alt="Игрушки от компании Vtech" title="Статья в блоге">
                             </div>
                             <h4 class="blog__title">
-                                Идейные соображения высшего порядка также
+                                Развивающие игрушки от компании Vtech в Минске
                             </h4>
                             <p class="blog__anons">
-                                Значимость этих проблем настолько очевидна, что постоянный количественный рост и сфера
-                                нашей активности играет.
+                                Вся линейка игрушек в одном онлайн-магазине! Выбирайте прямо сейчас.
                             </p>
                             <a class="blog__btn" href="#">Читать далее</a>
                         </div>
@@ -1627,7 +1681,6 @@
                 </div>
             </div>
         </section>
-
     </main>
 
     <footer class="footer">
@@ -1637,14 +1690,12 @@
                     <div class="footer-top__logo-title">Магазин</div>
                     <div class="footer-top__phone">
                         <p class="footer-top__qestion">Возникли вопросы? Звоните!</p>
-                        <a class="footer-top__link" href="tel:88001234567">8 (800) 123-45-67,</a>
-                        <a class="footer-top__link" href="tel:+79876543210">+7 (987) 654-32-10</a>
+                        <a class="footer-top__link" href="tel:80171234567">8017 123-45-67,</a>
+                        <a class="footer-top__link" href="tel:+375296543210">+375 29 654-32-10</a>
                     </div>
                     <div class="footer-top__contact">
                         <p class="footer-top__text">Мы находимся тут</p>
-                        <a class="footer-top__address" href="#">1234 Значимость этих, место обучения кадров влечет
-                            за
-                            65c.</a>
+                        <a class="footer-top__address" href="#">221234, Минск, ул. Якуба Колоса, д. 65</a>
                     </div>
                     <ul class="footer-top__social-list">
                         <li class="footer-top__item">
@@ -1683,28 +1734,28 @@
                             </div>
                             <ul class="footer-top__menu-list">
                                 <li class="footer-top__menu-item">
-                                    <a class="footer-top__menu-link" href="#">
-                                        Доставка и возврат
+                                    <a class="footer-top__menu-link" href="/catalog.html">
+                                        Каталог
                                     </a>
                                 </li>
                                 <li class="footer-top__menu-item">
-                                    <a class="footer-top__menu-link" href="#">
-                                        Безопасные покупки
+                                    <a class="footer-top__menu-link" href="/blog.html">
+                                        Блог
                                     </a>
                                 </li>
                                 <li class="footer-top__menu-item">
-                                    <a class="footer-top__menu-link" href="#">
-                                        Международные перевозки
+                                    <a class="footer-top__menu-link" href="/about.html">
+                                        О магазине
                                     </a>
                                 </li>
                                 <li class="footer-top__menu-item">
-                                    <a class="footer-top__menu-link" href="#">
-                                        Партнеры
+                                    <a class="footer-top__menu-link" href="/goods.html">
+                                        Товар
                                     </a>
                                 </li>
                                 <li class="footer-top__menu-item">
-                                    <a class="footer-top__menu-link" href="#">
-                                        Группа продаж
+                                    <a class="footer-top__menu-link" href="/">
+                                        Главная
                                     </a>
                                 </li>
                             </ul>
@@ -1715,23 +1766,23 @@
                             </div>
                             <ul class="footer-top__menu-list">
                                 <li class="footer-top__menu-item">
-                                    <a class="footer-top__menu-link" href="#">
-                                        Вход
+                                    <a class="footer-top__menu-link" href="/404.html">
+                                        404
                                     </a>
                                 </li>
                                 <li class="footer-top__menu-item">
-                                    <a class="footer-top__menu-link" href="#">
+                                    <a class="footer-top__menu-link" href="/login.html">
                                         Регистрация
                                     </a>
                                 </li>
                                 <li class="footer-top__menu-item">
-                                    <a class="footer-top__menu-link" href="#">
-                                        Моя корзина
+                                    <a class="footer-top__menu-link" href="/goods.html">
+                                        Товар
                                     </a>
                                 </li>
                                 <li class="footer-top__menu-item">
-                                    <a class="footer-top__menu-link" href="#">
-                                        Список желаний
+                                    <a class="footer-top__menu-link" href="/contact.html">
+                                        Контакты
                                     </a>
                                 </li>
                             </ul>
@@ -1740,13 +1791,16 @@
                     <div class="footer-top__card">
                         <ul class="footer-top__card-list">
                             <li class="footer-top__card-item">
-                                <img class="footer-top__card-img" src="./images/icons/mastercard.png" alt="mastercard">
+                                <img class="footer-top__card-img" src="./images/icons/mastercard.png" alt="mastercard"
+                                    title="Способы оплаты">
                             </li>
                             <li class="footer-top__card-item">
-                                <img class="footer-top__card-img" src="./images/icons/visa.png" alt="visa">
+                                <img class="footer-top__card-img" src="./images/icons/visa.png" alt="visa"
+                                    title="Способы оплаты">
                             </li>
                             <li class="footer-top__card-item">
-                                <img class="footer-top__card-img" src="./images/icons/paypal.png" alt="paypal">
+                                <img class="footer-top__card-img" src="./images/icons/paypal.png" alt="paypal"
+                                    title="Способы оплаты">
                             </li>
                         </ul>
                     </div>
@@ -1754,12 +1808,9 @@
             </div>
         </div>
         <div class="footer-bottom">
-            Copyright МАГАЗИН © 2021. Разработка: @antonborod1n
+            Copyright МАГАЗИН © 2022. Разработка: @antonborod1n
         </div>
     </footer>
-
-    <!-- <a class="arrow-up" href="#"></a>
-    </a> -->
 
     <script src="js/main.min.js"></script>
 </body>
