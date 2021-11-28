@@ -816,6 +816,10 @@
             color: #FFFFFF;
             transition: all .3s;
         }
+        &.popular__btn--active {
+            color: #FFFFFF;
+            background-color: #5ce2ec;
+        }
     }
     &__filter-btn {
         padding-bottom: 30px;
