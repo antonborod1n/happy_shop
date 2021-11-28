@@ -68,7 +68,7 @@ body {
     }
 }
 
-.arrow-up {
+/* .arrow-up {
     width: 50px;
     height: 50px;
     background-color: $accent;
@@ -81,7 +81,7 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
     cursor: pointer;
-}
+} */
 
 /* SLICK-SLIDER */
 
@@ -130,5 +130,26 @@ body {
 }
 .jq-ry-group-wrapper svg{
     padding-right: 2px;
+}
+
+/* SCROLL */
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+  
+::-webkit-scrollbar-thumb {
+    border: 2px solid #ffdd00;
+    background: hsla(343, 88%, 58%, 1);
+    border-radius: 10px;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: hsla(343, 88%, 58%, .7);
+}
+  
+::-webkit-scrollbar-track {
+    background: #ffdd00;
+    border-radius: 10px;
 }
 
