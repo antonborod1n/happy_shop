@@ -162,9 +162,6 @@
             }
         }
     }
-}
-
-.shop-content {
     &__inner {
         display: flex;
         justify-content: space-between;
@@ -207,6 +204,12 @@
             @extend %montserrat-alternates-400;
             font-size: 13px;
             color: $title; 
+            transition: 0.5s linear;
+        }
+        &-btn:hover {
+            background-color: $accent;
+            color: #FFFFFF;
+            transition: 0.5s linear;
         }
     }
 }
